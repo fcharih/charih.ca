@@ -15,7 +15,7 @@
   <div>
     Chercheur and co-fondateur @ <a href="https://nuvobio.com">NuvoBio</a>
   </div>
-  <div>Musicien, féministe, anti-raciste, queer</div>
+  <div>Musicien, féministe, anti-raciste, queer 🏳️‍🌈💖💜💙</div>
 </div>
 
 <div id="socials">

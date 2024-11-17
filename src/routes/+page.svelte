@@ -15,7 +15,7 @@
   <div>
     Lead scientist and co-founder @ <a href="https://nuvobio.com">NuvoBio</a>
   </div>
-  <div>Musician, feminist, antiracist, queer</div>
+  <div>Musician, feminist, antiracist, queer 🏳️‍🌈💖💜💙</div>
 </div>
 
 <div id="socials">
