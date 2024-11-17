@@ -1,0 +1,1 @@
+import{a as e,t as r}from"../chunks/disclose-version.DUeUvj-E.js";import"../chunks/stores.cXl4S_JY.js";import{P as p}from"../chunks/PageTemplate.Df4doVPQ.js";var s=r("<h1>Music</h1>");function c(t){p(t,{children:(o,m)=>{var a=s();e(o,a)},$$slots:{default:!0}})}export{c as component};

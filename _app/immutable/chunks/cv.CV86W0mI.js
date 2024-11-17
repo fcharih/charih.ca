@@ -1,0 +1,619 @@
+const n=`# Contact Info
+name: François Charih
+affiliations:
+  - Carleton University Biomedical Informatics Collaboratory
+  - Institute of Biochemistry, Carleton University
+room: "Nesbitt Hall (room 232)/Canal Building (room 6105), Carleton University"
+address: "1125, Colonel By Drive"
+postalcode: "K1S 5B6"
+city: "Ottawa"
+state: "ON"
+country: "Canada"
+email: "francois@charih.ca"
+webpage: "https://charih.ca"
+
+# Research interests (at least 6 in order of priority)
+researchinterests:
+  - Computational biology
+  - Biomedical informatics
+  - Applied machine learning
+  - High performance computing
+  - Protein biochemistry
+  - Motor neuron diseases
+
+# Education
+education:
+  - degree: Ph.D.
+    topic: Electrical and Computer Engineering (Computational Biology)
+    school: Carleton University
+    location: "Ottawa, ON"
+    advisors:
+      - name: James R. Green
+        website: "http://www.sce.carleton.ca/faculty/green/green.php"
+      - name: Kyle K. Biggar
+        website: "https://carleton.ca/biology/people/kyle-biggar/"
+    thesistitle: "Uncovering and modulating the lysine methylome: a computational approach"
+    years: 2019 - 2025 (expected)
+
+  - degree: M.A.Sc.
+    topic: Electrical and Computer Engineering (Data Science)
+    school: Carleton University
+    location: "Ottawa, ON"
+    advisors:
+      - name: James R. Green
+        website: "http://www.sce.carleton.ca/faculty/green/green.php"
+    thesistitle: "Machine Learning in Audiology: Applications and Implications"
+    thesisurl: "https://charih.ca/theses/Charih_thesis_2019.pdf"
+    years: 2016 - 2018
+
+  - degree: B.Sc.(Hons.)
+    topic: Biochemistry
+    school: University of Ottawa
+    location: "Ottawa, ON"
+    years: 2010 - 2016
+    advisors:
+      - name: Jean-François Couture
+        website: "https://research.uottawa.ca/people/couture-jean-francois"
+    thesistitle: Structural Insights into the DNA-Binding Activity of Metalloregulator Fur in C. jejuni
+    thesisurl: "https://charih.ca/theses/Charih_honours_2015.pdf"
+
+  - degree: B.A.Sc.
+    topic: Chemical Engineering
+    school: University of Ottawa
+    location: "Ottawa, ON"
+    years: 2010 - 2016
+    thesistitle: Design, Simulation and Optimization of a High Production Volume Toluene Plant
+    thesisurl: "https://charih.ca/theses/Bouchard_et_al_2016.pdf"
+
+employment:
+  - title: Research Scientist
+    employer: NuvoBio
+    location: "Ottawa, ON"
+    years: "2022 - present"
+    details:
+      - Leading the development of Darwin, a inhibitory peptide engineering algorithm
+      - Responsible for the implementation, deployment and distribution of Darwin
+      - Managing multiple high performance computing platforms (mid-size computer clusters)
+
+  - title: Lead Researcher (Contractual position)
+    employer: Carleton University
+    location: "Ottawa, ON"
+    years: "Summer 2020"
+    details:
+      - Collaboration initiated by the WSIB of Ontario upon reading my master's thesis
+      - Managed a team composed of myself, one M.Eng. student, and one undergraduate student
+      - Responsible for developing a semi-automated audiogram digitization/interpretation solution using machine learning and computer vision to support the claim adjudication process at WSIB
+
+  - title: Contract Researcher
+    employer: The Ottawa Hospital Rehabilitation Centre
+    location: "Ottawa, ON"
+    years: "2018 - 2019"
+    details:
+      - Responsible for the implementation of a tablet-based software for the annotation of stress levels of PTSD/TBI patients undergoing VR therapy (collaboration with Rehabilitation Virtual Reality Lab at The Ottawa Hospital).
+
+  - title: Contract Researcher
+    employer: Natural Resources Canada
+    location: "Ottawa, ON"
+    years: 2017 - 2018
+    details:
+      - Co-authored a technical report detailing how deep learning strategies can be deployed for passive monitoring of critical electrical infrastructure
+      - Responsible for the annotation of thousands of images for the development of deep learning-based segmentation models
+
+  - title: Teaching Assistant
+    employer: Carleton University
+    location: "Ottawa, ON"
+    years: "2017 - present"
+    details:
+      - SYSC4001 - Operating Systems (Fall 2023)
+      - SYSC2100 - Data Structures and Algorithms (Spring 2023)
+      - SYSC4415 - Introduction to Machine Learning (Winter 2023)
+      - SYSC2002 - Data Structures and Algorithms (Spring 2020)
+      - SYSC2006 - Foundations of Imperative Programming (Fall 2017, Winter 2019)
+
+  - title: Undergraduate Research Assistant
+    employer: Ottawa Institute of Systems Biology
+    location: "Ottawa, ON"
+    years: 2014 - 2016
+    details:
+      - Successfully crystallized and contributed to the resolution of the crystal structure of the protein under study
+      - Performed and optimized a variety of biochemistry techniques, including protein overexpression, mutational studies, structural characterization and protein-DNA interaction studies
+      - Used tools including high-throughput crystallization robots, x-ray diffractometer, FPLC/HPLC, protein modelling software, isothermal titration calorimetry on a regular basis in addition to applying other common techniques
+
+publications:
+  #################### JOURNAL ##########################
+
+  #- title: "Machine learning-based exploration of enzyme-substrate networks: SET8-mediated methyllysine and its changing impact within cancer proteomes"
+  #  type: journal
+  #  year: 2024
+  #  publisher: "Nature Communications"
+  #  authors: "K. K. Biggar, N. Ridgeway, A. Chopra, V. Lukinović, F. Charih, D. Levy, J. R. Green"
+  #  volume: ""
+  #  issue: ""
+  #  pages: ""
+  #  preprint: false
+  #  url: ""
+  #  comment: "Submitted to Nature Communications"
+
+  - title: "Systematic in vitro optimization of antimicrobial peptides against Escherichia coli"
+    type: journal
+    year: 2024
+    publisher: "JAC-Antimicrobial Resistance"
+    authors: "A. Shukri, A. C. Carroll, R. Collins, F. Charih, A. Wong, K. K. Biggar"
+    volume: "6"
+    issue: "4"
+    pages: ""
+    preprint: false
+    url: "https://academic.oup.com/jacamr/article/6/4/dlae096/7704604?login=false"
+    comment: ""
+
+  - title: "Unraveling the Battle for Lysine: A Review of the Competition among Post-Translational Modifications"
+    type: journal
+    year: 2023
+    publisher: "Biochimica et Biophysica Acta (BBA) - Gene Regulatory Mechanisms"
+    authors: "A. H. Shukri, V. Lukinović, F. Charih, K. K. Biggar"
+    volume: "1866"
+    issue: "4"
+    pages: "194990"
+    preprint: false
+    url: "https://www.sciencedirect.com/science/article/pii/S1874939923000858"
+    comment: ""
+
+  - title: "Audiogram Digitization Tool for Audiological Reports"
+    type: journal
+    year: 2022
+    publisher: "IEEE Access"
+    authors: "F. Charih and J.R. Green"
+    volume: "10"
+    issue: ""
+    pages: "110761-110769"
+    preprint: false
+    url: "https://ieeexplore.ieee.org/document/9925220?source=authoralert"
+    comment: ""
+
+  - title: "GasBotty: Multi-Metric Extraction in the Wild"
+    type: journal
+    year: 2022
+    publisher: "IEEE Access"
+    authors: "K. Dick, J. B. Tanner, F. Charih, J.R. Green"
+    volume: "10"
+    issue: ""
+    pages: "28487-28498"
+    url: "https://ieeexplore.ieee.org/document/9727170"
+    comment: ""
+
+  - title: "Assessing sequence-based protein-protein interaction predictors for use in therapeutic peptide engineering"
+    type: journal
+    year: 2022
+    publisher: "Scientific Reports"
+    authors: "F. Charih, K. Biggar, J.R. Green"
+    volume: "12"
+    issue: "9610"
+    pages: "1-13"
+    url: "https://www.nature.com/articles/s41598-022-13227-9"
+    comment: ""
+
+  - title: "Translatomic database of cortical astroglia across male and female mouse development reveals two distinct developmental phenotypes"
+    type: journal
+    year: 2022
+    publisher: "Cell Reports"
+    authors: "G.M. Rurak, S. Simard, M. Freitas-Andrade, B. Lacoste, F. Charih, A. Van Geel, J. Stead, B. Woodside, J.R. Green, G. Coppola, N. Salmaso"
+    volume: "38"
+    issue: "5"
+    pages: ""
+    url: "https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00022-5"
+    comment: ""
+
+  - title: "Machine Learning-Driven Identification of Novel Lysine Methylation Sites with MethylSight"
+    type: journal
+    year: 2020
+    publisher: "Star Protocols"
+    authors: "F. Charih, J. R. Green, K. K. Biggar"
+    volume: ""
+    issue: ""
+    pages: ""
+    url: "https://doi.org/10.1016/j.xpro.2020.100135"
+    comment: ""
+
+  - title: "Proteome-wide Prediction of Lysine Methylation Reveals Novel Histone Marks and Outlines the Methyllysine Proteome"
+    type: journal
+    year: 2020
+    publisher: "Cell Reports"
+    status: Under review
+    authors: "K. K. Biggar*, F. Charih*, H. Liu, Y. B. Ruiz-Blanco, L. Stalker, A. Chopra, J. Connolly, K. Frensemier, M. Galka, Q. Fang, C. Wynder, W. L. Standford, J. R. Green, and S. S-C. Li"
+    volume: "32"
+    issue: "107896"
+    pages: ""
+    url: "https://doi.org/10.1016/j.celrep.2020.107896"
+    comment: "*Co-first authors"
+
+  - title: "Data-Driven Audiogram Classification for Mobile Audiometry"
+    type: journal
+    year: 2020
+    publisher: Scientific Reports
+    status: "Under review"
+    authors: "F. Charih, M. Bromwich, A. E. Mark, R. Lefrançois, and J. R. Green"
+    volume: "10"
+    issue: "3962"
+    pages: ""
+    url: "https://doi.org/10.1038/s41598-020-60898-3"
+    comment: ""
+
+  - title: "Purification and characterization of Campylobacter jejuni ferric uptake regulator"
+    type: journal
+    year: 2018
+    publisher: BioMetals
+    status: ""
+    authors: "S. Sarvan, A. Yeung, F. Charih, A. Stintzi, and J.-F. Couture"
+    volume: "32"
+    issue: "3"
+    pages: "491-500"
+    url: "https://doi.org/10.1007/s10534-019-00177-5"
+    comment: ""
+
+  - title: "Crystal structure of Campylobacter jejuni peroxide regulator"
+    type: journal
+    year: 2018
+    publisher: FEBS Letters
+    status: ""
+    authors: "S. Sarvan, F. Charih, J. Butcher, J. S. Brunzelle, A. Stintzi, and J.-F. Couture"
+    volume: "592"
+    issue: "13"
+    pages: "2351-2360"
+    url: "https://doi.org/10.1002/1873-3468.13120"
+    comment: ""
+
+  - title: "Functional insights into the interplay between DNA interaction and metal coordination in ferric uptake regulators"
+    type: journal
+    year: 2018
+    publisher: Scientific Reports
+    status: ""
+    authors: "S. Sarvan, F. Charih, M. Askoura, J. Butcher, J. S. Brunzelle, A. Stintzi, and J.-F. Couture"
+    volume: "8"
+    issue: "1"
+    pages: "1-14"
+    url: "https://doi.org/10.1038/s41598-018-25157-6"
+    comment: ""
+
+    ################### CONFERENCES #########################
+  - title: "Gas Prices of America: The Machine-Augmented Crowd-Sourcing Era"
+    type: conference
+    date: May 2020
+    conference: "17th Conference on Computer and Robot Vision"
+    location: Ottawa, Canada
+    status: ""
+    authors: "K. Dick, F. Charih, J. Woo, J. R. Green"
+    url: "https://doi.org/10.1109/CRV50864.2020.00029"
+    comment: ""
+  - title: "Exploratory Analysis of Ultra-Short-Term Heart Rate Variability Features in Virtual Rehabilitation Sessions"
+    type: conference
+    date: June 2020
+    conference: "2020 IEEE International Symposium on Medical Measurements and Applications (MeMeA)"
+    location: Bari, Italy
+    status: ""
+    authors: "R. Selzler, A. Smith, F. Charih, A. Boyle, J. Holly, C. Bridgewater, M. Besemann, D. Curran, A. D. C. Chan, and J. R. Green"
+    url: "https://doi.org/10.1109/MeMeA49120.2020.9137133"
+    comment: ""
+  - title: "Applications of Machine Learning Methods in Retrospective Studies on Hearing"
+    type: conference
+    date: October 2018
+    conference: Proceedings of the 2018 IEEE Life Sciences Conference
+    location: Montréal, Canada
+    status: ""
+    authors: "F. Charih, A. Steeves, M. Bromwich, A. E. Mark, R. Lefrançois, and J. R. Green"
+    url: "https://doi.org/10.1109/LSC.2018.8572268r"
+    slides: "LSC2018.pdf"
+    comment: ""
+
+  - title: "Mining Audiograms to Improve the Interpretability of Automated Audiometry Measurements"
+    type: conference
+    date: June 2018
+    conference: "Proceedings of the 2018 IEEE International Symposium on Medical Measurements and Applications (MeMeA)"
+    location: Rome, Italy
+    status: ""
+    authors: "F. Charih, M. Bromwich, R. Lefrançois, A. E. Mark, and J. R. Green"
+    url: "https://doi.org/10.1109/MeMeA.2018.8438746"
+    slides: "MeMeA2018.pdf"
+    comment: ""
+
+  - title: "Systematic Street View Sampling: High Quality Annotation of Power Infrastructure in Rural Ontario"
+    type: conference
+    date: May 2018
+    conference: "Proceedings of the 2018 15th Conference on Computer and Robot Vision (CRV)"
+    location: Toronto, Canada
+    status: ""
+    authors: "K. Dick, F. Charih, Y. Souley Dosso, L. Russell, and J. R. Green"
+    url: "https://doi.org/10.1109/CRV.2018.00028"
+    comment: ""
+
+    ################# OTHER ##########################
+  - title: "Machine learning-based exploration of enzyme-substrate networks: SET8-mediated methyllysine and its changing impact within cancer proteomes"
+    type: "preprint"
+    authors: "K. K. Biggar, N. Ridgeway, A. Chopra, V. Lukinović, F. Charih, D. Levy, J. R. Green"
+    server: "Research Square"
+    date: "2024"
+    comment: "Under review at Nature Communications"
+    url: "https://www.researchsquare.com/article/rs-3771179/v1"
+
+  - title: "Machine Learning in Audiology: Applications and Implications"
+    type: "Master's thesis"
+    authors: "F. Charih"
+    publisher: "Carleton University"
+    location: "Ottawa, ON"
+    date: "December 2018"
+    comment: "Defended without revisions, and was awarded the Carleton University Senate medal"
+    num_pages: 170
+    url: "https://curve.carleton.ca/873548bb-f077-49d4-a5a6-9a69fddf1284"
+
+  - title: "Towards Energy Infrastructure Image Seg-mentation Using Deep Learning"
+    type: "Technical Report prepared for Natural Resources Canada"
+    authors: "K. Dick, F. Charih, Y. Souley Dosso, L. Russell, and J. R. Green"
+    publisher: "Carleton University"
+    location: "Ottawa, ON"
+    date: "April 2018"
+    comment: ""
+    num_pages: 88
+    url: ""
+
+presentations:
+  - title: "Machine learning in Biomedical Informatics and Bioinformatics (Guest lecture)"
+    event: ECOR1055
+    location: "Ottawa, ON"
+    date: November 6th, 2024
+    url: ""
+
+  - title: "Machine learning in Biomedical Informatics and Bioinformatics"
+    event: ECOR1055
+    location: "Ottawa, ON"
+    date: November 1st, 2022
+    url: ""
+
+  - title: "Evolution-Inspired Peptide Drug Design"
+    event: GRADflix Challenge
+    location: "Ottawa, ON"
+    date: April 2022
+    url: "https://www.youtube.com/watch?v=jE3-lh7vuNE"
+
+  - title: "AI in biology and biomedical engineering (guest lecture)"
+    event: ECOR1055
+    location: "Ottawa, ON"
+    date: December 2nd, 2019
+    url: ""
+
+  - title: "X-ray crystallography and computational biochemistry (guest lecture)"
+    event: BIOC3202
+    location: "Ottawa, ON"
+    date: November 22nd, 2019
+    url: "https://charih.ca/slides/BIOC3202_Guest_lecture.pdf"
+
+  - title: "Introductory Data Analysis with Pandas"
+    event: Lecture Series (IEEE EMBS Carleton)
+    location: "Ottawa, ON"
+    date: October 16th, 2019
+    url: "https://charih.ca/workshops/pandas-workshop/pandas_workshop_2019.pdf"
+
+  - title: "Building interactive visualizations in the browser with D3.js"
+    event: Lecture Series (IEEE EMBS Carleton)
+    location: "Ottawa, ON"
+    date: February 6th, 2019
+    url: "https://charih.ca/workshops/d3-workshop/presentation.html"
+
+  - title: "Machine learning in Audiology (guest lecture)"
+    event: HLTH2001 and HLTH4102 (Carleton University)
+    location: "Ottawa, ON"
+    date: November 2018, 2019
+    url: "https://charih.ca/slides/HLTH2001_Guest_Lecture.pdf"
+
+  - title: "MethylSight: A Computational Approach to the Elucidation of the Methyllysine Proteome"
+    event: 21st Chemistry and Biochemistry Graduate Research Conference
+    location: "Montreal, QC"
+    date: November 9th, 2018
+    url: "https://charih.ca/slides/MethylSight_Concordia2018.pdf"
+
+posters:
+  - title: "In silico design of a novel SMYD3 inhibitor with Darwin"
+    event: "Life Science Day 6.0, Carleton University"
+    location: "Ottawa, ON"
+    # filename: "Charih_APS2022_poster.pdf"
+    date: May 2023
+
+  - title: "Darwin: an evolution-inspired algorithm for target-specific peptide inhibitor engineering"
+    event: "American Peptide Society Symposium"
+    location: "Whistler, BC"
+    # filename: "Charih_APS2022_poster.pdf"
+    date: June 2022
+
+  - title: "Machine Learning in Audiology: Applications and Implications"
+    event: Ottawa-AI Alliance Workshop
+    location: "Ottawa, ON"
+    date: October 2018
+
+  - title: "Systematic Street View Sampling for Accurate Urban Population Estimation"
+    event: Data Day 5.0
+    location: "Ottawa, ON"
+    filename: "https://charih.ca/census_charih_2018.pdf"
+    date: May 2018
+
+  - title: "Extending the SHOEBOX Audiometry mobile audiometer with an automated audiogram classification system"
+    event: Life Science Day 2.0, Carleton University
+    location: "Ottawa, ON"
+    filename: "https://charih.ca/shoeboxai_charih_2017.pdf"
+    date: May 2018
+
+  - title: "Structural insights into the DNA Binding Activity of the Ferric Uptake Regulator in Campylobacter jejuni"
+    event: "Honours Project Poster Day"
+    location: "Ottawa, ON"
+    filename: "https://charih.ca/honours_charih_2015.pdf"
+    date: April, 2015
+
+webtools:
+  - title: "MethylSight (undergoing maintenance)"
+    url: "http://methylsight.cu-bic.ca"
+    description: "A web server that makes the MethylSight lysine methylation predictor available to biologists."
+
+  - title: "cuBIC website"
+    url: "https://cu-bic.ca"
+    description: "The website of the Carleton University Biomedical Informatics Collaboratory."
+
+  - title: "StarDB"
+    url: "http://stardb.cu-bic.ca"
+    description: "A database of translatomic data from astroglia (in collaboration with the Salmaso lab)."
+
+awards:
+  - title: Gabriel Warshaw Scholarship
+    source: "Carleton University"
+    year: 2023
+    value: "1,700 CAD"
+    comment: "Merit-based award"
+
+  - title: Queen Elizabeth II Scholarship in Science and Technology
+    source: "Government of Ontario"
+    year: 2022
+    value: "15,000 CAD"
+    comment: "Merit-based award"
+
+  - title: American Peptide Symposium Travel Award
+    source: "American Peptide Society"
+    year: 2022
+    value: "600 USD"
+    comment: ""
+
+  - title: Douglas Millar Scholarship
+    source: "Dean of the FGPA (Carleton)"
+    year: 2020
+    value: "3,200 CAD"
+    comment: "Awarded yearly to an outstanding graduate student in engineering"
+
+  - title: Postgraduate Scholarship-Doctoral (PGS-D)
+    source: NSERC
+    year: 2019
+    value: "63,000 CAD"
+    comment: "Awarded to high potential researchers to pursue doctoral studies"
+
+  - title: Ontario Graduate Scholarship
+    source: Carleton University
+    year: 2019
+    value: "15,000 CAD"
+    comment: "Declined in favour of NSERC PGS-D award"
+
+  - title: Carleton University Senate Medal
+    source: Carleton University
+    year: 2019
+    value: ""
+    comment: "Awarded for outstanding academic achievement at the graduate level (1 medal/faculty awarded)"
+
+  - title: Ph.D. Entrance Scholaship
+    source: Carleton University
+    year: 2018
+    value: "2,000 CAD"
+    comment: ""
+
+  - title: CREATE-BEST Scholarship
+    source: NSERC
+    year: 2017
+    value: "5,000 CAD"
+    comment: ""
+
+  - title: Engage/VIP-I Grant
+    source: NSERC, OCE and Clearwater Clinical Ltd.
+    year: 2017
+    value: "50,000 CAD"
+    comment: Co-authored the proposal for the grant awarded to Prof. James R. Green
+
+  - title: M.A.Sc. Entrance Scholaship
+    source: Carleton University
+    year: 2017
+    value: "2,000 CAD"
+    comment: ""
+
+  - title: Protein Modeling Contest
+    source: University of Ottawa
+    year: 2014
+    value: "100 CAD"
+    comment: ""
+
+  - title: B.Sc. Entrance Scholarship
+    source: University of Ottawa
+    year: 2011
+    value: "2,000 CAD"
+    comment: ""
+
+mentoring:
+  - student: Abhinav Yalamanchili
+    type: M.Eng. Student
+    project: "Machine vision to digitize audiogram images (with WSIB Ontario)"
+    location: Carleton University
+    date: Summer 2020
+
+  - student: Ahmed Abdelrazik
+    type: Undergraduate Student
+    project: "Development of an ergonomic audiogram digitization tool (with WSIB Ontario)"
+    location: Carleton University
+    date: Summer 2020
+
+  - student: Siddharth Chadha
+    type: Undergraduate Student
+    project: "Digitization of audiograms with template matching"
+    location: Carleton University
+    date: Summer 2019
+
+  - student: Pratyush Singh
+    type: Undergraduate Student
+    project: "Machine vision to digitize audiogram images"
+    location: Carleton University
+    date: Summer 2018
+
+  - student: Ashlynn Steeves
+    type: Undergraduate Student
+    project: "Using kNN to impute values in incomplete audiograms"
+    location: Carleton University
+    date: Winter 2018
+
+peerreviews:
+  - venue: "Scientific Reports"
+    type: "journal"
+    count: 5
+
+  - venue: "Oxford Bioinformatics"
+    type: "journal"
+    count: 1
+
+  - venue: "PLoS One"
+    type: "journal"
+    count: 1
+
+  - venue: "Cell Star Protocols"
+    type: "journal"
+    count: 1
+
+  - venue: "IEEE International Symposium on Medical Measurements and Applications"
+    type: "Conference"
+    count: 1
+
+involvement:
+  - title: Executive Member
+    source: Carleton University Biology Graduate Student Association
+    year: 2023
+
+  - title: Judge
+    source: Ottawa Regional Science Fair
+    year: 2019, 2021, 2023, 2024
+
+  - title: Communications Officer
+    source: Carleton University Engineering in Medicine and Biology Society
+    year: 2018-2020
+
+  - title: Judge
+    source: Canada Wide Science Fair
+    year: 2018, 2021, 2024
+
+languages:
+  - name: French
+    type: natural
+    level: native
+  - name: English
+    type: natural
+    level: fluent
+  - name: Moroccan Arabic
+    type: natural
+    level: elementary
+`;export{n as y};
