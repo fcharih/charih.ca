@@ -72,7 +72,8 @@
     <li>
       <b>Structural biology</b><br />
       Under the supervision of
-      <a href="https://med.uottawa.ca/bmi/en/people/couture-jean-francois"
+      <a
+        href="https://www.uottawa.ca/faculty-medicine/leadership-team/dr-jean-francois-couture"
         >Prof. Jean-François Couture</a
       >, I completed my my
       <a href="https://charih.ca/Charih_Honours_2015.pdf">honours thesis</a>
