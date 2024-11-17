@@ -68,6 +68,22 @@
 
 <style>
   /*=============== GLOBAL =================*/
+  @font-face {
+    font-family: "Source Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("%sveltekit.assets%/fonts/SourceSansPro-Regular.otf") format("otf");
+  }
+
+  body {
+    font-family: "Source Sans", sans-serif;
+    font-size: 14px;
+  }
+
+  a,
+  a:visited {
+    color: #0f67a6;
+  }
 
   :global(h1, h2, h3) {
     text-align: center;
