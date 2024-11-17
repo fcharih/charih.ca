@@ -80,7 +80,12 @@
     font-size: 14px;
   }
 
-  :global(a, a:visited) {
+  :global(a) {
+    color: #0f67a6;
+    text-decoration: none;
+  }
+
+  :global(a:visited) {
     color: #0f67a6;
   }
 
