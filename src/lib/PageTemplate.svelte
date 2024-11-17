@@ -80,8 +80,7 @@
     font-size: 14px;
   }
 
-  a,
-  a:visited {
+  :global(a, a:visited) {
     color: #0f67a6;
   }
 
