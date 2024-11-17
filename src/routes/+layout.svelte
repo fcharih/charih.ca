@@ -27,13 +27,17 @@
     <a href="/research">Research</a>
     <a href="/cv">CV</a>
     <a href="/music">Music</a>
-    <a href={en_fr_map[activeUrl]}>Français 🇫🇷</a>
+    <a href={en_fr_map[activeUrl]}
+      >FR <span style="font-size:0.9rem;">🇫🇷</span></a
+    >
   {:else}
     <a href="/fr">Accueil</a>
     <a href="/fr/recherche">Recherche</a>
     <a href="/fr/cv">CV</a>
     <a href="/fr/musique">Musique</a>
-    <a href={fr_en_map[activeUrl]}>English 🇬🇧</a>
+    <a href={fr_en_map[activeUrl]}
+      >EN <span style="font-size:0.9rem;">🇬🇧</span></a
+    >
   {/if}
 </header>
 
@@ -80,6 +84,7 @@
   header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
 
   section {
