@@ -41,6 +41,7 @@
 		"vite": "^5.0.11"
 	},
 	"dependencies": {
+		"gh-pages": "^6.2.0",
 		"marked": "^15.0.0",
 		"svelte-markdown": "^0.4.1"
 	}
