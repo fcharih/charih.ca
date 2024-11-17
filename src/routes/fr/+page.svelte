@@ -42,17 +42,6 @@
 </div>
 
 <style>
-  /* Global CSS */
-  :global(a) {
-    text-decoration: none;
-  }
-
-  :global(h1) {
-    text-align: center;
-  }
-
-  /* Local CSS */
-
   #headshot {
     width: 150px;
     border-radius: 50%;
@@ -71,6 +60,7 @@
     justify-content: space-between;
     width: 50%;
     margin: 10px auto;
+    min-width: 250px;
   }
 
   h1 {

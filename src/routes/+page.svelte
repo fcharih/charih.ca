@@ -42,23 +42,6 @@
 </div>
 
 <style>
-  /* Global CSS */
-  :global(a) {
-    text-decoration: none;
-  }
-
-  :global(h1) {
-    text-align: center;
-  }
-
-  :global(body) {
-    @media (max-width: 750px) {
-      font-size: 0.7rem;
-    }
-  }
-
-  /* Local CSS */
-
   #headshot {
     width: 150px;
     border-radius: 50%;
@@ -76,6 +59,7 @@
     display: flex;
     justify-content: space-between;
     width: 50%;
+    min-width: 250px;
     margin: 10px auto;
   }
 

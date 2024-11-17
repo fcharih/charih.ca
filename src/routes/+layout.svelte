@@ -1,73 +1,70 @@
 <script>
   import "../app.css";
   import { page } from "$app/stores";
-  let pathname = $page.url.pathname;
-  let pagename = pathname.split("/").slice(-1)[0];
-  let french = pathname.includes("fr");
+  $: activeUrl = $page.url.pathname;
+  //let french = activeUrl.includes("fr");
 
   let en_fr_map = {
-    "": "/fr",
-    research: "fr/recherche",
-    cv: "fr/cv",
-    music: "fr/musique",
+    "/": "/fr",
+    "/research": "fr/recherche",
+    "/cv": "fr/cv",
+    "/music": "fr/musique",
   };
 
   let fr_en_map = {
-    fr: "/",
-    recherche: "/research",
-    musique: "/music",
-    cv: "/cv",
+    "/fr": "/",
+    "/fr/recherche": "/research",
+    "/fr/musique": "/music",
+    "/fr/cv": "/cv",
   };
 
   let corresponding;
-  console.log("=======>", pagename);
 </script>
 
-<div>
-  <header>
-    {#if !french}
-      <a href="/">Home</a>
-      <a href="/research">Research</a>
-      <a href="/cv">CV</a>
-      <a href="/music">Music</a>
-      <a href={en_fr_map[pagename]}>Français 🇫🇷</a>
-    {:else}
-      <a href="/fr">Accueil</a>
-      <a href="/fr/recherche">Recherche</a>
-      <a href="/fr/cv">CV</a>
-      <a href="/fr/musique">Musique</a>
-      <a href={fr_en_map[pagename]}>English 🇬🇧</a>
-    {/if}
-  </header>
+<header>
+  {#if !activeUrl.includes("fr")}
+    <a href="/">Home</a>
+    <a href="/research">Research</a>
+    <a href="/cv">CV</a>
+    <a href="/music">Music</a>
+    <a href={en_fr_map[activeUrl]}>Français 🇫🇷</a>
+  {:else}
+    <a href="/fr">Accueil</a>
+    <a href="/fr/recherche">Recherche</a>
+    <a href="/fr/cv">CV</a>
+    <a href="/fr/musique">Musique</a>
+    <a href={fr_en_map[activeUrl]}>English 🇬🇧</a>
+  {/if}
+</header>
 
-  <section>
-    <div class="padder">
-      <slot></slot>
+<section>
+  <div class="padder">
+    <slot></slot>
+  </div>
+</section>
+
+<footer>
+  {#if !activeUrl.includes("fr")}
+    <div>
+      Built by yours truly using <a href="https://svelte.dev/">Svelte</a>.
     </div>
-  </section>
-
-  <footer>
-    {#if !french}
-      <div>
-        Built by yours truly using <a href="https://svelte.dev/">Svelte</a>.
-      </div>
-      <div>
-        Want to discuss opportunities to collaborate or chat over a coffee?
-        Please <a href="mailto:francois@charih.ca">reach out</a>!
-      </div>
-    {:else}
-      <div>
-        Page bâtie avec amour et <a href="https://svelte.dev/">Svelte</a>.
-      </div>
-      <div>
-        Vous voulez discuter d'une opportunité de collaborer ou parler en
-        sirotant un bon café? N'hésitez-pas à <a
-          href="mailto:francois@charih.ca">me contacter</a
-        >!
-      </div>
-    {/if}
-  </footer>
-</div>
+    <div>
+      Want to discuss opportunities to collaborate or chat over a coffee? Please <a
+        href="mailto:francois@charih.ca">reach out</a
+      >!
+    </div>
+  {:else}
+    <div>
+      Page bâtie avec amour et <a href="https://svelte.dev/">Svelte</a>.
+    </div>
+    <div>
+      Vous voulez discuter d'une opportunité de collaborer ou parler en sirotant
+      un bon café? N'hésitez-pas à <a href="mailto:francois@charih.ca"
+        >me contacter</a
+      >!
+    </div>
+  {/if}
+</footer>
 
 <style>
   header,

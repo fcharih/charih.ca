@@ -18,3 +18,9 @@ a, a:hover {
     color: #0f67a6;
     text-decoration: none;
 }
+
+@media (max-width: 750px) {
+    body {
+        font-size: 0.7rem;
+    }
+}
