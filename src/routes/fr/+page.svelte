@@ -10,7 +10,7 @@
 <div id="who-i-am">
   <img alt="francois" id="headshot" src="/img/charih1.png" />
   <h1>François Charih (il/lui)</h1>
-  <div>(🇬🇧 prononciation: Fran-soi Cha-ri)</div>
+  <div>(🇫🇷 prononciation: Fran-soi Cha-ri)</div>
   <div>Doctorant @ Université Carleton</div>
   <div>
     Chercheur and co-fondateur @ <a href="https://nuvobio.com">NuvoBio</a>
