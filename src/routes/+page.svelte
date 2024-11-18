@@ -7,6 +7,10 @@
   const news = yaml.load(newsyaml);
 </script>
 
+<svelte:head>
+  <title>Charih | Home</title>
+</svelte:head>
+
 <div id="who-i-am">
   <img alt="francois" id="headshot" src="/img/charih1.png" />
   <h1>François Charih (he/him/his)</h1>

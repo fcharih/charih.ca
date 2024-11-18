@@ -11,6 +11,10 @@
   let webtools = cv.webtools;
 </script>
 
+<svelte:head>
+  <title>Charih | CV</title>
+</svelte:head>
+
 <h1>CV</h1>
 
 <p>

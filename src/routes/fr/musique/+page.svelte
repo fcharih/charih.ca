@@ -1,6 +1,10 @@
 <script>
 </script>
 
+<svelte:head>
+  <title>Charih | Musique</title>
+</svelte:head>
+
 <h1>Musique</h1>
 
 <p>

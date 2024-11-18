@@ -1,6 +1,10 @@
 <script>
 </script>
 
+<svelte:head>
+  <title>Charih | Music</title>
+</svelte:head>
+
 <h1>Music</h1>
 <p>
   In my spare times, I enjoy playing the guitar and singing. I started

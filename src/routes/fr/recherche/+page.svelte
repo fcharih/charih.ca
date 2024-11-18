@@ -1,6 +1,10 @@
 <script>
 </script>
 
+<svelte:head>
+  <title>Charih | Recherche</title>
+</svelte:head>
+
 <h1>Recherche</h1>
 
 <p>
