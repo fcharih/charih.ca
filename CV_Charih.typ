@@ -306,7 +306,7 @@ footer: context [
 Carleton University Biomedical Informatics Collaboratory (cuBIC)\
 Institute of Biochemistry, Carleton University \
 NuvoBio \
-Health Science Building, Room 4302 \
+Health Sciences Building, Room 4302 \
 1125, Colonel By Drive \
 Ottawa, ON (K1S 5B6) \
 #fa-icon("envelope") #link("mailto:francois@charih.ca")[francois\@charih.ca] \
