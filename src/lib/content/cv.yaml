@@ -329,9 +329,10 @@ publications:
   - title: "Machine learning-based exploration of enzyme-substrate networks: SET8-mediated methyllysine and its changing impact within cancer proteomes"
     type: "preprint"
     authors: "K. K. Biggar, N. Ridgeway, A. Chopra, V. Lukinović, F. Charih, D. Levy, J. R. Green"
+    publisher: "Nature Communications (under review)"
     server: "Research Square"
     date: "2024"
-    comment: "Under review at Nature Communications"
+    comment: ""
     url: "https://www.researchsquare.com/article/rs-3771179/v1"
 
   - title: "Machine Learning in Audiology: Applications and Implications"
