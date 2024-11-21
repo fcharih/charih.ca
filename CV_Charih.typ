@@ -45,13 +45,11 @@ footer: context [
 #show heading.where(level:2): it => [
   #set align(center)
   #set text(1em, weight: "bold")
-  #box[
-  //#line(length: 100%)
-  //#v(-0.8em)
-  #it.body
-  //#v(-0.8em)
-  //#line(length: 100%)
-  ]
+  #table(
+    columns: 1fr,
+    stroke: (left: none, right: none),
+    [#it.body]
+  )
 ]
 
 // Formatting functions
