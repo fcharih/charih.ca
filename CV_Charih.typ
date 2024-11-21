@@ -104,13 +104,10 @@ footer: context [
 }
 
 #let format-journal(entry) = {
-   [#entry.authors. #entry.title (#entry.year). #text(style: "italic")[#entry.publisher]. 
+   [#entry.authors. #entry.title (#entry.year). #text(style: "italic")[#entry.publisher]#if entry.volume != "" [, #entry.volume]#if entry.issue != "" [(#entry.issue)]#if entry.volume != "" [.]
+    #if entry.comment != "" [ (#entry.comment)]
+    #if entry.url != "" [ \[#link(entry.url)[Link]\]]
    ]
-    if entry.volume != "" [#entry.volume]
-    if entry.issue != "" [(#entry.issue)]
-    if entry.volume != "" [.]
-    if entry.comment != "" [ (#entry.comment)]
-    if entry.url != "" [ \[#link(entry.url)[Link]\]]
 
     [
 
@@ -153,7 +150,7 @@ footer: context [
 }
 
 #let format-other(entry) = {
-  [#entry.authors. #entry.title. #text(style: "italic")[#entry.type], #entry.publisher, #if "location" in entry { entry.location }, #entry.date.]
+  [#entry.authors. #entry.title. #text(style: "italic")[#entry.type], #entry.publisher#if "location" in entry {[, #entry.location]}, #entry.date.]
     if entry.comment != "" [ (#entry.comment)]
     if entry.url != "" [ \[#link(entry.url)[Link]\]]
 
