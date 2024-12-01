@@ -66,6 +66,23 @@
   </li>
 </ol>
 
+<p>
+  Want to know more about my main research project? Feel free to take a look at
+  my submission for the 2021 Gradflix contest:
+</p>
+
+<div class="yt">
+  <iframe
+    height="400"
+    src="https://www.youtube.com/embed/jE3-lh7vuNE?si=biHHOWK-WStRSNOR"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</div>
+
 <h2>Previous research</h2>
 <ol>
   <li>
@@ -103,5 +120,15 @@
     display: block;
     margin: 10px auto;
     width: 30%;
+  }
+
+  .yt {
+    width: 90%;
+    margin: auto;
+  }
+  .yt iframe {
+    width: 100%;
+    border: 0;
+    overflow: hidden;
   }
 </style>

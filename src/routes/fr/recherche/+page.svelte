@@ -74,6 +74,24 @@
   </li>
 </ol>
 
+<p>
+  Vous voulez en savoir plus sur mon projet de recherche principal? Vous pouvez
+  visionner la vidéo que j'ai soumise au concours Gradflix en 2021. Elle résume
+  en une minute l'essentiel de mon projet.
+</p>
+
+<div class="yt">
+  <iframe
+    height="400"
+    src="https://www.youtube.com/embed/jE3-lh7vuNE?si=biHHOWK-WStRSNOR"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</div>
+
 <h2>Travaux antérieurs</h2>
 <ol>
   <li>
@@ -113,5 +131,15 @@
     display: block;
     margin: 10px auto;
     width: 30%;
+  }
+
+  .yt {
+    width: 90%;
+    margin: auto;
+  }
+  .yt iframe {
+    width: 100%;
+    border: 0;
+    overflow: hidden;
   }
 </style>
