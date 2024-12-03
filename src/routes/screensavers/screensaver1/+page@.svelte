@@ -1,5 +1,5 @@
 <script>
-  let STEP = 0.05;
+  let STEP = 0.1;
   let innerWidth = $state(0);
   let innerHeight = $state(0);
   let position = $state({ x: 200, y: 200 });
@@ -15,8 +15,8 @@
   }
 
   const generateRandomPosition = () => {
-    const random1 = getRandomInt(logoWidth, innerWidth - logoWidth);
-    const random2 = getRandomInt(logoHeight, innerHeight - logoHeight);
+    const random1 = getRandomInt(0, innerWidth - logoWidth);
+    const random2 = getRandomInt(0, innerHeight - logoHeight);
 
     return {
       x: random1,
@@ -26,22 +26,24 @@
 
   setInterval(() => {
     const newOpacity = opacityIncreasing ? opacity + STEP : opacity - STEP;
-    if (newOpacity > 1 || newOpacity < 0) {
+    if (newOpacity > 1) {
       opacityIncreasing = !opacityIncreasing;
+      return;
+    }
+
+    if (newOpacity < 0) {
+      opacityIncreasing = !opacityIncreasing;
+      position = generateRandomPosition();
       return;
     }
     opacity = newOpacity;
   }, 100);
-
-  setInterval(function () {
-    position = generateRandomPosition();
-  }, 1000);
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
 <svelte:head></svelte:head>
 
-<div>
+<div id="container">
   <img
     id="logo"
     bind:clientWidth={logoWidth}
@@ -50,3 +52,11 @@
     style={`position: absolute; left: ${position.x}px; top: ${position.y}px; opacity: ${opacity};`}
   />
 </div>
+
+<style>
+  #container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+</style>
