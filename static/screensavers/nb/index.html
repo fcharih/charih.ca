@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script src="/screensavers/nb/d3.js"></script>
+    </head>
+    <body>
+        <img id="logo" src="/screensavers/nb/nuvo_n.png"></img>
+    </body>
+</html>
+
+<script>
+ var x_pos = 0;
+ var y_pos = 0;
+ var d = document.getElementById('logo');
+ d.style.position = "absolute";
+ d.style.left = x_pos+'px';
+ d.style.top = y_pos+'px';
+ d.style.opacity = 1;
+
+ var STEP = 0.01;
+ var goingTransparent = true;
+
+ setInterval(function() {
+     var windowWidth = window.innerWidth;
+     var windowHeight = window.innerHeight;
+    var logo = document.getElementById('logo');
+     var logoWidth = logo.clientWidth;
+     var logoHeight = logo.clientHeight;
+     var currentOpacity = parseFloat(logo.style.opacity);
+
+     if(goingTransparent) {
+        var newOpacity = currentOpacity - STEP;
+
+        if(newOpacity <= 0) {
+            goingTransparent = false;
+
+            var random1 = Math.random();
+            var random2 = Math.random();
+
+            logo.style.left = Math.min(random1 * windowWidth, windowWidth - logoWidth);
+            logo.style.top = Math.min(random2 * windowHeight, windowHeight - logoHeight);
+            return;
+        }
+        logo.style.opacity = newOpacity;
+
+    } else {
+        var newOpacity = currentOpacity + STEP;
+
+        if(newOpacity >= 1) {
+            goingTransparent = true;
+            return;
+        }
+
+
+        logo.style.opacity = newOpacity;
+    }
+ }, 10)
+
+</script>
