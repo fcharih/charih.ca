@@ -1,5 +1,5 @@
 <script>
-  import "../app.css";
+  import "../../app.css";
   import { page } from "$app/stores";
   $: activeUrl = $page.url.pathname;
   //let french = activeUrl.includes("fr");
@@ -71,6 +71,9 @@
 </footer>
 
 <style>
+  body > div {
+    background-image: url("/wallpaper.jpg");
+  }
   header,
   section,
   footer {

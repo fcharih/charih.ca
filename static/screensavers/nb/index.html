@@ -1,13 +1,11 @@
 <html>
-    <head>
-        <script src="/screensavers/nb/d3.js"></script>
-    </head>
     <body>
-        <img id="logo" src="/screensavers/nb/nuvo_n.png"></img>
+        <img id="logo" src="./nuvo_n.png"/>
     </body>
 </html>
 
 <script>
+    const STEP = 0.01;
  var x_pos = 0;
  var y_pos = 0;
  var d = document.getElementById('logo');
@@ -18,8 +16,9 @@
 
  var STEP = 0.01;
  var goingTransparent = true;
+    var newOpacity
 
- setInterval(function() {
+ setInterval(() => {
      var windowWidth = window.innerWidth;
      var windowHeight = window.innerHeight;
     var logo = document.getElementById('logo');
@@ -28,7 +27,7 @@
      var currentOpacity = parseFloat(logo.style.opacity);
 
      if(goingTransparent) {
-        var newOpacity = currentOpacity - STEP;
+         newOpacity = currentOpacity - STEP;
 
         if(newOpacity <= 0) {
             goingTransparent = false;
@@ -41,15 +40,13 @@
             return;
         }
         logo.style.opacity = newOpacity;
-
     } else {
-        var newOpacity = currentOpacity + STEP;
+        newOpacity = currentOpacity + STEP;
 
         if(newOpacity >= 1) {
             goingTransparent = true;
             return;
         }
-
 
         logo.style.opacity = newOpacity;
     }
