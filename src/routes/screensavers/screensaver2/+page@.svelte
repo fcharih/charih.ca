@@ -8,8 +8,6 @@
 
   const LogoJson = parse(Logo);
   LogoJson.then((x) => {
-    re;
-
     let STEP = 0.1;
 
     let position = $state({ x: 200, y: 200 });
