@@ -43,6 +43,7 @@
 	"dependencies": {
 		"gh-pages": "^6.2.0",
 		"marked": "^15.0.0",
-		"svelte-markdown": "^0.4.1"
+		"svelte-markdown": "^0.4.1",
+		"svgson": "^5.3.1"
 	}
 }
