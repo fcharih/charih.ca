@@ -68,8 +68,11 @@
         <span class="topic">high performance computing</span>, and
         <span class="topic">machine learning in protein science</span>. I am a
         co-founder and a research scientist at
-        <a href="https://nuvobio.com">NuvoBio</a>, a biotechnology startup
-        specializing in peptide binder design.
+        <a href="https://nuvobio.com"
+          ><span class="orange">Nuvo</span><span class="green">B</span><span
+            class="orange">i</span
+          ><span class="green">o</span></a
+        >, a biotechnology startup specializing in peptide binder design.
       </p>
 
       <p>
@@ -97,9 +100,12 @@
         <span class="topic"
           >les applications de l'apprentissage automatique aux protéines</span
         >. Je suis co-fondateur et chercheur chez
-        <a href="https://nuvobio.com">NuvoBio</a>, une entreprise en démarage
-        qui se spécialise dans la conception de peptides pour des applications
-        thérapeutiques, entre autres.
+        <a href="https://nuvobio.com"
+          ><span class="orange">Nuvo</span><span class="green">B</span><span
+            class="orange">i</span
+          ><span class="green">o</span></a
+        >, une entreprise en démarage qui se spécialise dans la conception de
+        peptides pour des applications thérapeutiques, entre autres.
       </p>
 
       <p>
