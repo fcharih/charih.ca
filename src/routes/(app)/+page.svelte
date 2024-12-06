@@ -17,8 +17,8 @@
   <h1>François Charih ({$locale === "en" ? "he/him/his" : "il/lui"})</h1>
   <div>
     ({$locale === "en"
-      ? "(pronunciation: Fran-swa Sha-ree)"
-      : "(prononciation: Fran-soi Cha-ri)"})
+      ? "pronunciation: Fran-swa Sha-ree"
+      : "prononciation: Fran-soi Cha-ri"})
   </div>
   <div>
     {$locale === "en"
@@ -26,13 +26,34 @@
       : "Doctorant @ Université Carleton"}
   </div>
   <div>
-    {locale === "en"
-      ? "Co-founder and Research scientist @ NuvoBio"
-      : "Chercheur and co-fondateur @ NuvoBio"}
+    {@html $locale === "en"
+      ? "Co-founder and Research scientist @ "
+      : "Co-fondateur et chercheur @ "}
+    <a href="https://nuvobio.com"
+      ><span class="orange">Nuvo</span><span class="green">B</span><span
+        class="orange">i</span
+      ><span class="green">o</span></a
+    >
   </div>
-  <div></div>
-  <h2>{$locale === "en" ? "About me" : "Bio"}</h2>
+  <div id="socials">
+    <a href="mailto:francois@charih.ca"><i class="fa-solid fa-envelope"></i></a>
+    <div>|</div>
+    <a href="https://bsky.app/profile/charih.ca"
+      ><i class="fa-brands fa-bluesky"></i></a
+    >
+    <div>|</div>
+    <a href="https://scholar.google.ca/citations?user=6Ist2oUAAAAJ&hl=en"
+      ><i class="fa-brands fa-google-scholar"></i></a
+    >
+    <div>|</div>
+    <a href="https://orcid.org/0000-0002-7931-8921">
+      <i class="fa-brands fa-orcid"></i>
+    </a>
+    <div>|</div>
+    <a href="https://github.com/fcharih"><i class="fa-brands fa-github"></i></a>
+  </div>
   <div id="intro">
+    <h2>{$locale === "en" ? "About me" : "Bio"}</h2>
     {#if $locale == "en"}
       <p>Hi there 👋🏾!</p>
       <p>
@@ -93,18 +114,6 @@
   </div>
 </div>
 
-<div id="socials">
-  <a href="mailto:francois@charih.ca">Email</a>
-  <div>|</div>
-  <a href="https://bsky.app/profile/charih.ca">Bluesky</a>
-  <div>|</div>
-  <a href="https://scholar.google.ca/citations?user=6Ist2oUAAAAJ&hl=en"
-    >Scholar</a
-  >
-  <div>|</div>
-  <a href="https://github.com/fcharih">Github</a>
-</div>
-
 <div id="news-container">
   <h2>{$locale === "en" ? "News" : "Nouvelles"}</h2>
   {#each news as newsPiece}
@@ -140,8 +149,9 @@
     display: flex;
     justify-content: space-between;
     width: 50%;
-    min-width: 250px;
-    margin: 10px auto;
+    max-width: 250px;
+    margin: 5px auto;
+    height: 20px;
   }
 
   h1 {
@@ -164,5 +174,21 @@
     margin: 20px auto;
     max-width: 80%;
     text-align: left;
+    background-color: #f3f3f3;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .orange {
+    color: #ff661b;
+  }
+
+  .green {
+    color: #5ebe18;
+  }
+
+  #socials i:hover {
+    font-size: 1.2rem;
   }
 </style>

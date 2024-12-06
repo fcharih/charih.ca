@@ -1,5 +1,5 @@
 <script>
-  import { t, locale, locales } from "./i18n";
+  import { locale } from "./i18n";
 
   import "../../app.css";
 </script>
