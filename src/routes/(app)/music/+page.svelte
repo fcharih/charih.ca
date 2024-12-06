@@ -1,24 +1,42 @@
 <script>
+  import { locale } from "../i18n";
 </script>
 
 <svelte:head>
-  <title>Charih | Music</title>
+  <title>Charih | {$locale === "en" ? "Music" : "Musique"}</title>
 </svelte:head>
 
-<h1>Music</h1>
-<p>
-  In my spare times, I enjoy playing the guitar and singing. I started
-  songwriting in my late teens.
-</p>
-<p>
-  Life (grad school) got in the way and left me with very little time to play
-  and write music. Art and music are important, but fighting diseases is
-  important too! I'm starting to get back into it as I'm wrapping up that PhD
-  and am writing new songs.
-</p>
-<p>
-  You can listen to my latest single <i>Half Moon Eyes</i> in the meantime.
-</p>
+<h1>{$locale === "en" ? "Music" : "Musique"}</h1>
+{#if $locale === "en"}
+  <p>
+    In my spare times, I enjoy playing the guitar and singing. I started
+    songwriting in my late teens.
+  </p>
+  <p>
+    Life (grad school) got in the way and left me with very little time to play
+    and write music. Art and music are important, but fighting diseases is
+    important too! I'm starting to get back into it as I'm wrapping up that PhD
+    and am writing new songs.
+  </p>
+  <p>
+    You can listen to my latest single <i>Half Moon Eyes</i> in the meantime.
+  </p>
+{:else}
+  <p>
+    Dans mes temps libres, j'aime écrire de la musique. Je compose des chansons
+    depuis l'adolescence.
+  </p>
+  <p>
+    Mes études ont accaparé beaucoup de mon temps, ce qui m'en a laissé trop peu
+    pour jouer et écrire des chansons. L'art et la musique sont importants, mais
+    combattre les maladies l'est aussi. Comme j'approche la fin de mon doctorat,
+    je suis en train de me remettre à l'écriture.
+  </p>
+  <p>
+    Vous pouvez écouter mon dernier single
+    <i>Half Moon Eyes</i> ici en attendant.
+  </p>
+{/if}
 
 <div>
   <iframe

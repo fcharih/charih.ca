@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { locale } from "../i18n";
   import yamlCV from "$lib/content/cv.yaml?raw";
   import yaml from "js-yaml";
 
@@ -18,11 +19,19 @@
 <h1>CV</h1>
 
 <p>
-  Feel free to consult a PDF version of <a href="/charih_cv.pdf">my CV</a>.
+  {#if $locale === "en"}
+    Feel free to consult a PDF version of <a href="/charih_cv.pdf">my CV</a>.
+  {:else}
+    Vous pouvez consulter ici la version PDF de <a href="/charih_cv.pdf"
+      >mon CV</a
+    > (en anglais).
+  {/if}
 </p>
 
 <h2>Publications</h2>
-<h3>Peer-reviewed journals ({journalPubs.length})</h3>
+<h3>
+  {$locale === "en" ? "Peer-reviewed journals" : "Articles de revue savante"} ({journalPubs.length})
+</h3>
 {#each journalPubs as pub, i}
   <div class="journal-pub">
     <b>[J{journalPubs.length - i}]</b>
@@ -34,7 +43,11 @@
   </div>
 {/each}
 
-<h3>Conference proceedings ({conferencePubs.length})</h3>
+<h3>
+  {$locale === "en"
+    ? "Conference proceedings"
+    : "Comptes-rendus de conférences"} ({conferencePubs.length})
+</h3>
 {#each conferencePubs as pub, i}
   <div class="conference-pub">
     <b>[C{conferencePubs.length - i}]</b>
@@ -44,7 +57,9 @@
   </div>
 {/each}
 
-<h3>Pre-prints ({preprints.length})</h3>
+<h3>
+  {$locale === "en" ? "Pre-prints" : "Prépublications"} ({preprints.length})
+</h3>
 
 {#if preprints.length === 0}No pre-prints at this time...{/if}
 {#each preprints as pub, i}
@@ -56,7 +71,11 @@
   </div>
 {/each}
 
-<h2>Workshops and presentations</h2>
+<h2>
+  {$locale === "en"
+    ? "Workshops and presentations"
+    : "Ateliers et présentations"} ({presentations.length})
+</h2>
 {#each presentations as presentation, i}
   <div class="presentation">
     <div><b>[W{presentations.length - i}]</b> {presentation.title}</div>
@@ -67,7 +86,7 @@
   </div>
 {/each}
 
-<h2>Posters</h2>
+<h2>Posters ({posters.length})</h2>
 {#each posters as poster, i}
   <div class="poster">
     <div><b>[P{posters.length - i}]</b> {poster.title}</div>
@@ -78,7 +97,9 @@
   </div>
 {/each}
 
-<h2>Web tools</h2>
+<h2>
+  {$locale === "en" ? "Web tools" : "Outils web"} ({webtools.length})
+</h2>
 {#each webtools as wt, i}
   <div class="webtool">
     <div>

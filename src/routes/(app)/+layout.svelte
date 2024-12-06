@@ -1,44 +1,18 @@
 <script>
+  import { t, locale, locales } from "./i18n";
+
   import "../../app.css";
-  import { page } from "$app/stores";
-  $: activeUrl = $page.url.pathname;
-  //let french = activeUrl.includes("fr");
-
-  let en_fr_map = {
-    "/": "/fr",
-    "/research": "fr/recherche",
-    "/cv": "fr/cv",
-    "/music": "fr/musique",
-  };
-
-  let fr_en_map = {
-    "/fr": "/",
-    "/fr/recherche": "/research",
-    "/fr/musique": "/music",
-    "/fr/cv": "/cv",
-  };
-
-  let corresponding;
 </script>
 
 <header>
-  {#if !activeUrl.includes("fr")}
-    <a href="/">Home</a>
-    <a href="/research">Research</a>
-    <a href="/cv">CV</a>
-    <a href="/music">Music</a>
-    <a href={en_fr_map[activeUrl]}
-      >FR <span style="font-size:0.9rem;">🇫🇷</span></a
-    >
-  {:else}
-    <a href="/fr">Accueil</a>
-    <a href="/fr/recherche">Recherche</a>
-    <a href="/fr/cv">CV</a>
-    <a href="/fr/musique">Musique</a>
-    <a href={fr_en_map[activeUrl]}
-      >EN <span style="font-size:0.9rem;">🇬🇧</span></a
-    >
-  {/if}
+  <a href="/">{$locale === "en" ? "Home" : "Accueil"}</a>
+  <a href="/research">{$locale === "en" ? "Research" : "Recherche"}</a>
+  <a href="/cv">{$locale === "en" ? "CV" : "CV"}</a>
+  <a href="/music">{$locale === "en" ? "Music" : "Musique"}</a>
+  <select bind:value={$locale}>
+    <option value={"en"}>EN 🇬🇧</option>
+    <option value={"fr"}>FR 🇫🇷</option>
+  </select>
 </header>
 
 <section>
@@ -48,7 +22,7 @@
 </section>
 
 <footer>
-  {#if !activeUrl.includes("fr")}
+  {#if $locale === "en"}
     <div>
       Built by yours truly using <a href="https://svelte.dev/">Svelte</a>.
     </div>
@@ -71,9 +45,6 @@
 </footer>
 
 <style>
-  body > div {
-    background-image: url("/wallpaper.jpg");
-  }
   header,
   section,
   footer {
