@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://d3js.org/d3.v2.js"></script>
+    <script src="http://bl.ocks.org/tnightingale/raw/4687146/topojson-v0.0.10.js"></script>
+    <script src="http://bl.ocks.org/tnightingale/raw/4687146/cartogram.js"></script>
+
+    <style type="text/css">
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Helvetica;
+      }
+
+      h1 {
+        font-size: 1.2em;
+      }
+
+      #results-box {
+        padding: 20px;
+        height: 200px;
+        width: 400px;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+      path.province {
+        fill: steelblue;
+        stroke: white;
+      }
+      path.province:hover {
+        fill: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="map-container"
+      data-provinces="provinces.json"
+      data-profile="census-profile.csv"
+    >
+      <svg id="canvas" width="960px" height="350"></svg>
+    </div>
+    <div id="results-box"></div>
+    <script
+      nomodule
+      src="https://unpkg.com/browser-es-module-loader/dist/babel-browser-build.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/browser-es-module-loader"></script>
+    <script type="text/javascript">
+      (function() {
+        var proj = d3.geo.albers(), // type of projection
+          path = d3.geo.path().projection(proj); // get path generator from projection
+
+        var profiles = {};
+
+        d3.json("provinces.json", function(canada) {
+          d3.csv("census-profile.csv", function(profile) {
+            profile.forEach(function(provinceProfile) {
+              profiles[provinceProfile.Prov_Name] = provinceProfile;
+            });
+            d3.json("elections.json", function(electionResultsJson) {
+              ready(canada, profiles, electionResultsJson);
+            });
+          });
+        });
+
+        function ready(canada, profiles, electionsData) {
+          var provinces = d3
+            .select("#canvas")
+            .append("g")
+            .attr("class", "provinces")
+            .selectAll("path")
+            .data(topojson.object(canada, canada.objects.provinces).geometries)
+            .enter()
+            .append("path")
+            .attr("class", "province")
+            .attr("d", path)
+            .attr("transform", "translate(0,250)scale(0.5,0.5)")
+            .on("mouseover", function(data) {
+              var provinceName = profiles[data.id].Prov_Name;
+              var parties = Object.values(
+                electionsData[provinceName].parties
+              ).map(
+                party => `${party.party}: ${party.seats} (${party.percentage}%)`
+              );
+              d3.select("#results-box").html(
+                `<h1>${provinceName}</h1>` + "<br/>" + parties.join("<br/>")
+              );
+            })
+            .on("mouseout", function(data) {
+              d3.select("#results-box").html("");
+            });
+        }
+      })();
+    </script>
+  </body>
+</html>

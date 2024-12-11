@@ -1,0 +1,119 @@
+{
+	"British Columbia": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 17 , "percentage": 35.1 },
+			{ "party": "Conservative Party of Canada", "seats": 10, "percentage": 29.9 },
+			{ "party": "New Democratic Party of Canada", "seats": 14, "percentage": 26.0 },
+			{ "party": "Green Party of Canada", "seats": 1, "percentage": 8.2 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Alberta": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 4, "percentage": 24.5 },
+			{ "party": "Conservative Party of Canada", "seats": 29, "percentage": 59.6 },
+			{ "party": "New Democratic Party of Canada", "seats": 1, "percentage": 11.6 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 2.5 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Saskatchewan": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 1, "percentage": 23.9 },
+			{ "party": "Conservative Party of Canada", "seats": 10, "percentage": 48.5 },
+			{ "party": "New Democratic Party of Canada", "seats": 3, "percentage": 25.1 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 2.1 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Manitoba": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 7, "percentage": 44.7 },
+			{ "party": "Conservative Party of Canada", "seats": 5, "percentage": 37.4 },
+			{ "party": "New Democratic Party of Canada", "seats": 2, "percentage": 13.6 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 3.2 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Ontario": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 80, "percentage": 44.7 },
+			{ "party": "Conservative Party of Canada", "seats": 33, "percentage": 35.1 },
+			{ "party": "New Democratic Party of Canada", "seats": 8, "percentage": 16.6 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 2.8 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Quebec": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 40, "percentage": 35.7 },
+			{ "party": "Conservative Party of Canada", "seats": 12, "percentage": 16.7 },
+			{ "party": "New Democratic Party of Canada", "seats": 16, "percentage": 25.4 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 2.8 },
+			{ "party": "Bloc Quebecois", "seats": 10, "percentage": 19.4 }
+		]
+	},
+	"New Brunswick": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 10, "percentage": 51.6 },
+			{ "party": "Conservative Party of Canada", "seats": 0, "percentage": 25.4 },
+			{ "party": "New Democratic Party of Canada", "seats": 0, "percentage": 25.4 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 2.8 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Nova Scotia": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 11, "percentage": 62.0 },
+			{ "party": "Conservative Party of Canada", "seats": 0, "percentage": 17.9 },
+			{ "party": "New Democratic Party of Canada", "seats": 0, "percentage": 16.3 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 3.4 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Newfoundland and Labrador": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 7, "percentage": 64.5 },
+			{ "party": "Conservative Party of Canada", "seats": 0, "percentage": 10.3 },
+			{ "party": "New Democratic Party of Canada", "seats": 0, "percentage": 21.1 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 1.1 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Prince Edward Island": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 4, "percentage": 58.3 },
+			{ "party": "Conservative Party of Canada", "seats": 0, "percentage": 19.3 },
+			{ "party": "New Democratic Party of Canada", "seats": 0, "percentage": 16.0 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 6.0 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Yukon": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 1, "percentage": 53.7 },
+			{ "party": "Conservative Party of Canada", "seats": 0, "percentage": 24.3 },
+			{ "party": "New Democratic Party of Canada", "seats": 0, "percentage": 19.4 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 2.8 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Northwest Territories": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 1, "percentage": 48.3 },
+			{ "party": "Conservative Party of Canada", "seats": 0, "percentage": 18.3 },
+			{ "party": "New Democratic Party of Canada", "seats": 0, "percentage": 30.5 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 2.8 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	},
+	"Nunavut": {
+		"parties": [
+			{ "party": "Liberal Party of Canada", "seats": 1, "percentage": 47.1 },
+			{ "party": "Conservative Party of Canada", "seats": 0, "percentage": 24.8 },
+			{ "party": "New Democratic Party of Canada", "seats": 0, "percentage": 26.6 },
+			{ "party": "Green Party of Canada", "seats": 0, "percentage": 1.5 },
+			{ "party": "Bloc Quebecois", "seats": 0, "percentage": 0 }
+		]
+	}
+}
