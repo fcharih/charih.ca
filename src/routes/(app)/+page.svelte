@@ -42,6 +42,10 @@
       ><i class="fa-brands fa-bluesky"></i></a
     >
     <div>|</div>
+    <a href="https://app.thestorygraph.com/profile/fcharih">
+      <i class="fa-solid fa-book"></i>
+    </a>
+    <div>|</div>
     <a href="https://scholar.google.ca/citations?user=6Ist2oUAAAAJ&hl=en"
       ><i class="fa-brands fa-google-scholar"></i></a
     >
