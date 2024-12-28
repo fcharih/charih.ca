@@ -574,6 +574,10 @@ peerreviews:
     type: "journal"
     count: 5
 
+  - venue: "Drug Discovery Today"
+    type: "journal"
+    count: 1
+
   - venue: "Oxford Bioinformatics"
     type: "journal"
     count: 1
