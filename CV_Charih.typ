@@ -326,8 +326,8 @@ Ottawa, ON (K1S 5B6) \
     High performance computing
   ],
   [
-    Software development \
-    Protein/peptide engineering
+    Cloud computing \
+    Peptide therapeutic design
   ]
 )
 ]
