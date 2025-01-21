@@ -42,7 +42,7 @@
       ><i class="fa-brands fa-bluesky"></i></a
     >
     <div>|</div>
-    <a href="https://www.goodreads.com/user/show/116398248">
+    <a href="https://app.thestorygraph.com/profile/fcharih">
       <i class="fa-solid fa-book"></i>
     </a>
     <div>|</div>
