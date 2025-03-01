@@ -1,7 +1,7 @@
 #import "@preview/fontawesome:0.5.0": *
 #import "@preview/icu-datetime:0.1.2": fmt-date, fmt-time, fmt-datetime, experimental
 
-#set text(font: "Palatino", size: 10pt)
+#set text(size: 10pt)
 #show link: set text(blue)
 //#show heading: set align(center)
 #set list(indent: 3em, spacing: 10pt)
@@ -403,7 +403,7 @@ I have reviewed submissions for the following peer-reviewed journals or conferen
 ]
 
 #for p in cv.peerreviews [
-  - #p.venue (#p.count review#if p.count > 1 [s])
+  - #p.venue // (#p.count review#if p.count > 1 [s])
 ]
 
 #box(width: 100%)[

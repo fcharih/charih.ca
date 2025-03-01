@@ -19,7 +19,8 @@
     and am writing new songs.
   </p>
   <p>
-    You can listen to my latest single <i>Half Moon Eyes</i> in the meantime.
+    I look forward to sharing my songs with you once I get a minute to record
+    them!
   </p>
 {:else}
   <p>
@@ -32,12 +33,10 @@
     combattre les maladies l'est aussi. Comme j'approche la fin de mon doctorat,
     je suis en train de me remettre à l'écriture.
   </p>
-  <p>
-    Vous pouvez écouter mon dernier single
-    <i>Half Moon Eyes</i> ici en attendant.
-  </p>
+  <p>J'ai hâte de partager mes chansons avec vous!</p>
 {/if}
 
+<!--
 <div>
   <iframe
     style="border: 0; width: 300px; height: 470px; display: block; margin: 20px auto;"
@@ -48,3 +47,4 @@
     ></iframe
   >
 </div>
+-->
