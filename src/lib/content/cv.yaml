@@ -134,6 +134,18 @@ publications:
   #  url: ""
   #  comment: "Submitted to Nature Communications"
 
+  - title: "Design of a Selective Peptide Inhibitor Targeting KDM5C Demethylase Activity"
+    type: journal
+    year: 2025
+    publisher: "Structure"
+    authors: "V. Lukinović, H. Adhikary, M. Hoekstra, A. Shukri, F. Charih, A. Chopra, K. K. Biggar"
+    volume: ""
+    issue: ""
+    pages: ""
+    preprint: false
+    url: ""
+    comment: "(In revision)"
+
   - title: "Systematic in vitro optimization of antimicrobial peptides against Escherichia coli"
     type: journal
     year: 2024
