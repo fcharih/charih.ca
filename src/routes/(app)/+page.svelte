@@ -13,7 +13,7 @@
 </svelte:head>
 
 <div id="who-i-am">
-  <img alt="francois" id="headshot" src="/img/charih1.png" />
+  <img alt="francois" id="headshot" src="/img/charih.png" />
   <h1>François Charih ({$locale === "en" ? "he/him/they/them" : "il/lui"})</h1>
   <div>
     ({$locale === "en"
