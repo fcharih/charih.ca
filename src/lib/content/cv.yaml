@@ -582,6 +582,10 @@ mentoring:
     date: Winter 2018
 
 peerreviews:
+  - venue: "Conference on Neural Information Processing Systems (NeurIPS)"
+    type: "conference"
+    count: 1
+
   - venue: "Scientific Reports"
     type: "journal"
     count: 5
