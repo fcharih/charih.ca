@@ -71,7 +71,7 @@ employment:
     location: "Ottawa, ON"
     years: "2022 - present"
     details:
-      - Leading the development of Darwin, a inhibitory peptide engineering algorithm
+      - Leading the development of Darwin, an inhibitory peptide engineering algorithm
       - Responsible for the implementation, deployment and distribution of Darwin
       - Managing multiple high performance computing platforms (mid-size computer clusters)
 
