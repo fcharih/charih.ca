@@ -338,6 +338,15 @@ publications:
     comment: ""
 
     ################# OTHER ##########################
+  - title: "Sequence-based protein-protein interaction prediction and its applications in drug discovery"
+    type: "preprint"
+    authors: "F. Charih, J. R. Green, K. K. Biggar"
+    publisher: "Cells (under review)"
+    server: "arXiv"
+    date: "2025"
+    comment: ""
+    url: "http://www.arxiv.org/abs/2507.19805"
+
   - title: "Machine learning-based exploration of enzyme-substrate networks: SET8-mediated methyllysine and its changing impact within cancer proteomes"
     type: "preprint"
     authors: "K. K. Biggar, N. Ridgeway, A. Chopra, V. Lukinović, F. Charih, D. Levy, J. R. Green"
