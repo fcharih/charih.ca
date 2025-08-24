@@ -591,6 +591,10 @@ mentoring:
     date: Winter 2018
 
 peerreviews:
+  - venue: "IEEE International Conference on Collaborative Advances in Software and Computing"
+    type: "conference"
+    count: 1
+
   - venue: "Conference on Neural Information Processing Systems (NeurIPS)"
     type: "conference"
     count: 1
