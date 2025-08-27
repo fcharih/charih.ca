@@ -141,10 +141,10 @@ publications:
     authors: "V. Lukinović, H. Adhikary, M. Hoekstra, A. Shukri, F. Charih, A. Chopra, K. K. Biggar"
     volume: "33"
     issue: ""
-    pages: "1-13"
+    pages: ""
     preprint: false
-    url: ""
-    comment: "In press"
+    url: "https://doi.org/10.1016/j.str.2025.08.001"
+    comment: ""
 
   - title: "Systematic in vitro optimization of antimicrobial peptides against Escherichia coli"
     type: journal
