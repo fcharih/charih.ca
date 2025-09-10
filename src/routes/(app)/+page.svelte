@@ -1,11 +1,38 @@
 <script>
+  import * as contentful from "contentful";
+  import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+
   import { locale } from "./i18n";
   import yaml from "js-yaml";
   import { marked } from "marked";
+  import {
+    PUBLIC_CONTENTFUL_SPACE_ID,
+    PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+  } from "$env/static/public";
 
   import newsyaml from "$lib/content/news.yaml?raw";
 
-  const news = yaml.load(newsyaml);
+  function titleCase(str) {
+    return str.toLowerCase().replace(/(?:^|\s)\w/g, function (match) {
+      return match.toUpperCase();
+    });
+  }
+
+  const client = contentful.createClient({
+    space: PUBLIC_CONTENTFUL_SPACE_ID,
+    accessToken: PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+  });
+
+  let news = $state([]);
+
+  client
+    .getEntries()
+    .then((response) => {
+      news = response.items;
+    })
+    .catch(console.error);
+
+  //const news = yaml.load(newsyaml);
 </script>
 
 <svelte:head>
@@ -126,16 +153,32 @@
 
 <div id="news-container">
   <h2>{$locale === "en" ? "News" : "Nouvelles"}</h2>
-  {#each news as newsPiece}
+  {#each news.toSorted((a, b) => {
+    return new Date(b.fields.date) - new Date(a.fields.date);
+  }) as newsPiece}
     <div class="news-title">
-      {$locale === "en" ? newsPiece.title : newsPiece.title_fr}
+      {$locale === "en" ? newsPiece.fields.title : newsPiece.fields.titre}
     </div>
     <div class="news-date">
-      {$locale === "en" ? newsPiece.date : newsPiece.date_fr}
+      {$locale === "en"
+        ? new Intl.DateTimeFormat("en-US", { month: "long" }).format(
+            new Date(newsPiece.fields.date)
+          ) +
+          " " +
+          new Date(newsPiece.fields.date).getFullYear()
+        : titleCase(
+            new Intl.DateTimeFormat("fr-CA", { month: "long" }).format(
+              new Date(newsPiece.fields.date)
+            )
+          ) +
+          " " +
+          new Date(newsPiece.fields.date).getFullYear()}
     </div>
     <div class="news-content">
-      {@html marked(
-        $locale === "en" ? newsPiece.content : newsPiece.content_fr
+      {@html documentToHtmlString(
+        $locale === "en"
+          ? newsPiece.fields.newsContent
+          : newsPiece.fields.contenu
       )}
     </div>
   {/each}
