@@ -10,12 +10,12 @@
 
 <p>
   {#if $locale === "en"}
-    I earned my PhD in Electrical and Computer Engineering, though I specialize
-    in computational biochemistry (2025). I am particularly interested in
-    applications of artificial intelligence (AI)/machine learning (ML) to design
-    novel therapeutic peptides and study lysine methylation. I have also
-    developed an interest in high performance computing throughout the past
-    years. My thesis advisors were Profs. <a
+    I earned my PhD in Electrical and Computer Engineering (Carleton, 2025),
+    though I specialize in computational biochemistry. I am particularly
+    interested in applications of artificial intelligence (AI)/machine learning
+    (ML) to design novel therapeutic peptides and study lysine methylation. I
+    have also developed an interest in high performance computing throughout the
+    past years. My thesis advisors were Profs. <a
       href="https://www.sce.carleton.ca/faculty/green/green.php"
       >James R. Green</a
     >
