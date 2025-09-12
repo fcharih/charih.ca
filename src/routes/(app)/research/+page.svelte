@@ -10,25 +10,25 @@
 
 <p>
   {#if $locale === "en"}
-    I am currently a PhD student in Electrical and Computer Engineering
-    specializing in computational biology. I am particularly interested in
+    I earned my PhD in Electrical and Computer Engineering, though I specialize
+    in computational biochemistry (2025). I am particularly interested in
     applications of artificial intelligence (AI)/machine learning (ML) to design
     novel therapeutic peptides and study lysine methylation. I have also
     developed an interest in high performance computing throughout the past
-    years. My thesis advisors are Profs. <a
+    years. My thesis advisors were Profs. <a
       href="https://www.sce.carleton.ca/faculty/green/green.php"
       >James R. Green</a
     >
     (Systems and Computer Engineering) and
     <a href="https://www.biggarlab.ca/">Kyle K. Biggar</a> (Biochemistry).
   {:else}
-    Je suis présentement doctorant en génie électrique et informatique, quoique
-    je me spécialise en biologie computationnelle. Je m'intéresse tout
-    particulièrement aux applications de l'apprentissage automatique dans la
-    conception d'inhibiteurs peptidiques et l'étude de la méthylation des
-    lysines. Dans le cadre de mes projets de recherches, j'utilise des
-    techniques de calcul haute performance (high performance computing). Mes
-    directeurs de thèse sont les professeurs <a
+    Je suis titulaire d'un doctorat en génie électrique et informatique de
+    l'Université Carleton (2025), quoique je me spécialise en biochimie
+    computationnelle. Je m'intéresse tout particulièrement aux applications de
+    l'apprentissage automatique dans la conception d'inhibiteurs peptidiques et
+    l'étude de la méthylation des lysines. Dans le cadre de mes projets de
+    recherches, j'utilise des techniques de calcul haute performance (high
+    performance computing). Mes directeurs de thèse sont les professeurs <a
       href="https://www.sce.carleton.ca/faculty/green/green.php"
       >James R. Green</a
     >
@@ -40,12 +40,12 @@
 <h2>{$locale === "en" ? "Current research" : "Recherche actuelle"}</h2>
 <p>
   {#if $locale === "en"}
-    As part of my thesis work, I apply AI/ML tools to the study of lysine
-    methylation. My research can be subdivided into three research themes:
+    As part of my PhD thesis work, I applied AI/ML tools to the study of lysine
+    methylation. My PhD research falls within three research themes:
   {:else}
-    Dans le cadres de mes travaux de thèse, je m'intéresse aux applications de
-    l'IA pour l'étude de la méthylation des lysines. Mes travaux se déclinent en
-    trois axes de recherche:
+    Dans le cadres de mes travaux de thèse, je me suis intéressé aux
+    applications de l'IA pour l'étude de la méthylation des lysines. Mes travaux
+    de doctorat se déclinent en trois axes de recherche:
   {/if}
 </p>
 

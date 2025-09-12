@@ -29,6 +29,7 @@
     .getEntries()
     .then((response) => {
       news = response.items;
+      console.log(news);
     })
     .catch(console.error);
 
@@ -46,11 +47,6 @@
     ({$locale === "en"
       ? "pronunciation: Fran-swa Sha-ree"
       : "prononciation: Fran-soi Cha-ri"})
-  </div>
-  <div>
-    {$locale === "en"
-      ? "PhD candidate @ Carleton University"
-      : "Doctorant @ Université Carleton"}
   </div>
   <div>
     {@html $locale === "en"
@@ -88,7 +84,7 @@
     {#if $locale == "en"}
       <p>Hi there 👋🏾!</p>
       <p>
-        I'm François. I'm currently a senior PhD student at Carleton University,
+        I'm François. <!--I'm currently a senior PhD student at Carleton University,
         where I am conducting research under the supervision of Profs. <a
           href="https://www.sce.carleton.ca/faculty/green/green.php"
           >James Green</a
@@ -97,8 +93,8 @@
         interests include <span class="topic">peptide binder design</span>,
         <span class="topic">lysine methylation</span>,
         <span class="topic">high performance computing</span>, and
-        <span class="topic">machine learning in protein science</span>. I am a
-        co-founder and a research scientist at
+        <span class="topic">machine learning in protein science</span>.-->
+        I am a co-founder and a research scientist at
         <a href="https://nuvobio.com"
           ><span class="orange">Nuvo</span><span class="green">B</span><span
             class="orange">i</span
@@ -117,7 +113,7 @@
     {:else}
       <p>Salut 👋🏾!</p>
       <p>
-        Je suis François, présentement un doctorant à l'Université Carleton à
+        Je suis François<!--, présentement un doctorant à l'Université Carleton à
         Ottawa où je complète ma recherche sous la supervision des professeurs <a
           href="https://www.sce.carleton.ca/faculty/green/green.php"
           >James Green</a
@@ -130,7 +126,8 @@
         et
         <span class="topic"
           >les applications de l'apprentissage automatique aux protéines</span
-        >. Je suis co-fondateur et chercheur chez
+        >-->.
+        Je suis chercheur et co-fondateur de
         <a href="https://nuvobio.com"
           ><span class="orange">Nuvo</span><span class="green">B</span><span
             class="orange">i</span
@@ -142,7 +139,7 @@
       <p>
         Dans mes temps libres, vous aurez de fortes chances de me trouver dans
         un café, dans mon studio de fortune en train d'enregistrer des chansons
-        ou alors, dans un open mic en pleine immersion parmi la communauté
+        ou alors, dans un micro ouvert en pleine immersion parmi la communauté
         musicale locale. 🎤 ☕️
       </p>
 
@@ -175,11 +172,9 @@
           new Date(newsPiece.fields.date).getFullYear()}
     </div>
     <div class="news-content">
-      {@html documentToHtmlString(
-        $locale === "en"
-          ? newsPiece.fields.newsContent
-          : newsPiece.fields.contenu
-      )}
+      {@html $locale === "en"
+        ? marked(newsPiece.fields.contentMarkdown)
+        : marked(newsPiece.fields.contenuMarkdown)}
     </div>
   {/each}
 </div>
