@@ -170,7 +170,9 @@
         href="https://www.uottawa.ca/faculty-medicine/leadership-team/dr-jean-francois-couture"
         >Prof. Jean-François Couture</a
       >, I completed my my
-      <a href="https://charih.ca/Charih_Honours_2015.pdf">honours thesis</a>
+      <a href="https://charih.ca/theses/Charih_Honours_2015.pdf"
+        >honours thesis</a
+      >
       on the structural characterisation of the Fur (Ferric Uptake Regulator) protein
       in Campylobacter jejuni a pathogenic agent responsible for numerous cases of
       gastroenteritis. I crystallized the protein and built a draft model of the
@@ -186,7 +188,7 @@
         href="https://www.uottawa.ca/faculty-medicine/leadership-team/dr-jean-francois-couture"
         >Jean-François Couture</a
       >, j'ai complété ma
-      <a href="https://charih.ca/Charih_Honours_2015.pdf"
+      <a href="https://charih.ca/theses/Charih_Honours_2015.pdf"
         >thèse de premier cycle</a
       >
       sur la caractérisation structurale de la protéine Fur (Ferric uptake regulator)
