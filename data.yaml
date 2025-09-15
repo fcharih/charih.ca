@@ -1,0 +1,1188 @@
+awardList:
+- comment: Awarded to a graduate engineering students aspiring to a career based on
+    the peaceful and environmentally respectful applications of engineering
+  source: Carleton University
+  title: Gabriel Warshaw Scholarship
+  value: 1,700 CAD
+  year: 2023-09-01 00:00:00-04:00
+- source: Government of Ontario
+  title: Queen Elizabeth II Scholarship in Science and Technology
+  value: 15,000 CAD
+  year: 2022-09-01 00:00:00-04:00
+- source: American Peptide Society
+  title: American Peptide Symposium Travel Award
+  value: 600 USD
+  year: 2022-06-22 00:00:00-04:00
+- comment: Awarded yearly to an outstanding graduate student in engineering
+  source: Dean of the FGPA (Carleton)
+  title: Douglas Millar Scholarship
+  value: 3,200 CAD
+  year: 2020-06-01 00:00:00-04:00
+- comment: Awarded to high potential researchers to pursue doctoral studies
+  source: NSERC
+  title: Postgraduate Scholarship-Doctoral (PGS-D)
+  value: 63,000 CAD (over 3 years)
+  year: 2019-05-01 00:00:00-04:00
+- comment: Declined in favour of NSERC PGS-D award
+  source: Carleton University/Government of Ontario
+  title: Ontario Graduate Scholarship
+  value: 15,000 CAD
+  year: 2019-05-01 00:00:00-04:00
+- comment: Awarded for outstanding academic achievement at the graduate level (1 medal/faculty
+    awarded)
+  source: Carleton University
+  title: Carleton University Senate Medal
+  year: 2019-08-01 00:00:00-04:00
+- source: Carleton University
+  title: Ph.D entrance scholarship
+  value: 2,000 CAD
+  year: 2019-01-01 00:00:00-04:00
+- source: NSERC
+  title: CREATE-BEST Scholarship
+  value: 5,000 CAD
+  year: 2017-09-01 00:00:00-04:00
+- comment: Co-authored the proposal for the grant awarded to Prof. James R. Green
+  source: NSERC/OCE
+  title: Engage/VIP-I Grant
+  value: 50,000 CAD
+  year: 2017-09-01 00:00:00-04:00
+- source: Carleton University
+  title: M.A.Sc. entrance scholarship
+  value: 2,000 CAD
+  year: 2017-05-01 00:00:00-04:00
+- source: University of Ottawa
+  title: B.Sc. Entrance Scholarship
+  value: 2,000 CAD
+  year: 2011-09-01 00:00:00-04:00
+communityActivities:
+- organization: Carleton University Engineering in Medicine and Biology Society
+  title: Communications Officer
+  years:
+  - '2018'
+  - '2019'
+  - '2020'
+- organization: Canada-Wide Science Fair
+  title: Judge
+  years:
+  - '2018'
+  - '2021'
+  - '2024'
+- organization: Ottawa Regional Science Fair
+  title: Judge
+  years:
+  - '2019'
+  - '2021'
+  - '2023'
+  - '2024'
+- organization: Carleton University Biology Graduate Student Association
+  title: Executive Member
+  years:
+  - '2023'
+mentoringList:
+- degree: B.A.Sc.
+  end_date: 2018-04-30 00:00:00
+  location: Carleton University
+  project: Using kNN to impute values in incomplete audiograms
+  start_date: 2018-01-01 00:00:00
+  student_name: Ashlynn Steeves
+- degree: M.Eng.
+  end_date: 2018-08-31 00:00:00
+  location: Carleton University
+  project: Machine vision to digitize audiogram images
+  start_date: 2018-05-01 00:00:00
+  student_name: Pratyush Singh
+- degree: B.A.Sc.
+  end_date: 2019-08-31 00:00:00
+  location: Carleton University
+  project: Digitization of audiograms with template matching
+  start_date: 2019-05-01 00:00:00
+  student_name: Siddharth Chadha
+- degree: B.A.Sc.
+  end_date: 2020-08-31 00:00:00
+  location: Carleton University
+  project: Development of an ergonomic audiogram digitization tool (with WSIB Ontario)
+  start_date: 2020-05-01 00:00:00
+  student_name: Ahmed Abdelrazik
+- degree: M.Eng.
+  end_date: 2020-08-31 00:00:00
+  location: Carleton University
+  project: Machine vision to digitize audiogram images (with WSIB Ontario)
+  start_date: 2020-05-01 00:00:00
+  student_name: Abhinav Yalamanchili
+peerReviewList:
+- publication_type: Conference
+  title: "MambaPP: Structured Sequence Modeling for Protein\u2013Peptide Interaction"
+  venue: Conference on Neural Information Processing Systems (NeurIPS)
+  year: 2025
+- publication_type: Conference
+  title: Synthetic generation of 2D data records based on Autoencoders
+  venue: IEEE International Symposium on Medical Measurements and Applications (MeMeA)
+  year: 2025
+- publication_type: Conference
+  title: 'Designing Large Language Models for Specific Domains: A Case Study on Live
+    Microbe Foods for Precision Nutrition'
+  venue: IEEE International Conference on Collaborative Advances in Software and Computing
+    (CASCON)
+  year: 2025
+- publication_type: Journal
+  title: Prediction of hearing recovery with deep learning algorithm in sudden sensorineural
+    hearing loss
+  venue: The Laryngoscope
+  year: 2024
+- publication_type: Journal
+  title: Artificial Intelligence in Peptide-based Drug Design
+  venue: Drug Discovery Today
+  year: 2024
+- publication_type: Journal
+  title: Discovery of novel multi-functional peptides by using protein language models
+    and graph-based deep learning
+  venue: Genomics, Proteomics & Bioinformatics
+  year: 2023
+- publication_type: Conference
+  title: Flexible and Stretchable Optical Fiber Strain Sensor based on Nanoparticles
+    and Polymer for Human Motion Detection
+  venue: IEEE International Symposium on Medical Measurements and Applications (MeMeA)
+  year: 2022
+- publication_type: Journal
+  title: Graph-BERT and Language Model-based Framework for Protein-Protein Interaction
+    Identification
+  venue: Scientific Reports
+  year: 2022
+- publication_type: Journal
+  title: 'Timesias: a machine learning pipeline for predicting outcomes from time-series
+    records'
+  venue: STAR Protocols
+  year: 2021
+- publication_type: Journal
+  title: 'StackDPPIV: improved and robust prediction of dipeptidyl peptidase IV (DPP-IV)
+    inhibitory peptides by using the stacking strategy'
+  venue: Scientific Reports
+  year: 2021
+- publication_type: Journal
+  title: Diagnostic machine learning reveals that structural features distinguishing
+    promiscuous and non-promiscuous compounds depend on target combinations
+  venue: Scientific Reports
+  year: 2021
+- publication_type: Journal
+  title: Music Generation Based on Artificial Scoring and Integration Generative Adversarial
+    Network Framework
+  venue: Scientific Reports
+  year: 2020
+- publication_type: Journal
+  title: Improved Protein Methylation Sites Prediction Based on a Large Variety of
+    Structure Features Set
+  venue: Scientific Reports
+  year: 2019
+- publication_type: Journal
+  title: 'N-GlyDE: a two-stage N-linked glycosylation site prediction incorporating
+    gapped dipeptides and pattern-based encoding'
+  venue: Bioinformatics
+  year: 2018
+- publication_type: Journal
+  title: Identification of lysine methylation in the core GTPase domain by GoMADScan
+    and its putative impact on RAS structure
+  venue: PLOS ONE
+  year: 2019
+posterList:
+- date: 2015-04-15 00:00:00
+  event: Honours Project Poster Day
+  file: !!python/object:contentful.asset.Asset
+    _depth: 1
+    _fields:
+      en-US:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 50863950
+          fileName: honours_charih_2015.pdf
+          url: //downloads.ctfassets.net/h10co4b8nw83/664dmhxbMXfuv5m9eC5aou/a95659f3358af9da226db5514c36bc57/honours_charih_2015.pdf
+        title: Honour's thesis poster
+    _max_depth: 20
+    _metadata:
+      concepts: []
+      tags: []
+    default_locale: en-US
+    raw:
+      fields:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 50863950
+          fileName: honours_charih_2015.pdf
+          url: //downloads.ctfassets.net/h10co4b8nw83/664dmhxbMXfuv5m9eC5aou/a95659f3358af9da226db5514c36bc57/honours_charih_2015.pdf
+        title: Honour's thesis poster
+      metadata:
+        concepts: []
+        tags: []
+      sys:
+        createdAt: '2025-09-15T17:15:57.984Z'
+        environment:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        id: 664dmhxbMXfuv5m9eC5aou
+        locale: en-US
+        publishedVersion: 4
+        revision: 1
+        space:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        type: Asset
+        updatedAt: '2025-09-15T17:15:57.984Z'
+    sys:
+      created_at: 2025-09-15 17:15:57.984000+00:00
+      environment: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        sys:
+          id: master
+          link_type: Environment
+          type: Link
+      id: 664dmhxbMXfuv5m9eC5aou
+      locale: en-US
+      published_version: 4
+      revision: 1
+      space: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        sys:
+          id: h10co4b8nw83
+          link_type: Space
+          type: Link
+      type: Asset
+      updated_at: 2025-09-15 17:15:57.984000+00:00
+  location: University of Ottawa
+  title: Structural insights into the DNA Binding Activity of the Ferric Uptake Regulator
+    in Campylobacter jejuni
+- date: 2023-05-13 00:00:00
+  event: Life Science Day 6.0 (Carleton University)
+  location: Ottawa, ON
+  title: In silico design of a novel SMYD3 inhibitor with Darwin
+- date: 2022-06-23 00:00:00
+  event: American Peptide Society Symposium
+  location: Whistler, BC
+  title: 'Darwin: an evolution-inspired algorithm for target-specific peptide inhibitor
+    engineering'
+- date: 2018-10-13 00:00:00
+  event: Ottawa-AI Alliance Workshop
+  location: Ottawa, ON
+  title: 'Machine Learning in Audiology: Applications and Implications'
+- date: 2018-05-12 00:00:00
+  event: Data Day 5.0 (Carleton University)
+  file: !!python/object:contentful.asset.Asset
+    _depth: 1
+    _fields:
+      en-US:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 12986362
+          fileName: census_charih_2018.pdf
+          url: //downloads.ctfassets.net/h10co4b8nw83/1KrjWumidr5ezlRB21yWLC/79ab559d6449eeab6d4bef671e24435c/census_charih_2018.pdf
+        title: Data Day 5.0 poster
+    _max_depth: 20
+    _metadata:
+      concepts: []
+      tags: []
+    default_locale: en-US
+    raw:
+      fields:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 12986362
+          fileName: census_charih_2018.pdf
+          url: //downloads.ctfassets.net/h10co4b8nw83/1KrjWumidr5ezlRB21yWLC/79ab559d6449eeab6d4bef671e24435c/census_charih_2018.pdf
+        title: Data Day 5.0 poster
+      metadata:
+        concepts: []
+        tags: []
+      sys:
+        createdAt: '2025-09-15T17:18:58.230Z'
+        environment:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        id: 1KrjWumidr5ezlRB21yWLC
+        locale: en-US
+        publishedVersion: 5
+        revision: 1
+        space:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        type: Asset
+        updatedAt: '2025-09-15T17:18:58.230Z'
+    sys:
+      created_at: 2025-09-15 17:18:58.230000+00:00
+      environment: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        sys:
+          id: master
+          link_type: Environment
+          type: Link
+      id: 1KrjWumidr5ezlRB21yWLC
+      locale: en-US
+      published_version: 5
+      revision: 1
+      space: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        sys:
+          id: h10co4b8nw83
+          link_type: Space
+          type: Link
+      type: Asset
+      updated_at: 2025-09-15 17:18:58.230000+00:00
+  location: Ottawa, ON
+  title: Systematic Street View Sampling for Accurate Urban Population Estimation
+- date: 2018-05-17 00:00:00
+  event: Life Science Day 2.0 (Carleton University)
+  file: !!python/object:contentful.asset.Asset
+    _depth: 1
+    _fields:
+      en-US:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 1321635
+          fileName: shoeboxai_charih_2017.pdf
+          url: //assets.ctfassets.net/h10co4b8nw83/5pOqTD3qjkxE9Ia2769hEl/f33b6a5d178f0071aa57b1326be98552/shoeboxai_charih_2017.pdf
+        title: Life Science Day 2.0 poster
+    _max_depth: 20
+    _metadata:
+      concepts: []
+      tags: []
+    default_locale: en-US
+    raw:
+      fields:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 1321635
+          fileName: shoeboxai_charih_2017.pdf
+          url: //assets.ctfassets.net/h10co4b8nw83/5pOqTD3qjkxE9Ia2769hEl/f33b6a5d178f0071aa57b1326be98552/shoeboxai_charih_2017.pdf
+        title: Life Science Day 2.0 poster
+      metadata:
+        concepts: []
+        tags: []
+      sys:
+        createdAt: '2025-09-15T17:17:35.274Z'
+        environment:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        id: 5pOqTD3qjkxE9Ia2769hEl
+        locale: en-US
+        publishedVersion: 5
+        revision: 1
+        space:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        type: Asset
+        updatedAt: '2025-09-15T17:17:35.274Z'
+    sys:
+      created_at: 2025-09-15 17:17:35.274000+00:00
+      environment: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        sys:
+          id: master
+          link_type: Environment
+          type: Link
+      id: 5pOqTD3qjkxE9Ia2769hEl
+      locale: en-US
+      published_version: 5
+      revision: 1
+      space: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        sys:
+          id: h10co4b8nw83
+          link_type: Space
+          type: Link
+      type: Asset
+      updated_at: 2025-09-15 17:17:35.274000+00:00
+  location: Ottawa
+  title: Extending the SHOEBOX Audiometry mobile audiometer with an automated audiogram
+    classification system
+presentationList:
+- date: 2019-10-16 00:00:00
+  event: Lecture Series (IEEE EMBS Carleton)
+  file: !!python/object:contentful.asset.Asset
+    _depth: 1
+    _fields:
+      en-US:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 2161008
+          fileName: pandas_workshop_2019.pdf
+          url: //assets.ctfassets.net/h10co4b8nw83/u4wp0TX7xopIltKNNKvbq/1d93a9b5a401c8c200f9234915b9f368/pandas_workshop_2019.pdf
+        title: Pandas workshop 2019
+    _max_depth: 20
+    _metadata:
+      concepts: []
+      tags: []
+    default_locale: en-US
+    raw:
+      fields:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 2161008
+          fileName: pandas_workshop_2019.pdf
+          url: //assets.ctfassets.net/h10co4b8nw83/u4wp0TX7xopIltKNNKvbq/1d93a9b5a401c8c200f9234915b9f368/pandas_workshop_2019.pdf
+        title: Pandas workshop 2019
+      metadata:
+        concepts: []
+        tags: []
+      sys:
+        createdAt: '2025-09-15T17:35:07.889Z'
+        environment:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        id: u4wp0TX7xopIltKNNKvbq
+        locale: en-US
+        publishedVersion: 4
+        revision: 1
+        space:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        type: Asset
+        updatedAt: '2025-09-15T17:35:07.889Z'
+    sys:
+      created_at: 2025-09-15 17:35:07.889000+00:00
+      environment: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        sys:
+          id: master
+          link_type: Environment
+          type: Link
+      id: u4wp0TX7xopIltKNNKvbq
+      locale: en-US
+      published_version: 4
+      revision: 1
+      space: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        sys:
+          id: h10co4b8nw83
+          link_type: Space
+          type: Link
+      type: Asset
+      updated_at: 2025-09-15 17:35:07.889000+00:00
+  location: Ottawa, ON
+  title: Introductory data analysis with Pandas (workshop)
+- date: 2022-11-01 00:00:00
+  event: ECOR1055
+  location: Ottawa, ON
+  title: Machine learning in biomedical informatics and bioinformatics (guest lecture)
+- date: 2024-11-06 00:00:00
+  event: ECOR1055
+  location: Ottawa, ON
+  title: Machine learning in biomedical informatics and bioinformatics (guest lecture)
+- date: 2021-04-23 00:00:00
+  event: GRADflix Challenge
+  location: Ottawa, ON
+  title: Evolution-inspired peptide drug design
+  url: https://www.youtube.com/watch?v=jE3-lh7vuNE
+- date: 2019-11-04 00:00:00
+  event: HLTH2001 and HLTH4102 (Carleton University)
+  file: !!python/object:contentful.asset.Asset
+    _depth: 1
+    _fields:
+      en-US:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 2147010
+          fileName: HLTH2001_Guest_Lecture.pdf
+          url: //assets.ctfassets.net/h10co4b8nw83/22qjGACkC6MLUmX2EmH7IO/7f418fa728e39c9ec30c0cfd06df7b20/HLTH2001_Guest_Lecture.pdf
+        title: HLTH2001 Guest Lecture
+    _max_depth: 20
+    _metadata:
+      concepts: []
+      tags: []
+    default_locale: en-US
+    raw:
+      fields:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 2147010
+          fileName: HLTH2001_Guest_Lecture.pdf
+          url: //assets.ctfassets.net/h10co4b8nw83/22qjGACkC6MLUmX2EmH7IO/7f418fa728e39c9ec30c0cfd06df7b20/HLTH2001_Guest_Lecture.pdf
+        title: HLTH2001 Guest Lecture
+      metadata:
+        concepts: []
+        tags: []
+      sys:
+        createdAt: '2025-09-15T17:32:17.936Z'
+        environment:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        id: 22qjGACkC6MLUmX2EmH7IO
+        locale: en-US
+        publishedVersion: 3
+        revision: 1
+        space:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        type: Asset
+        updatedAt: '2025-09-15T17:32:17.936Z'
+    sys:
+      created_at: 2025-09-15 17:32:17.936000+00:00
+      environment: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        sys:
+          id: master
+          link_type: Environment
+          type: Link
+      id: 22qjGACkC6MLUmX2EmH7IO
+      locale: en-US
+      published_version: 3
+      revision: 1
+      space: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        sys:
+          id: h10co4b8nw83
+          link_type: Space
+          type: Link
+      type: Asset
+      updated_at: 2025-09-15 17:32:17.936000+00:00
+  location: Ottawa, ON
+  title: Machine learning in audiology (guest lecture)
+- date: 2018-11-09 00:00:00
+  event: 21st Chemistry and Biochemistry Graduate Research Conference
+  file: !!python/object:contentful.asset.Asset
+    _depth: 1
+    _fields:
+      en-US:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 4253098
+          fileName: MethylSight_Concordia2018.pdf
+          url: //assets.ctfassets.net/h10co4b8nw83/2b1eQJ6IW5SFbrTtNXEuh6/cad96ea5443f5f7d249c86305672c436/MethylSight_Concordia2018.pdf
+        title: MethylSight Concordia 2018
+    _max_depth: 20
+    _metadata:
+      concepts: []
+      tags: []
+    default_locale: en-US
+    raw:
+      fields:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 4253098
+          fileName: MethylSight_Concordia2018.pdf
+          url: //assets.ctfassets.net/h10co4b8nw83/2b1eQJ6IW5SFbrTtNXEuh6/cad96ea5443f5f7d249c86305672c436/MethylSight_Concordia2018.pdf
+        title: MethylSight Concordia 2018
+      metadata:
+        concepts: []
+        tags: []
+      sys:
+        createdAt: '2025-09-15T17:28:50.387Z'
+        environment:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        id: 2b1eQJ6IW5SFbrTtNXEuh6
+        locale: en-US
+        publishedVersion: 4
+        revision: 1
+        space:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        type: Asset
+        updatedAt: '2025-09-15T17:28:50.387Z'
+    sys:
+      created_at: 2025-09-15 17:28:50.387000+00:00
+      environment: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        sys:
+          id: master
+          link_type: Environment
+          type: Link
+      id: 2b1eQJ6IW5SFbrTtNXEuh6
+      locale: en-US
+      published_version: 4
+      revision: 1
+      space: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        sys:
+          id: h10co4b8nw83
+          link_type: Space
+          type: Link
+      type: Asset
+      updated_at: 2025-09-15 17:28:50.387000+00:00
+  location: Montreal, QC
+  title: 'MethylSight: a computational approach to the elucidation of the methyllysine
+    proteome'
+- date: 2019-02-06 00:00:00
+  event: Lecture Series (IEEE EMBS Carleton)
+  location: Ottawa, ON
+  title: Building interactive visualizations in the browser with D3.js (workshop)
+  url: https://charih.ca/workshops/d3-workshop/presentation.html
+- date: 2019-12-02 00:00:00
+  event: ECOR1055
+  location: Ottawa, ON
+  title: AI in biology and biomedical engineering (guest lecture)
+- date: 2019-11-22 00:00:00
+  event: BIOC3202
+  file: !!python/object:contentful.asset.Asset
+    _depth: 1
+    _fields:
+      en-US:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 5590440
+          fileName: BIOC3202_Guest_lecture.pdf
+          url: //assets.ctfassets.net/h10co4b8nw83/BKuFrbL50H7isF8NeRgQF/76d994ad7999a2547e35a19482379140/BIOC3202_Guest_lecture.pdf
+        title: BIOC3202 Guest lecture
+    _max_depth: 20
+    _metadata:
+      concepts: []
+      tags: []
+    default_locale: en-US
+    raw:
+      fields:
+        description: ''
+        file:
+          contentType: application/pdf
+          details:
+            size: 5590440
+          fileName: BIOC3202_Guest_lecture.pdf
+          url: //assets.ctfassets.net/h10co4b8nw83/BKuFrbL50H7isF8NeRgQF/76d994ad7999a2547e35a19482379140/BIOC3202_Guest_lecture.pdf
+        title: BIOC3202 Guest lecture
+      metadata:
+        concepts: []
+        tags: []
+      sys:
+        createdAt: '2025-09-15T17:36:07.053Z'
+        environment:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        id: BKuFrbL50H7isF8NeRgQF
+        locale: en-US
+        publishedVersion: 3
+        revision: 1
+        space:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        type: Asset
+        updatedAt: '2025-09-15T17:36:07.053Z'
+    sys:
+      created_at: 2025-09-15 17:36:07.053000+00:00
+      environment: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: master
+            linkType: Environment
+            type: Link
+        sys:
+          id: master
+          link_type: Environment
+          type: Link
+      id: BKuFrbL50H7isF8NeRgQF
+      locale: en-US
+      published_version: 3
+      revision: 1
+      space: !!python/object:contentful.resource.Link
+        _depth: 0
+        _max_depth: 20
+        _metadata: {}
+        default_locale: en-US
+        raw:
+          sys:
+            id: h10co4b8nw83
+            linkType: Space
+            type: Link
+        sys:
+          id: h10co4b8nw83
+          link_type: Space
+          type: Link
+      type: Asset
+      updated_at: 2025-09-15 17:36:07.053000+00:00
+  location: Ottawa, ON
+  title: X-ray crystallography and computational biochemistry (guest lecture)
+publicationList:
+- authors:
+  - F. Charih
+  - A. Steeves
+  - M. Bromwich
+  - A. E. Mark
+  - "R. Lefran\xE7ois"
+  - J. R. Green
+  conference: IEEE Life Sciences Conference
+  conference_date: October 28-30, 2018
+  doi: 10.1109/LSC.2018.8572268r
+  location: "Montr\xE9al, Canada"
+  publication_type: Conference
+  publisher: Proceedings of the 2018 IEEE Life Sciences Conference
+  status: Published
+  title: Applications of Machine Learning Methods in Retrospective Studies on Hearing
+  url: https://doi.org/10.1109/LSC.2018.8572268r
+  year: '2018'
+- authors:
+  - F. Charih
+  - M. Bromwich
+  - "R. Lefran\xE7ois"
+  - A. E. Mark
+  - J. R. Green
+  conference: IEEE International Symposium on Medical Measurements and Applications
+    (MeMeA)
+  conference_date: June 11-13, 2018
+  doi: 10.1109/MeMeA.2018.8438746
+  location: Rome, Italy
+  publication_type: Conference
+  publisher: Proceedings of the 2018 IEEE International Symposium on Medical Measurements
+    and Applications (MeMeA)
+  status: Published
+  title: Mining Audiograms to Improve the Interpretability of Automated Audiometry
+    Measurements
+  url: https://doi.org/10.1109/MeMeA.2018.8438746
+  year: '2018'
+- authors:
+  - K. Dick
+  - F. Charih
+  - Y. Souley Dosso
+  - L. Russell
+  - J. R. Green
+  conference: 15th Conference on Computer and Robot Vision (CRV)
+  conference_date: May 8-10, 2025
+  doi: 10.1109/CRV.2018.00028
+  location: Toronto, Canada
+  publication_type: Conference
+  publisher: Proceedings of the 2018 15th Conference on Computer and Robot Vision
+    (CRV)
+  status: Published
+  title: 'Systematic Street View Sampling: High Quality Annotation of Power Infrastructure
+    in Rural Ontario'
+  url: https://doi.org/10.1109/CRV.2018.00028
+  year: '2018'
+- authors:
+  - R. Selzler
+  - A. Smith
+  - F. Charih
+  - A. Boyle
+  - J. Holly
+  - C. Bridgewater
+  - M. Besemann
+  - D. Curran
+  - A. D. C. Chan
+  - J. R. Green
+  conference: IEEE International Symposium on Medical Measurements and Applications
+    (MeMeA)
+  conference_date: June 1-July 1, 2020
+  doi: 10.1109/MeMeA49120.2020.9137133
+  location: Bari, Italy
+  publication_type: Conference
+  publisher: Proceedings of the 2020 IEEE International Symposium on Medical Measurements
+    and Applications (MeMeA)
+  status: Published
+  title: Exploratory Analysis of Ultra-Short-Term Heart Rate Variability Features
+    in Virtual Rehabilitation Sessions
+  url: https://doi.org/10.1109/MeMeA49120.2020.9137133
+  year: '2020'
+- authors:
+  - K. Dick
+  - F. Charih
+  - J. Woo
+  - J. R. Green
+  conference: Conference on Computer and Robot Vision (CRV)
+  conference_date: May 13-15, 2020
+  doi: 10.1109/CRV50864.2020.00029
+  location: Ottawa, ON
+  publication_type: Conference
+  publisher: Proceedings of the 17th Conference on Computer and Robot Vision (CRV)
+  status: Published
+  title: 'Gas Prices of America: The Machine-Augmented Crowd-Sourcing Era'
+  url: https://doi.org/10.1109/CRV50864.2020.00029
+  year: May 2020
+- authors:
+  - F. Charih
+  - J. R. Green
+  - K. K. Biggar
+  doi: 10.48550/arXiv.2507.19805
+  publication_type: Journal
+  publisher: Cells
+  status: Accepted
+  title: Sequence-based protein-protein interaction prediction and its applications
+    in drug discovery
+  url: https://www.arxiv.org/abs/2507.19805
+  year: '2025'
+- authors:
+  - K. K. Biggar
+  - N. Ridgeway
+  - A. Chopra
+  - "V. Lukinovi\u0107"
+  - F. Charih
+  - D. Levy
+  - J. R. Green
+  doi: 10.21203/rs.3.rs-3771179/v1
+  publication_type: Preprint
+  publisher: Research Square
+  title: 'Machine learning-based exploration of enzyme-substrate networks: SET8-mediated
+    methyllysine and its changing impact within cancer proteomes'
+  url: https://www.researchsquare.com/article/rs-3771179/v1
+  year: '2024'
+- authors:
+  - "V. Lukinovi\u0107"
+  - H. Adhikary
+  - M. Hoekstra
+  - A. Shukri
+  - F. Charih
+  - A. Chopra
+  - K. K. Biggar
+  doi: 10.1016/j.str.2025.08.001
+  publication_type: Journal
+  publisher: Structure
+  status: Published
+  title: Design of a selective peptide inhibitor targeting KDM5C demethylase activity
+  url: https://www.cell.com/structure/abstract/S0969-2126(25)00303-X?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS096921262500303X%3Fshowall%3Dtrue
+  volume: '33'
+  year: '2025'
+- authors:
+  - A. Shukri
+  - A. C. Carroll
+  - R. Collins
+  - F. Charih
+  - A. Wong
+  - K. K. Biggar
+  doi: 10.1093/jacamr/dlae096
+  issue: '4'
+  publication_type: Journal
+  publisher: JAC-Antimicrobial Resistance
+  status: Published
+  title: Systematic in vitro optimization of antimicrobial peptides against Escherichia
+    coli
+  url: https://academic.oup.com/jacamr/article/6/4/dlae096/7704604?login=false
+  volume: '6'
+  year: '2024'
+- authors:
+  - A. H. Shukri
+  - "V. Lukinovi\u0107"
+  - F. Charih
+  - K. K. Biggar
+  doi: 10.1016/j.bbagrm.2023.194990
+  issue: '4'
+  publication_type: Journal
+  publisher: Biochimica et Biophysica Acta (BBA) - Gene Regulatory Mechanisms
+  status: Published
+  title: 'Unraveling the Battle for Lysine: A Review of the Competition among Post-Translational
+    Modifications'
+  url: https://www.sciencedirect.com/science/article/pii/S1874939923000858
+  volume: '1866'
+  year: '2023'
+- authors:
+  - F. Charih
+  - J.R. Green
+  doi: 10.1109/ACCESS.2022.3215972
+  pages: pp. 110761-110769
+  publication_type: Journal
+  publisher: IEEE Access
+  status: Published
+  title: Audiogram Digitization Tool for Audiological Reports
+  url: https://ieeexplore.ieee.org/document/9925220?source=authoralert
+  volume: '10'
+  year: '2022'
+- authors:
+  - K. Dick
+  - ' J. B. Tanner'
+  - F. Charih
+  - J.R. Green
+  doi: 10.1109/ACCESS.2022.3156578
+  pages: pp. 28487-28498
+  publication_type: Journal
+  publisher: IEEE Access
+  status: Published
+  title: 'GasBotty: Multi-Metric Extraction in the Wild'
+  url: https://ieeexplore.ieee.org/document/9727170
+  volume: '10'
+  year: '2022'
+- authors:
+  - F. Charih
+  - K. Biggar
+  - J.R. Green
+  doi: 10.1038/s41598-022-13227-9
+  issue: '9610'
+  pages: pp. 1-13
+  publication_type: Journal
+  publisher: Scientific Reports
+  status: Published
+  title: Assessing sequence-based protein-protein interaction predictors for use in
+    therapeutic peptide engineering
+  url: https://www.nature.com/articles/s41598-022-13227-9
+  volume: '12'
+  year: '2022'
+- authors:
+  - G. M. Rurak
+  - S. Simard
+  - M. Freitas-Andrade
+  - B. Lacoste
+  - F. Charih
+  - A. Van Geel
+  - J. Stead
+  - B. Woodside
+  - J.R. Green
+  - G. Coppola
+  - N. Salmaso
+  doi: 10.1016/j.celrep.2022.110310
+  issue: '5'
+  publication_type: Journal
+  publisher: Cell Reports
+  status: Published
+  title: Translatomic database of cortical astroglia across male and female mouse
+    development reveals two distinct developmental phenotypes
+  url: https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00022-5
+  volume: '38'
+  year: '2022'
+- authors:
+  - F. Charih
+  - J. R. Green
+  - K. K. Biggar
+  doi: 10.1016/j.xpro.2020.100135
+  issue: '3'
+  publication_type: Journal
+  publisher: Star Protocols
+  status: Published
+  title: Machine Learning-Driven Identification of Novel Lysine Methylation Sites
+    with MethylSight
+  url: https://doi.org/10.1016/j.xpro.2020.100135
+  volume: '1'
+  year: '2020'
+- authors:
+  - K. K. Biggar*
+  - F. Charih*
+  - H. Liu
+  - Y. B. Ruiz-Blanco
+  - L. Stalker
+  - A. Chopra
+  - J. Connolly
+  - K. Frensemier
+  - M. Galka
+  - Q. Fang
+  - C. Wynder
+  - W. L. Standford
+  - J. R. Green
+  - S. S-C. Li
+  doi: 10.1016/j.celrep.2020.107896
+  issue: '107896'
+  publication_type: Journal
+  publisher: Cell Reports
+  status: Published
+  title: Proteome-wide Prediction of Lysine Methylation Reveals Novel Histone Marks
+    and Outlines the Methyllysine Proteome
+  url: https://doi.org/10.1016/j.celrep.2020.107896
+  volume: '32'
+  year: '2020'
+- authors:
+  - F. Charih
+  - M. Bromwich
+  - A. E. Mark
+  - "R. Lefranc\u0327ois"
+  - J. R. Green
+  doi: 10.1038/s41598-020-60898-3
+  issue: '3962'
+  publication_type: Journal
+  publisher: Scientific Reports
+  status: Published
+  title: Data-Driven Audiogram Classification for Mobile Audiometry
+  url: https://doi.org/10.1038/s41598-020-60898-3
+  volume: '10'
+  year: '2020'
+- authors:
+  - S. Sarvan
+  - F. Charih
+  - J. Butcher
+  - J. S. Brunzelle
+  - A. Stintzi
+  - J.-F. Couture
+  doi: 10.1002/1873-3468.13120
+  issue: '13'
+  pages: pp. 2351-2360
+  publication_type: Journal
+  publisher: FEBS Letters
+  status: Published
+  title: Crystal structure of Campylobacter jejuni peroxide regulator
+  url: https://doi.org/10.1002/1873-3468.13120
+  volume: '592'
+  year: '2018'
+- authors:
+  - S. Sarvan
+  - A. Yeung
+  - F. Charih
+  - A. Stintzi
+  - J.-F. Couture
+  doi: 10.1007/s10534-019-00177-5
+  issue: '3'
+  pages: pp. 491-500
+  publication_type: Journal
+  publisher: BioMetals
+  status: Published
+  title: Purification and characterization of Campylobacter jejuni ferric uptake regulator
+  url: https://doi.org/10.1007/s10534-019-00177-5
+  volume: '32'
+  year: '2018'
+- authors:
+  - S. Sarvan
+  - F. Charih
+  - M. Askoura
+  - J. Butcher
+  - J. S. Brunzelle
+  - A. Stintzi
+  - J.-F. Couture
+  doi: 10.1038/s41598-018-25157-6
+  issue: '1'
+  pages: pp. 1-14
+  publication_type: Journal
+  publisher: Scientific Reports
+  status: Published
+  title: Functional insights into the interplay between DNA interaction and metal
+    coordination in ferric uptake regulators
+  url: https://doi.org/10.1038/s41598-018-25157-6
+  volume: '8'
+  year: '2018'
+softwareList:
+- description: A database of translatomic data from astroglia (in collaboration with
+    the Salmaso lab).
+  name: StarDB database
+  url: https://stardb.cu-bic.ca
+- description: A web server that makes the MethylSight lysine methylation predictor
+    available to biologists.
+  name: MethylSight 2.0 web server
+  url: http://methylsight2.cu-bic.ca

@@ -34,6 +34,7 @@ education:
         website: "https://carleton.ca/biology/people/kyle-biggar/"
     thesistitle: "Sequence-based peptide binder design to modulate the lysine methylome and beyond"
     years: 2019 - 2025
+    comment: "Nominated for a University Medal"
 
   - degree: M.A.Sc.
     topic: Electrical and Computer Engineering (Data Science)
@@ -45,6 +46,7 @@ education:
     thesistitle: "Machine Learning in Audiology: Applications and Implications"
     thesisurl: "https://charih.ca/theses/Charih_thesis_2019.pdf"
     years: 2016 - 2018
+    comment: "Awarded the Senate Medal"
 
   - degree: B.Sc.(Hons.)
     topic: Biochemistry

@@ -28,8 +28,7 @@
   client
     .getEntries()
     .then((response) => {
-      news = response.items;
-      console.log(news);
+      news = response.items.filter((x) => x.sys.contentType.sys.id == "news");
     })
     .catch(console.error);
 
