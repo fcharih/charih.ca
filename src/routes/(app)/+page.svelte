@@ -13,31 +13,13 @@
   import newsyaml from "$lib/content/news.yaml?raw";
   import { text } from "@sveltejs/kit";
 
+  let { data } = $props();
+
   function titleCase(str) {
     return str.toLowerCase().replace(/(?:^|\s)\w/g, function (match) {
       return match.toUpperCase();
     });
   }
-
-  const client = contentful.createClient({
-    space: PUBLIC_CONTENTFUL_SPACE_ID,
-    accessToken: PUBLIC_CONTENTFUL_ACCESS_TOKEN,
-  });
-
-  let textChunks = $state({});
-  let news = $state([]);
-
-  client
-    .getEntries()
-    .then((response) => {
-      news = response.items.filter((x) => x.sys.contentType.sys.id == "news");
-      response.items
-        .filter((x) => x.sys.contentType.sys.id == "textChunk")
-        .forEach((chunk) => (textChunks[chunk.fields.name] = chunk.fields));
-    })
-    .catch(console.error);
-
-  //const news = yaml.load(newsyaml);
 </script>
 
 <svelte:head>
@@ -86,40 +68,40 @@
   <div id="intro">
     <h2>{$locale === "en" ? "About me" : "Bio"}</h2>
     {#if $locale == "en"}
-      {@html textChunks["About"] && marked(textChunks["About"].content)}
+      {@html marked(data.textChunks["About"].content)}
     {:else}
-      {@html textChunks["About"] && marked(textChunks["About"].contenu)}
+      {@html marked(data.textChunks["About"].contenu)}
     {/if}
   </div>
 </div>
 
 <div id="news-container">
   <h2>{$locale === "en" ? "News" : "Nouvelles"}</h2>
-  {#each news.toSorted((a, b) => {
-    return new Date(b.fields.date) - new Date(a.fields.date);
+  {#each data.news.toSorted((a, b) => {
+    return new Date(b.date) - new Date(a.date);
   }) as newsPiece}
     <div class="news-title">
-      {$locale === "en" ? newsPiece.fields.title : newsPiece.fields.titre}
+      {$locale === "en" ? newsPiece.title : newsPiece.titre}
     </div>
     <div class="news-date">
       {$locale === "en"
         ? new Intl.DateTimeFormat("en-US", { month: "long" }).format(
-            new Date(newsPiece.fields.date)
+            new Date(newsPiece.date)
           ) +
           " " +
-          new Date(newsPiece.fields.date).getFullYear()
+          new Date(newsPiece.date).getFullYear()
         : titleCase(
             new Intl.DateTimeFormat("fr-CA", { month: "long" }).format(
-              new Date(newsPiece.fields.date)
+              new Date(newsPiece.date)
             )
           ) +
           " " +
-          new Date(newsPiece.fields.date).getFullYear()}
+          new Date(newsPiece.date).getFullYear()}
     </div>
     <div class="news-content">
       {@html $locale === "en"
-        ? marked(newsPiece.fields.contentMarkdown)
-        : marked(newsPiece.fields.contenuMarkdown)}
+        ? marked(newsPiece.contentMarkdown)
+        : marked(newsPiece.contenuMarkdown)}
     </div>
   {/each}
 </div>

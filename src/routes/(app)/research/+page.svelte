@@ -1,10 +1,8 @@
 <script>
   import { locale } from "../i18n";
-  import { loadTextChunks } from "$lib/contentful.ts";
   import { marked } from "marked";
 
-  let textChunks = $state({});
-  loadTextChunks().then((_textChunks) => (textChunks = _textChunks));
+  let { data } = $props();
 </script>
 
 <svelte:head>
@@ -12,9 +10,9 @@
 </svelte:head>
 
 {#if $locale === "en"}
-  {@html textChunks["Research"] && marked(textChunks["Research"].content)}
+  {@html marked(data.textChunks["Research"].content)}
 {:else}
-  {@html textChunks["Research"] && marked(textChunks["Research"].contenu)}
+  {@html marked(data.textChunks["Research"].contenu)}
 {/if}
 
 <style>
