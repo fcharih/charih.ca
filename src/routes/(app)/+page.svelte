@@ -11,6 +11,7 @@
   } from "$env/static/public";
 
   import newsyaml from "$lib/content/news.yaml?raw";
+  import { text } from "@sveltejs/kit";
 
   function titleCase(str) {
     return str.toLowerCase().replace(/(?:^|\s)\w/g, function (match) {
@@ -23,12 +24,16 @@
     accessToken: PUBLIC_CONTENTFUL_ACCESS_TOKEN,
   });
 
+  let textChunks = $state({});
   let news = $state([]);
 
   client
     .getEntries()
     .then((response) => {
       news = response.items.filter((x) => x.sys.contentType.sys.id == "news");
+      response.items
+        .filter((x) => x.sys.contentType.sys.id == "textChunk")
+        .forEach((chunk) => (textChunks[chunk.fields.name] = chunk.fields));
     })
     .catch(console.error);
 
@@ -81,68 +86,9 @@
   <div id="intro">
     <h2>{$locale === "en" ? "About me" : "Bio"}</h2>
     {#if $locale == "en"}
-      <p>Hi there 👋🏾!</p>
-      <p>
-        I'm François. <!--I'm currently a senior PhD student at Carleton University,
-        where I am conducting research under the supervision of Profs. <a
-          href="https://www.sce.carleton.ca/faculty/green/green.php"
-          >James Green</a
-        >
-        and <a href="https://www.biggarlab.ca/">Kyle Biggar</a>. My research
-        interests include <span class="topic">peptide binder design</span>,
-        <span class="topic">lysine methylation</span>,
-        <span class="topic">high performance computing</span>, and
-        <span class="topic">machine learning in protein science</span>.-->
-        I am a co-founder and a research scientist at
-        <a href="https://nuvobio.com"
-          ><span class="orange">Nuvo</span><span class="green">B</span><span
-            class="orange">i</span
-          ><span class="green">o</span></a
-        >, a biotechnology startup specializing in peptide binder design.
-      </p>
-
-      <p>
-        When I'm not sciencing, you are likely to find me reading or journaling
-        in a coffee shop, recording music in my home studio, or engaging with
-        the Ottawa music community at an open mic. 🎤 ☕️
-      </p>
-      <p style="text-align: center;">
-        I nearly forgot to mention that I looove cats!
-      </p>
+      {@html textChunks["About"] && marked(textChunks["About"].content)}
     {:else}
-      <p>Salut 👋🏾!</p>
-      <p>
-        Je suis François<!--, présentement un doctorant à l'Université Carleton à
-        Ottawa où je complète ma recherche sous la supervision des professeurs <a
-          href="https://www.sce.carleton.ca/faculty/green/green.php"
-          >James Green</a
-        >
-        et <a href="https://www.biggarlab.ca/">Kyle Biggar</a>. Mes intérêts de
-        recherche comprennent la
-        <span class="topic">conception d'inhibiteurs peptidiques</span>, la
-        <span class="topic">méthylation des lysines</span>, le
-        <span class="topic">calcul haute performance</span>
-        et
-        <span class="topic"
-          >les applications de l'apprentissage automatique aux protéines</span
-        >-->.
-        Je suis chercheur et co-fondateur de
-        <a href="https://nuvobio.com"
-          ><span class="orange">Nuvo</span><span class="green">B</span><span
-            class="orange">i</span
-          ><span class="green">o</span></a
-        >, une entreprise en démarage qui se spécialise dans la conception de
-        peptides pour des applications thérapeutiques, entre autres.
-      </p>
-
-      <p>
-        Dans mes temps libres, vous aurez de fortes chances de me trouver dans
-        un café, dans mon studio de fortune en train d'enregistrer des chansons
-        ou alors, dans un micro ouvert en pleine immersion parmi la communauté
-        musicale locale. 🎤 ☕️
-      </p>
-
-      <p style="text-align: center;">J'oubliais; j'aime les chats!</p>
+      {@html textChunks["About"] && marked(textChunks["About"].contenu)}
     {/if}
   </div>
 </div>

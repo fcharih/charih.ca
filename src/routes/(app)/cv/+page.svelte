@@ -1,6 +1,5 @@
 <script lang="ts">
   import { locale } from "../i18n";
-  import yamlCV from "$lib/content/cv.yaml?raw";
   import yaml from "js-yaml";
   import * as contentful from "contentful";
   import { marked } from "marked";
@@ -8,14 +7,6 @@
     PUBLIC_CONTENTFUL_SPACE_ID,
     PUBLIC_CONTENTFUL_ACCESS_TOKEN,
   } from "$env/static/public";
-
-  let cv = yaml.load(yamlCV);
-  let journalPubs = cv.publications.filter((x) => x.type === "journal");
-  let conferencePubs = cv.publications.filter((x) => x.type === "conference");
-  //let preprints = cv.publications.filter((x) => x.type === "preprint");
-  //let presentations = cv.presentations;
-  //let posters = cv.posters;
-  //let webtools = cv.webtools;
 
   const client = contentful.createClient({
     space: PUBLIC_CONTENTFUL_SPACE_ID,
@@ -56,8 +47,6 @@
       webtools = response.items.filter(
         (x) => x.sys.contentType.sys.id == "softwareAndWebTools"
       );
-
-      console.log(presentations);
     })
     .catch(console.error);
 </script>
@@ -80,7 +69,7 @@
 
 <h2>Publications</h2>
 <h3>
-  {$locale === "en" ? "Peer-reviewed journals" : "Articles de revue savante"} ({journalPubs.length})
+  {$locale === "en" ? "Peer-reviewed journals" : "Articles de revue savante"} ({journalPublications.length})
 </h3>
 {#each journalPublications.toSorted((a, b) => b.fields.year - a.fields.year) as pub, i}
   <div class="journal-pub">
@@ -103,7 +92,7 @@
 </h3>
 {#each conferencePublications.toSorted((a, b) => b.fields.year - a.fields.year) as pub, i}
   <div class="conference-pub">
-    <b>[C{conferencePubs.length - i}]</b>
+    <b>[C{conferencePublications.length - i}]</b>
     {pub.fields.authors.join(", ")}. {#if pub.fields.url}<a
         href={pub.fields.url}>{pub.fields.title}</a
       >{:else}{pub.fields.title}{/if}.

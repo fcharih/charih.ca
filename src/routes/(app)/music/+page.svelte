@@ -1,5 +1,10 @@
 <script>
   import { locale } from "../i18n";
+  import { loadTextChunks } from "$lib/contentful.ts";
+  import { marked } from "marked";
+
+  let textChunks = $state({});
+  loadTextChunks().then((_textChunks) => (textChunks = _textChunks));
 </script>
 
 <svelte:head>
@@ -8,32 +13,9 @@
 
 <h1>{$locale === "en" ? "Music" : "Musique"}</h1>
 {#if $locale === "en"}
-  <p>
-    In my spare times, I enjoy playing the guitar and singing. I started
-    songwriting in my late teens.
-  </p>
-  <p>
-    Life (grad school) got in the way and left me with very little time to play
-    and write music. Art and music are important, but fighting diseases is
-    important too! I'm starting to get back into it as I'm wrapping up that PhD
-    and am writing new songs.
-  </p>
-  <p>
-    I look forward to sharing my songs with you once I get a minute to record
-    them!
-  </p>
+  {@html textChunks["Music"] && marked(textChunks["Music"].content)}
 {:else}
-  <p>
-    Dans mes temps libres, j'aime écrire de la musique. Je compose des chansons
-    depuis l'adolescence.
-  </p>
-  <p>
-    Mes études ont accaparé beaucoup de mon temps, ce qui m'en a laissé trop peu
-    pour jouer et écrire des chansons. L'art et la musique sont importants, mais
-    combattre les maladies l'est aussi. Comme j'approche la fin de mon doctorat,
-    je suis en train de me remettre à l'écriture.
-  </p>
-  <p>J'ai hâte de partager mes chansons avec vous!</p>
+  {@html textChunks["Music"] && marked(textChunks["Music"].contenu)}
 {/if}
 
 <!--
