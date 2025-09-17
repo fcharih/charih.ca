@@ -1,83 +1,192 @@
 awardList:
 - comment: Awarded to a graduate engineering students aspiring to a career based on
     the peaceful and environmentally respectful applications of engineering
+  date: 2023-09-01 00:00:00-04:00
   source: Carleton University
   title: Gabriel Warshaw Scholarship
   value: 1,700 CAD
-  year: 2023-09-01 00:00:00-04:00
-- source: Government of Ontario
+- date: 2022-09-01 00:00:00-04:00
+  source: Government of Ontario
   title: Queen Elizabeth II Scholarship in Science and Technology
   value: 15,000 CAD
-  year: 2022-09-01 00:00:00-04:00
-- source: American Peptide Society
+- date: 2022-06-22 00:00:00-04:00
+  source: American Peptide Society
   title: American Peptide Symposium Travel Award
   value: 600 USD
-  year: 2022-06-22 00:00:00-04:00
 - comment: Awarded yearly to an outstanding graduate student in engineering
+  date: 2020-06-01 00:00:00-04:00
   source: Dean of the FGPA (Carleton)
   title: Douglas Millar Scholarship
   value: 3,200 CAD
-  year: 2020-06-01 00:00:00-04:00
 - comment: Awarded to high potential researchers to pursue doctoral studies
+  date: 2019-05-01 00:00:00-04:00
   source: NSERC
   title: Postgraduate Scholarship-Doctoral (PGS-D)
   value: 63,000 CAD (over 3 years)
-  year: 2019-05-01 00:00:00-04:00
 - comment: Declined in favour of NSERC PGS-D award
+  date: 2019-05-01 00:00:00-04:00
   source: Carleton University/Government of Ontario
   title: Ontario Graduate Scholarship
   value: 15,000 CAD
-  year: 2019-05-01 00:00:00-04:00
 - comment: Awarded for outstanding academic achievement at the graduate level (1 medal/faculty
     awarded)
+  date: 2019-08-01 00:00:00-04:00
   source: Carleton University
   title: Carleton University Senate Medal
-  year: 2019-08-01 00:00:00-04:00
-- source: Carleton University
+- date: 2019-01-01 00:00:00-04:00
+  source: Carleton University
   title: Ph.D entrance scholarship
   value: 2,000 CAD
-  year: 2019-01-01 00:00:00-04:00
-- source: NSERC
+- date: 2017-09-01 00:00:00-04:00
+  source: NSERC
   title: CREATE-BEST Scholarship
   value: 5,000 CAD
-  year: 2017-09-01 00:00:00-04:00
 - comment: Co-authored the proposal for the grant awarded to Prof. James R. Green
+  date: 2017-09-01 00:00:00-04:00
   source: NSERC/OCE
   title: Engage/VIP-I Grant
   value: 50,000 CAD
-  year: 2017-09-01 00:00:00-04:00
-- source: Carleton University
+- date: 2017-05-01 00:00:00-04:00
+  source: Carleton University
   title: M.A.Sc. entrance scholarship
   value: 2,000 CAD
-  year: 2017-05-01 00:00:00-04:00
-- source: University of Ottawa
+- date: 2011-09-01 00:00:00-04:00
+  source: University of Ottawa
   title: B.Sc. Entrance Scholarship
   value: 2,000 CAD
-  year: 2011-09-01 00:00:00-04:00
 communityActivities:
-- organization: Carleton University Engineering in Medicine and Biology Society
+- end_date: 2024-04-30 00:00:00
+  organization: Carleton University Biology Graduate Student Association
+  start_date: 2023-09-05 00:00:00
+  title: Executive Member
+  years:
+  - '2023'
+- organization: Ottawa Regional Science Fair
+  start_date: 2019-04-13 00:00:00
+  title: Judge
+  years:
+  - '2019'
+  - '2021'
+  - '2023'
+  - '2024'
+- organization: Canada-Wide Science Fair
+  start_date: 2018-05-12 00:00:00
+  title: Judge
+  years:
+  - '2018'
+  - '2021'
+  - '2024'
+- end_date: 2020-05-30 00:00:00
+  organization: Carleton University Engineering in Medicine and Biology Society
+  start_date: 2018-09-04 00:00:00
   title: Communications Officer
   years:
   - '2018'
   - '2019'
   - '2020'
-- organization: Canada-Wide Science Fair
-  title: Judge
-  years:
-  - '2018'
-  - '2021'
-  - '2024'
-- organization: Ottawa Regional Science Fair
-  title: Judge
-  years:
-  - '2019'
-  - '2021'
-  - '2023'
-  - '2024'
-- organization: Carleton University Biology Graduate Student Association
-  title: Executive Member
-  years:
-  - '2023'
+degrees:
+- advisors:
+  - James R. Green,https://www.sce.carleton.ca/faculty/green/green.php
+  degree: M.A.Sc.
+  discipline: Electrical and Computer Engineering (Data Science)
+  end_date: 2018-12-18 00:00:00
+  institution: Carleton University
+  location: Ottawa, ON
+  start_date: 2016-09-06 00:00:00
+  thesis: 'Machine Learning in Audiology: Applications and Implications'
+- advisors:
+  - "Jean-Fran\xE7ois Couture,https://www.uottawa.ca/faculty-medicine/leadership-team/dr-jean-francois-couture"
+  degree: B.Sc.(Hons.)
+  discipline: Biochemistry
+  end_date: 2016-04-29 00:00:00
+  institution: University of Ottawa
+  location: Ottawa, ON
+  start_date: 2010-09-07 00:00:00
+  thesis: Structural Insights into the DNA-Binding Activity of Metalloregulator Fur
+    in C. jejuni
+- degree: B.A.Sc.
+  discipline: Chemical Engineering
+  end_date: 2016-04-30 00:00:00
+  institution: University of Ottawa
+  location: Ottawa, ON
+  start_date: 2010-09-07 00:00:00
+  thesis: Design, Simulation and Optimization of a High Production Volume Toluene
+    Plant
+- advisors:
+  - James R. Green,https://www.sce.carleton.ca/faculty/green/green.php
+  - Kyle K. Biggar,https://carleton.ca/biology/people/kyle-biggar/
+  degree: Ph.D.
+  discipline: Electrical and Computer Engineering (Computational Biology)
+  end_date: 2025-09-12 00:00:00
+  institution: Carleton University
+  location: Ottawa, ON
+  start_date: 2019-01-08 00:00:00
+  thesis: Sequence-based peptide binder design to modulate the lysine methylome and
+    beyond
+job:
+- employer: Ottawa Institute of Systems Biology
+  end_date: 2016-08-31 00:00:00
+  location: Ottawa, ON
+  responsibilities:
+  - Successfully crystallized and contributed to the resolution of the crystal structure
+    of the protein under study
+  - Performed and optimized a variety of biochemistry techniques, including protein
+    overexpression, mutational studies, structural characterization and protein-DNA
+    interaction studies
+  - Used tools including high-throughput crystallization robots, x-ray diffractometer,
+    FPLC/HPLC, protein modelling software, isothermal titration calorimetry on a regular
+    basis in addition to applying other common techniques
+  start_date: 2014-05-06 00:00:00
+  title: Undergraduate Research Assistant
+- employer: Carleton University
+  end_date: 2023-12-30 00:00:00
+  location: Ottawa, ON
+  responsibilities:
+  - SYSC4001 - Operating Systems (Fall 2023)
+  - SYSC2100 - Data Structures and Algorithms (Spring 2023)
+  - SYSC4415 - Introduction to Machine Learning (Winter 2023)
+  - SYSC2002 - Data Structures and Algorithms (Spring 2020)
+  - SYSC2006 - Foundations of Imperative Programming (Fall 2017, Winter 2019)
+  start_date: 2017-09-01 00:00:00
+  title: Teaching Assistant
+- employer: Natural Resources Canada
+  end_date: 2018-04-28 00:00:00
+  location: Ottawa, ON
+  responsibilities:
+  - Co-authored a technical report detailing how deep learning strategies can be deployed
+    for passive monitoring of critical electrical infrastructure
+  - Responsible for the annotation of thousands of images for the development of deep
+    learning-based segmentation models
+  start_date: 2017-09-05 00:00:00
+  title: Contract Researcher
+- employer: The Ottawa Hospital Rehabilitation Centre
+  end_date: 2019-03-30 00:00:00
+  location: Ottawa, ON
+  responsibilities:
+  - Responsible for the implementation of a tablet-based software for the annotation
+    of stress levels of PTSD/TBI patients undergoing VR therapy (collaboration with
+    Rehabilitation Virtual Reality Lab at The Ottawa Hospital).
+  start_date: 2018-09-04 00:00:00
+  title: Contract Researcher
+- employer: Carleton University
+  end_date: 2020-08-29 00:00:00
+  location: Ottawa, ON
+  responsibilities:
+  - Collaboration initiated by the WSIB of Ontario upon reading my master's thesis
+  - Managed a team composed of myself, one M.Eng. student, and one undergraduate student
+  - Responsible for developing a semi-automated audiogram digitization/interpretation
+    solution using machine learning and computer vision to support the claim adjudication
+    process at WSIB
+  start_date: 2020-05-05 00:00:00
+  title: Lead Researcher (Contractual position)
+- employer: NuvoBio
+  location: Ottawa, ON
+  responsibilities:
+  - Leading the development of Darwin, an inhibitory peptide engineering algorithm
+  - Responsible for the implementation, deployment and distribution of Darwin
+  - Managing multiple high performance computing platforms (mid-size computer clusters)
+  start_date: 2023-09-05 00:00:00
+  title: Research Scientist & Co-Founder
 mentoringList:
 - degree: B.A.Sc.
   end_date: 2018-04-30 00:00:00
@@ -841,6 +950,129 @@ presentationList:
   title: X-ray crystallography and computational biochemistry (guest lecture)
 publicationList:
 - authors:
+  - K. Dick
+  - F. Charih
+  - Y. Souley Dosso
+  - L. Russell
+  - J. R. Green
+  conference: 15th Conference on Computer and Robot Vision (CRV)
+  conference_date: May 8-10, 2018
+  doi: 10.1109/CRV.2018.00028
+  location: Toronto, Canada
+  publication_type: Conference
+  publisher: Proceedings of the 2018 15th Conference on Computer and Robot Vision
+    (CRV)
+  status: Published
+  title: 'Systematic Street View Sampling: High Quality Annotation of Power Infrastructure
+    in Rural Ontario'
+  url: https://doi.org/10.1109/CRV.2018.00028
+  year: '2018'
+- authors:
+  - F. Charih
+  - M. Boulter
+  - K. K. Biggar
+  - J. R. Green
+  doi: 10.1101/2025.08.27.672583v1
+  publication_type: Preprint
+  publisher: bioRxiv
+  title: Leveraging learned representations and multitask learning for lysine methylation
+    site discovery
+  url: https://www.biorxiv.org/content/10.1101/2025.08.27.672583v1
+  year: '2025'
+- authors:
+  - S. Sarvan
+  - F. Charih
+  - M. Askoura
+  - J. Butcher
+  - J. S. Brunzelle
+  - A. Stintzi
+  - J.-F. Couture
+  doi: 10.1038/s41598-018-25157-6
+  issue: '1'
+  pages: 1-14
+  publication_type: Journal
+  publisher: Scientific Reports
+  status: Published
+  title: Functional insights into the interplay between DNA interaction and metal
+    coordination in ferric uptake regulators
+  url: https://doi.org/10.1038/s41598-018-25157-6
+  volume: '8'
+  year: '2018'
+- authors:
+  - S. Sarvan
+  - A. Yeung
+  - F. Charih
+  - A. Stintzi
+  - J.-F. Couture
+  doi: 10.1007/s10534-019-00177-5
+  issue: '3'
+  pages: 491-500
+  publication_type: Journal
+  publisher: BioMetals
+  status: Published
+  title: Purification and characterization of Campylobacter jejuni ferric uptake regulator
+  url: https://doi.org/10.1007/s10534-019-00177-5
+  volume: '32'
+  year: '2018'
+- authors:
+  - S. Sarvan
+  - F. Charih
+  - J. Butcher
+  - J. S. Brunzelle
+  - A. Stintzi
+  - J.-F. Couture
+  doi: 10.1002/1873-3468.13120
+  issue: '13'
+  pages: 2351-2360
+  publication_type: Journal
+  publisher: FEBS Letters
+  status: Published
+  title: Crystal structure of Campylobacter jejuni peroxide regulator
+  url: https://doi.org/10.1002/1873-3468.13120
+  volume: '592'
+  year: '2018'
+- authors:
+  - F. Charih
+  - K. Biggar
+  - J.R. Green
+  doi: 10.1038/s41598-022-13227-9
+  issue: '9610'
+  pages: 1-13
+  publication_type: Journal
+  publisher: Scientific Reports
+  status: Published
+  title: Assessing sequence-based protein-protein interaction predictors for use in
+    therapeutic peptide engineering
+  url: https://www.nature.com/articles/s41598-022-13227-9
+  volume: '12'
+  year: '2022'
+- authors:
+  - K. Dick
+  - ' J. B. Tanner'
+  - F. Charih
+  - J.R. Green
+  doi: 10.1109/ACCESS.2022.3156578
+  pages: 28487-28498
+  publication_type: Journal
+  publisher: IEEE Access
+  status: Published
+  title: 'GasBotty: Multi-Metric Extraction in the Wild'
+  url: https://ieeexplore.ieee.org/document/9727170
+  volume: '10'
+  year: '2022'
+- authors:
+  - F. Charih
+  - J.R. Green
+  doi: 10.1109/ACCESS.2022.3215972
+  pages: 110761-110769
+  publication_type: Journal
+  publisher: IEEE Access
+  status: Published
+  title: Audiogram Digitization Tool for Audiological Reports
+  url: https://ieeexplore.ieee.org/document/9925220?source=authoralert
+  volume: '10'
+  year: '2022'
+- authors:
   - F. Charih
   - A. Steeves
   - M. Bromwich
@@ -875,24 +1107,6 @@ publicationList:
   title: Mining Audiograms to Improve the Interpretability of Automated Audiometry
     Measurements
   url: https://doi.org/10.1109/MeMeA.2018.8438746
-  year: '2018'
-- authors:
-  - K. Dick
-  - F. Charih
-  - Y. Souley Dosso
-  - L. Russell
-  - J. R. Green
-  conference: 15th Conference on Computer and Robot Vision (CRV)
-  conference_date: May 8-10, 2025
-  doi: 10.1109/CRV.2018.00028
-  location: Toronto, Canada
-  publication_type: Conference
-  publisher: Proceedings of the 2018 15th Conference on Computer and Robot Vision
-    (CRV)
-  status: Published
-  title: 'Systematic Street View Sampling: High Quality Annotation of Power Infrastructure
-    in Rural Ontario'
-  url: https://doi.org/10.1109/CRV.2018.00028
   year: '2018'
 - authors:
   - R. Selzler
@@ -1009,47 +1223,6 @@ publicationList:
   volume: '1866'
   year: '2023'
 - authors:
-  - F. Charih
-  - J.R. Green
-  doi: 10.1109/ACCESS.2022.3215972
-  pages: pp. 110761-110769
-  publication_type: Journal
-  publisher: IEEE Access
-  status: Published
-  title: Audiogram Digitization Tool for Audiological Reports
-  url: https://ieeexplore.ieee.org/document/9925220?source=authoralert
-  volume: '10'
-  year: '2022'
-- authors:
-  - K. Dick
-  - ' J. B. Tanner'
-  - F. Charih
-  - J.R. Green
-  doi: 10.1109/ACCESS.2022.3156578
-  pages: pp. 28487-28498
-  publication_type: Journal
-  publisher: IEEE Access
-  status: Published
-  title: 'GasBotty: Multi-Metric Extraction in the Wild'
-  url: https://ieeexplore.ieee.org/document/9727170
-  volume: '10'
-  year: '2022'
-- authors:
-  - F. Charih
-  - K. Biggar
-  - J.R. Green
-  doi: 10.1038/s41598-022-13227-9
-  issue: '9610'
-  pages: pp. 1-13
-  publication_type: Journal
-  publisher: Scientific Reports
-  status: Published
-  title: Assessing sequence-based protein-protein interaction predictors for use in
-    therapeutic peptide engineering
-  url: https://www.nature.com/articles/s41598-022-13227-9
-  volume: '12'
-  year: '2022'
-- authors:
   - G. M. Rurak
   - S. Simard
   - M. Freitas-Andrade
@@ -1125,58 +1298,6 @@ publicationList:
   url: https://doi.org/10.1038/s41598-020-60898-3
   volume: '10'
   year: '2020'
-- authors:
-  - S. Sarvan
-  - F. Charih
-  - J. Butcher
-  - J. S. Brunzelle
-  - A. Stintzi
-  - J.-F. Couture
-  doi: 10.1002/1873-3468.13120
-  issue: '13'
-  pages: pp. 2351-2360
-  publication_type: Journal
-  publisher: FEBS Letters
-  status: Published
-  title: Crystal structure of Campylobacter jejuni peroxide regulator
-  url: https://doi.org/10.1002/1873-3468.13120
-  volume: '592'
-  year: '2018'
-- authors:
-  - S. Sarvan
-  - A. Yeung
-  - F. Charih
-  - A. Stintzi
-  - J.-F. Couture
-  doi: 10.1007/s10534-019-00177-5
-  issue: '3'
-  pages: pp. 491-500
-  publication_type: Journal
-  publisher: BioMetals
-  status: Published
-  title: Purification and characterization of Campylobacter jejuni ferric uptake regulator
-  url: https://doi.org/10.1007/s10534-019-00177-5
-  volume: '32'
-  year: '2018'
-- authors:
-  - S. Sarvan
-  - F. Charih
-  - M. Askoura
-  - J. Butcher
-  - J. S. Brunzelle
-  - A. Stintzi
-  - J.-F. Couture
-  doi: 10.1038/s41598-018-25157-6
-  issue: '1'
-  pages: pp. 1-14
-  publication_type: Journal
-  publisher: Scientific Reports
-  status: Published
-  title: Functional insights into the interplay between DNA interaction and metal
-    coordination in ferric uptake regulators
-  url: https://doi.org/10.1038/s41598-018-25157-6
-  volume: '8'
-  year: '2018'
 softwareList:
 - description: A database of translatomic data from astroglia (in collaboration with
     the Salmaso lab).

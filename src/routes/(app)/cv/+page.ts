@@ -25,7 +25,7 @@ export const load: PageLoad = async ({}) => {
     .filter(
       (x) =>
         x.sys.contentType.sys.id == "publication" &&
-        x.fields.publicationType == "Journal"
+        x.fields.publicationType == "Preprint"
     )
     .map((x) => x.fields);
   let presentations = entries

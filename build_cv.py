@@ -12,6 +12,10 @@ entries = client.entries()
 # Group by entry types
 
 data = {
+    "degrees": [
+        entry.fields() for entry in entries if entry.content_type.id == "education"
+    ],
+    "job": [entry.fields() for entry in entries if entry.content_type.id == "job"],
     "presentationList": [
         entry.fields() for entry in entries if entry.content_type.id == "presentation"
     ],

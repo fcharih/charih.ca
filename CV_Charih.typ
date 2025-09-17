@@ -1,12 +1,47 @@
 #import "@preview/fontawesome:0.5.0": *
 #import "@preview/icu-datetime:0.1.2": experimental, fmt-date, fmt-datetime, fmt-time
+#import "@preview/datify:0.1.4": custom-date-format
+
+#let count-entries(entries) = {
+  let counts = (:)
+  for entry in entries {
+    if entry.venue in counts {
+      counts.insert(entry.venue, counts.at(entry.venue) + 1)
+    } else {
+      counts.insert(entry.venue, 1)
+    }
+  }
+  return counts
+}
+
+#let to-datetime(datestring) = {
+  let split_date = datestring.split("-")
+  return datetime(day: int(split_date.at(2).split(" ").at(0)), month: int(split_date.at(1)), year: int(split_date.at(
+    0,
+  )))
+}
+
+#let title-case(string) = {
+  return string.replace(regex("[A-Za-z]+('[A-Za-z]+)?"), word => upper(word.text.first()) + lower(word.text.slice(1)))
+}
+
+#let to-month-year(datestring) = {
+  let dt = to-datetime(datestring)
+  let uncapitalized = custom-date-format(dt, "MMM YYYY")
+  return title-case(uncapitalized)
+}
+
 
 #set text(size: 10pt)
 #show link: set text(blue)
 //#show heading: set align(center)
 #set list(indent: 3em, spacing: 10pt)
 
-#let cv = yaml("src/lib/content/cv.yaml")
+#let cv = yaml("data.yaml")
+
+#let entry-contains-key(entry, key) = {
+  return key in entry.keys()
+}
 
 #set page(
   margin: (
@@ -60,17 +95,17 @@
     ..for entry in contents {
       (
         [
-          #text(weight: "bold")[#entry.degree in #entry.topic] \
-          #entry.school\
-          *Thesis:* #entry.thesistitle \
+          #text(weight: "bold")[#entry.degree in #entry.discipline] \
+          #entry.institution\
+          *Thesis:* #entry.thesis \
           #if entry.keys().contains("advisors") [
-            #[*Thesis advisor(s):* #entry.advisors.map(advisor => [#link(advisor.website)[#advisor.name]]).join(", ", last: " and ")]
+            #[*Thesis advisor(s):* #entry.advisors.map(advisor => [#link(advisor.split(",").at(1))[#advisor.split(",").at(0)]]).join(", ", last: " and ")]
           ] else [
 
           ]
         ],
         [
-          #entry.years \
+          #to-month-year(entry.start_date) - #to-month-year(entry.end_date) \
           #fa-icon("location-dot") #entry.location \
 
         ],
@@ -92,18 +127,18 @@
         #entry.employer \
       ],
       [
-        #entry.years \
+        #to-month-year(entry.start_date) - #{ if "end_date" in entry [#to-month-year(entry.end_date)] else [present] }\
         #fa-icon("location-dot") #entry.location \
 
       ],
     )
-    list(..entry.details.map(d => list.item(d)))
+    list(..entry.responsibilities.map(d => list.item(d)))
   }
 }
 
 #let format-journal(entry) = {
-  [#entry.authors. #entry.title (#entry.year). #text(style: "italic")[#entry.publisher]#if entry.volume != "" [, #entry.volume]#if entry.issue != "" [(#entry.issue)]#if entry.volume != "" [.]
-    #if entry.comment != "" [ (#entry.comment)]
+  [#entry.authors.join(", "). #entry.title (#entry.year). #text(style: "italic")[#entry.publisher]#if entry-contains-key(entry, "volume") [, #entry.volume]#if entry-contains-key(entry, "issue") [(#entry.issue)]#if entry-contains-key(entry, "volume") [.]
+    #if entry-contains-key(entry, "comment") [ (#entry.comment)]
     #if entry.url != "" [ \[#link(entry.url)[Link]\]]
   ]
 
@@ -113,9 +148,9 @@
 }
 
 #let format-conference(entry) = {
-  [#entry.authors. #entry.title. #text(style: "italic")[#entry.conference], #entry.location, #entry.date.]
-  if entry.comment != "" [ (#entry.comment)]
-  if entry.url != "" [ \[#link(entry.url)[Link]\]]
+  [#entry.authors.join(", "). #entry.title. #text(style: "italic")[#entry.conference], #entry.location, #entry.conference_date.]
+  if entry-contains-key(entry, "comment") [ (#entry.comment)]
+  if entry-contains-key(entry, "url") [ \[#link(entry.url)[Link]\]]
 
   [
 
@@ -125,9 +160,9 @@
 
 
 #let print-journal-papers(publications, first: false) = {
-  let journal-entries = publications.filter(p => p.type == "journal")
+  let journal-entries = publications.filter(p => p.publication_type == "Journal").sorted(key: p => int(p.year)).rev()
   if first [
-    \[J#(journal-entries.len())\] #format-journal(publications.at(0))
+    \[J#(journal-entries.len())\] #format-journal(journal-entries.at(0))
   ] else [
     #for (i, entry) in journal-entries.enumerate().slice(1) {
       [\[J#(journal-entries.len() - i)\] #format-journal(entry)]
@@ -136,7 +171,10 @@
 }
 
 #let print-conference-papers(publications, first: false) = {
-  let conference-entries = publications.filter(p => p.type == "conference")
+  let conference-entries = publications
+    .filter(p => p.publication_type == "Conference")
+    .sorted(key: p => int(p.conference_date.split(", ").at(1)))
+    .rev()
   if first [
     \[C#(conference-entries.len())\] #format-conference(conference-entries.at(0))
   ] else [
@@ -147,9 +185,9 @@
 }
 
 #let format-other(entry) = {
-  [#entry.authors. #entry.title. #text(style: "italic")[#entry.type], #entry.publisher#if "location" in entry { [, #entry.location] }, #entry.date.]
-  if entry.comment != "" [ (#entry.comment)]
-  if entry.url != "" [ \[#link(entry.url)[Link]\]]
+  [#entry.authors.join(", "). #entry.title. #text(style: "italic")[#entry.publication_type], #entry.publisher#if "location" in entry { [, #entry.location] }, #entry.year.]
+  if "comment" in entry [ (#entry.comment)]
+  if "url" in entry [ \[#link(entry.url)[Link]\]]
 
   [
 
@@ -157,7 +195,7 @@
 }
 
 #let print-other(publications, first: false) = {
-  let other-entries = publications.filter(p => not ("journal", "conference").contains(p.type))
+  let other-entries = publications.filter(p => not ("Journal", "Conference").contains(p.publication_type))
   if first [
     \[O#(other-entries.len())\] #format-other(other-entries.at(0))
   ] else [
@@ -176,10 +214,10 @@
     align: (left, right),
     [
       \[PW#num\] #text(weight: "bold")[#entry.title] \
-      #entry.event #if entry.url != "" [ \[#link(entry.url)[Link]\]]\
+      #entry.event #if "url" in entry [ \[#link(entry.url)[Link]\]]\
     ],
     [
-      #entry.date \
+      #to-month-year(entry.date)\
       #fa-icon("location-dot") #entry.location \
     ],
   )
@@ -207,7 +245,7 @@
       #entry.event #if entry.keys().contains("url") and entry.url != "" [ \[#link(entry.url)[Link]\]]\
     ],
     [
-      #entry.date \
+      #to-month-year(entry.date)\
       #fa-icon("location-dot") #entry.location \
 
     ],
@@ -236,7 +274,7 @@
       #if entry.keys().contains("comment") and entry.comment != "" [#entry.comment]
     ],
     [
-      #entry.year
+      #to-month-year(entry.date)
     ],
   )
 }
@@ -260,11 +298,12 @@
       row-gutter: 1em,
       align: (left, right),
       [
-        #text(weight: "bold")[#entry.student], #entry.type \
+        #text(weight: "bold")[#entry.student_name], #entry.degree \
         Project: #text(style: "italic")[#entry.project]
       ],
       [
-        #entry.date
+        #to-month-year(entry.start_date) -
+        #to-month-year(entry.end_date)
       ],
     )
   }
@@ -279,10 +318,11 @@
     align: (left, right),
     [
       #text(weight: "bold")[#entry.title] \
-      #entry.source
+      #entry.organization
     ],
     [
-      #entry.year
+      #to-month-year(entry.start_date) -
+      #if "end_date" in entry [#to-month-year(entry.end_date)] else [present]
     ],
   )
 }
@@ -332,68 +372,77 @@ Ottawa, ON (K1S 5B6) \
 ]
 == Education
 
-#print-education(cv.education)
+#print-education(cv.degrees.sorted(key: x => x.start_date).rev())
+
+#let jobs = cv.job.sorted(key: e => int(e.start_date.split("-").at(0))).rev()
 
 #box(width: 100%)[
   == Relevant employment experience
-  #print-employment(cv.employment.slice(0, count: 1))
+  #print-employment(jobs.slice(0, count: 1))
 ]
-#print-employment(cv.employment.slice(1))
+#print-employment(jobs.slice(1))
+
 
 #show "F. Charih": name => text(weight: "bold")[F. Charih]
 #box(width: 100%)[
   == Publications
 
   === Peer-reviewed journal articles
-  #print-journal-papers(cv.publications, first: true)
+  #print-journal-papers(cv.publicationList, first: true)
 ]
 
-#print-journal-papers(cv.publications, first: false)
+#print-journal-papers(cv.publicationList, first: false)
 
 #box(width: 100%)[
   === Conference proceedings
-  #print-conference-papers(cv.publications, first: true)
+  #print-conference-papers(cv.publicationList, first: true)
 ]
 
-#print-conference-papers(cv.publications, first: false)
+#print-conference-papers(cv.publicationList, first: false)
 
 
 #box(width: 100%)[
   === Other manuscripts (_e.g._ pre-prints, theses, _etc._)
 
-  #print-other(cv.publications, first: true)
+  #print-other(cv.publicationList, first: true)
 ]
 
-#print-other(cv.publications, first: false)
+#print-other(cv.publicationList, first: false)
 
 
+#let presentations = cv.presentationList.sorted(key: x => int(x.date.split("-").at(0))).rev()
 #box(width: 100%)[
   == Presentations and workshops
 
-  #print-presentations(cv.presentations, first: true)
+  #print-presentations(presentations, first: true)
 ]
-#print-presentations(cv.presentations, first: false)
+#print-presentations(presentations, first: false)
+
+#let posters = cv.posterList.sorted(key: x => int(x.date.split("-").at(0))).rev()
 
 #box(width: 100%)[
   == Selected posters
-  #print-posters(cv.posters, first: true)
+  #print-posters(posters, first: true)
 ]
 
-#print-posters(cv.posters, first: false)
+#print-posters(posters, first: false)
+
+#let awards = cv.awardList.sorted(key: x => int(x.date.split("-").at(0))).rev()
 
 #box(width: 100%)[
   == Awards and honours
-  #print-awards(cv.awards, first: true)
+  #print-awards(awards, first: true)
 ]
 
-#print-awards(cv.awards)
+#print-awards(awards)
 
+#let mentoring = cv.mentoringList.sorted(key: x => int(x.start_date.split("-").at(0))).rev()
 #box(width: 100%)[
   == Research mentoring
   I have had the great pleasure to mentor the following students:
 ]
 
-#print-mentees(cv.mentoring)
+#print-mentees(mentoring)
 
 #box(width: 100%)[
   == Peer reviews
@@ -401,16 +450,17 @@ Ottawa, ON (K1S 5B6) \
   I have reviewed submissions for the following peer-reviewed journals or conferences:
 ]
 
-#for p in cv.peerreviews [
-  - #p.venue // (#p.count review#if p.count > 1 [s])
+#for (k, v) in count-entries(cv.peerReviewList).pairs() [
+  - #k (#v) // (#p.count review#if p.count > 1 [s])
 ]
 
+#let communityWork = cv.communityActivities.sorted(key: x => int(x.years.last())).rev()
 #box(width: 100%)[
   == Other relevant roles
-  #print-involvement(cv.involvement, first: true)
+  #print-involvement(communityWork, first: true)
 ]
 
-#print-involvement(cv.involvement)
+#print-involvement(communityWork)
 
 #box(width: 100%)[
   == Languages
