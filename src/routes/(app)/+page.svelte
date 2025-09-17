@@ -100,8 +100,8 @@
     </div>
     <div class="news-content">
       {@html $locale === "en"
-        ? marked(newsPiece.contentMarkdown)
-        : marked(newsPiece.contenuMarkdown)}
+        ? marked(newsPiece.content)
+        : marked(newsPiece.contenu)}
     </div>
   {/each}
 </div>
