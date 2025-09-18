@@ -175,7 +175,7 @@
 
 
 #let print-journal-papers(publications, first: false) = {
-  let journal-entries = publications.filter(p => p.publication_type == "Journal").sorted(key: p => int(p.year)).rev()
+  let journal-entries = publications
   if first [
     \[J#(journal-entries.len())\] #format-journal(journal-entries.at(0))
   ] else [
@@ -406,10 +406,10 @@ Ottawa, ON (K1S 5B6) \
   == Publications
 
   === Peer-reviewed journal articles
-  #print-journal-papers(cv.publicationList, first: true)
+  #print-journal-papers(journal-papers, first: true)
 ]
 
-#print-journal-papers(cv.publicationList, first: false)
+#print-journal-papers(journal-papers, first: false)
 
 #let conference-papers = sort-by-datekey(
   cv.publicationList.filter(p => p.publication_type == "Conference"),
