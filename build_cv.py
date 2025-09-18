@@ -54,5 +54,6 @@ data = {
 with open("temp_data.yaml", "w") as ofile:
     yaml.dump(data, ofile)
 
-sp.run("typst compile CV_Charih.typ && rm temp_data.yaml", shell=True)
+# sp.run("typst compile CV_Charih.typ && rm temp_data.yaml", shell=True)
+sp.run("typst compile CV_Charih.typ", shell=True)
 sp.run("cp CV_Charih.pdf static/charih_cv.pdf", shell=True)

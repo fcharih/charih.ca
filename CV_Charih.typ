@@ -31,6 +31,19 @@
   return title-case(uncapitalized)
 }
 
+#let string-to-date(date-string) = {
+  let split = date-string.split("-")
+  return datetime(year: int(split.at(0)), month: int(split.at(1)), day: int(split.at(2).split(" ").at(0)))
+}
+
+#let date-as-array(date) = {
+  return (date.year(), date.month(), date.day())
+}
+
+#let sort-by-datekey(array, key) = {
+  return array.sorted(key: d => date-as-array(string-to-date(d.at(key)))).rev()
+}
+
 
 #set text(size: 10pt)
 #show link: set text(blue)
@@ -116,23 +129,25 @@
 
 #let print-employment(contents) = {
   for entry in contents {
-    table(
-      stroke: none,
-      columns: (auto, 1fr),
-      //inset: 10pt,
-      row-gutter: 1em,
-      align: (left, right),
-      [
-        #text(weight: "bold")[#entry.title] \
-        #entry.employer \
-      ],
-      [
-        #to-month-year(entry.start_date) - #{ if "end_date" in entry [#to-month-year(entry.end_date)] else [present] }\
-        #fa-icon("location-dot") #entry.location \
+    box[
+      #table(
+        stroke: none,
+        columns: (auto, 1fr),
+        //inset: 10pt,
+        row-gutter: 1em,
+        align: (left, right),
+        [
+          #text(weight: "bold")[#entry.title] \
+          #entry.employer \
+        ],
+        [
+          #to-month-year(entry.start_date) - #{ if "end_date" in entry [#to-month-year(entry.end_date)] else [present] }\
+          #fa-icon("location-dot") #entry.location \
 
-      ],
-    )
-    list(..entry.responsibilities.map(d => list.item(d)))
+        ],
+      )
+      #list(..entry.responsibilities.map(d => list.item(d)))
+    ]
   }
 }
 
@@ -337,8 +352,8 @@
   ]
 }
 
-Carleton University Biomedical Informatics Collaboratory (cuBIC)\
-Institute of Biochemistry, Carleton University \
+//Carleton University Biomedical Informatics Collaboratory (cuBIC)\
+//Institute of Biochemistry, Carleton University \
 NuvoBio \
 Health Sciences Building, Room 4302 \
 1125, Colonel By Drive \
@@ -357,7 +372,7 @@ Ottawa, ON (K1S 5B6) \
     column-gutter: 3em,
     align: (left, left, left),
     [
-      Computational biology \
+      Computational biochemistry \
       Biomedical informatics
     ],
     [
@@ -372,10 +387,9 @@ Ottawa, ON (K1S 5B6) \
 ]
 == Education
 
-#print-education(cv.degrees.sorted(key: x => x.start_date).rev())
+#print-education(sort-by-datekey(cv.degrees, "start_date"))
 
-#let jobs = cv.job.sorted(key: e => int(e.start_date.split("-").at(0))).rev()
-
+#let jobs = sort-by-datekey(cv.job, "start_date")
 #box(width: 100%)[
   == Relevant employment experience
   #print-employment(jobs.slice(0, count: 1))
@@ -383,6 +397,10 @@ Ottawa, ON (K1S 5B6) \
 #print-employment(jobs.slice(1))
 
 
+#let journal-papers = sort-by-datekey(
+  cv.publicationList.filter(p => p.publication_type == "Journal"),
+  "publication_date",
+)
 #show "F. Charih": name => text(weight: "bold")[F. Charih]
 #box(width: 100%)[
   == Publications
@@ -393,24 +411,32 @@ Ottawa, ON (K1S 5B6) \
 
 #print-journal-papers(cv.publicationList, first: false)
 
+#let conference-papers = sort-by-datekey(
+  cv.publicationList.filter(p => p.publication_type == "Conference"),
+  "conference_start_date",
+).rev()
 #box(width: 100%)[
   === Conference proceedings
-  #print-conference-papers(cv.publicationList, first: true)
+  #print-conference-papers(conference-papers, first: true)
 ]
 
-#print-conference-papers(cv.publicationList, first: false)
+#print-conference-papers(conference-papers, first: false)
 
 
+#let other = sort-by-datekey(
+  cv.publicationList.filter(p => p.publication_type == "Preprint"),
+  "publication_date",
+)
 #box(width: 100%)[
   === Other manuscripts (_e.g._ pre-prints, theses, _etc._)
 
-  #print-other(cv.publicationList, first: true)
+  #print-other(other, first: true)
 ]
 
-#print-other(cv.publicationList, first: false)
+#print-other(other, first: false)
 
 
-#let presentations = cv.presentationList.sorted(key: x => int(x.date.split("-").at(0))).rev()
+#let presentations = sort-by-datekey(cv.presentationList, "date")
 #box(width: 100%)[
   == Presentations and workshops
 
@@ -418,7 +444,7 @@ Ottawa, ON (K1S 5B6) \
 ]
 #print-presentations(presentations, first: false)
 
-#let posters = cv.posterList.sorted(key: x => int(x.date.split("-").at(0))).rev()
+#let posters = sort-by-datekey(cv.posterList, "date")
 
 #box(width: 100%)[
   == Selected posters
@@ -427,7 +453,7 @@ Ottawa, ON (K1S 5B6) \
 
 #print-posters(posters, first: false)
 
-#let awards = cv.awardList.sorted(key: x => int(x.date.split("-").at(0))).rev()
+#let awards = sort-by-datekey(cv.awardList, "date")
 
 #box(width: 100%)[
   == Awards and honours
@@ -436,7 +462,7 @@ Ottawa, ON (K1S 5B6) \
 
 #print-awards(awards)
 
-#let mentoring = cv.mentoringList.sorted(key: x => int(x.start_date.split("-").at(0))).rev()
+#let mentoring = sort-by-datekey(cv.mentoringList, "start_date")
 #box(width: 100%)[
   == Research mentoring
   I have had the great pleasure to mentor the following students:
@@ -454,7 +480,7 @@ Ottawa, ON (K1S 5B6) \
   - #k (#v) // (#p.count review#if p.count > 1 [s])
 ]
 
-#let communityWork = cv.communityActivities.sorted(key: x => int(x.years.last())).rev()
+#let communityWork = sort-by-datekey(cv.communityActivities, "start_date")
 #box(width: 100%)[
   == Other relevant roles
   #print-involvement(communityWork, first: true)
