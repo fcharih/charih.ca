@@ -38,7 +38,14 @@ export const load: PageLoad = async ({}) => {
     .filter((x) => x.sys.contentType.sys.id == "poster")
     .map((x) => x.fields);
 
+  let cvMetadata = await fetch(
+    "https://cdn.contentful.com/spaces/h10co4b8nw83/environments/master/assets/charih_cv?access_token=q16uoVYBvpaF_eY3xst4IBRwzc3Yi6wWHNRvooKWeug"
+  );
+
+  let cvUrl = (await cvMetadata.json()).fields.file.url;
+
   return {
+    cvUrl,
     textChunks,
     journalPublications,
     conferencePublications,

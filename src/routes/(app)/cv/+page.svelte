@@ -13,11 +13,10 @@
 
 <p>
   {#if $locale === "en"}
-    Feel free to consult a PDF version of <a href="/charih_cv.pdf">my CV</a>.
+    Feel free to consult a PDF version of <a href={data.cvUrl}>my CV</a>.
   {:else}
-    Vous pouvez consulter ici la version PDF de <a href="/charih_cv.pdf"
-      >mon CV</a
-    > (en anglais).
+    Vous pouvez consulter ici la version PDF de <a href={data.cvUrl}>mon CV</a> (en
+    anglais).
   {/if}
 </p>
 

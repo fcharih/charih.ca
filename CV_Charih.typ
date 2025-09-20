@@ -50,7 +50,7 @@
 //#show heading: set align(center)
 #set list(indent: 3em, spacing: 10pt)
 
-#let cv = yaml("temp_data.yaml")
+#let cv = yaml("cv.yaml")
 
 #let entry-contains-key(entry, key) = {
   return key in entry.keys()
