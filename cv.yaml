@@ -124,6 +124,15 @@ degrees:
   thesis: Sequence-based peptide binder design to modulate the lysine methylome and
     beyond
 job:
+- employer: NuvoBio
+  location: Ottawa, ON
+  responsibilities:
+  - Responsible for the implementation, deployment and distribution of Darwin
+  - Leading the research and development efforts at NuvoBio
+  - Managing multiple high performance computing platforms (mid-size computer clusters,
+    cloud infrastructures)
+  start_date: 2023-09-05 00:00:00
+  title: Research Scientist & Co-Founder
 - employer: The Ottawa Hospital Rehabilitation Centre
   end_date: 2019-03-30 00:00:00
   location: Ottawa, ON
@@ -179,14 +188,6 @@ job:
     process at WSIB
   start_date: 2020-05-05 00:00:00
   title: Lead Researcher (Contractual position)
-- employer: NuvoBio
-  location: Ottawa, ON
-  responsibilities:
-  - Leading the development of Darwin, an inhibitory peptide engineering algorithm
-  - Responsible for the implementation, deployment and distribution of Darwin
-  - Managing multiple high performance computing platforms (mid-size computer clusters)
-  start_date: 2023-09-05 00:00:00
-  title: Research Scientist & Co-Founder
 mentoringList:
 - degree: B.A.Sc.
   end_date: 2018-04-30 00:00:00

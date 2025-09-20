@@ -1,18 +1,22 @@
 #! /usr/bin/env python3
 
-import time
+import time, os
 import subprocess as sp
 
 from contentful import Client
 from contentful_management import Client as ClientM
+from dotenv import load_dotenv
 import yaml
 
-management_key = open(".env").read().splitlines()[-1].split("=")[-1]
+load_dotenv()
+
+SPACE_ID = os.getenv("PUBLIC_CONTENTFUL_SPACE_ID")
+DELIVERY_KEY = os.getenv("PUBLIC_CONTENTFUL_ACCESS_TOKEN")
+MANAGEMENT_KEY = os.getenv("CONTENTFUL_MANAGEMENT_KEY")
 
 client = Client(
-    "h10co4b8nw83",
-    "q16uoVYBvpaF_eY3xst4IBRwzc3Yi6wWHNRvooKWeug",
-    environment="master",  # Optional - it defaults to 'master'.
+    SPACE_ID,
+    DELIVERY_KEY,
 )
 
 entries = client.entries()
@@ -62,7 +66,12 @@ with open("cv.yaml", "w") as ofile:
 sp.run("typst compile CV_Charih.typ", shell=True)
 sp.run("cp CV_Charih.pdf static/charih_cv.pdf", shell=True)
 
-client = ClientM(management_key)
+client = ClientM(MANAGEMENT_KEY)
+
+asset = client.assets("h10co4b8nw83", "master").find("charih_cv")
+asset.unpublish()
+client.assets(SPACE_ID, "master").delete("charih_cv")
+
 new_upload = client.uploads("h10co4b8nw83").create(open("CV_Charih.pdf", "rb"))
 
 print("Upload...")
@@ -95,4 +104,3 @@ while asset.url is None:
 print("Publish CV...")
 asset = client.assets("h10co4b8nw83", "master").find("charih_cv")
 asset.reload().publish()
-
