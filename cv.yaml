@@ -124,24 +124,65 @@ degrees:
   thesis: Sequence-based peptide binder design to modulate the lysine methylome and
     beyond
 job:
-- employer: NuvoBio
+- employer: Carleton University
+  end_date: 2020-08-29 00:00:00
   location: Ottawa, ON
   responsibilities:
-  - Responsible for the implementation, deployment and distribution of Darwin
-  - Leading the research and development efforts at NuvoBio
-  - Managing multiple high performance computing platforms (mid-size computer clusters,
-    cloud infrastructures)
-  start_date: 2023-09-05 00:00:00
-  title: Research Scientist & Co-Founder
-- employer: The Ottawa Hospital Rehabilitation Centre
-  end_date: 2019-03-30 00:00:00
+  - Collaboration initiated by the WSIB of Ontario upon reading my master's thesis
+  - Managed a team composed of myself, one M.Eng. student, and one undergraduate student
+  - Responsible for developing a semi-automated audiogram digitization/interpretation
+    solution using machine learning and computer vision to support the claim adjudication
+    process at WSIB
+  roles: '- Collaboration initiated by the WSIB of Ontario upon reading my master''s
+    thesis
+
+    - Managed a team composed of myself, one M.Eng. student, and one undergraduate
+    student
+
+    - Responsible for developing a semi-automated audiogram digitization/interpretation
+    solution using machine learning and computer vision to support the claim adjudication
+    process at WSIB
+
+    '
+  start_date: 2020-05-05 00:00:00
+  title: Lead Researcher (Contractual position)
+- employer: Natural Resources Canada
+  end_date: 2018-04-28 00:00:00
   location: Ottawa, ON
   responsibilities:
-  - Developed data collection software (iOS) for the annotation of stress levels of
-    post-traumatic stress disorder/traumatic brain injury patients undergoing VR therapy
-    (collaboration with Rehabilitation VR Lab at The Ottawa Hospital).
-  start_date: 2018-09-04 00:00:00
+  - Co-authored a technical report detailing how deep learning strategies can be deployed
+    for passive monitoring of critical electrical infrastructure
+  - Responsible for the annotation of thousands of images for the development of deep
+    learning-based segmentation models
+  roles: '- Co-authored a technical report detailing how deep learning strategies
+    can be deployed for passive monitoring of critical electrical infrastructure
+
+    - Responsible for the annotation of thousands of images for the development of
+    deep learning-based segmentation models
+
+    '
+  start_date: 2017-09-05 00:00:00
   title: Contract Researcher
+- employer: Carleton University
+  end_date: 2023-12-30 00:00:00
+  location: Ottawa, ON
+  responsibilities:
+  - SYSC4001 - Operating Systems (Fall 2023)
+  - SYSC2100 - Data Structures and Algorithms (Spring 2023)
+  - SYSC4415 - Introduction to Machine Learning (Winter 2023)
+  - SYSC2002 - Data Structures and Algorithms (Spring 2020)
+  - SYSC2006 - Foundations of Imperative Programming (Fall 2017, Winter 2019)
+  roles: '- SYSC4001 - Operating Systems (Fall 2023)
+
+    - SYSC2100 - Data Structures and Algorithms (Spring 2023)
+
+    - SYSC4415 - Introduction to Machine Learning (Winter 2023)
+
+    - SYSC2002 - Data Structures and Algorithms (Spring 2020)
+
+    - SYSC2006 - Foundations of Imperative Programming (Fall 2017, Winter 2019)'
+  start_date: 2017-09-01 00:00:00
+  title: Teaching Assistant
 - employer: Ottawa Institute of Systems Biology
   end_date: 2016-08-31 00:00:00
   location: Ottawa, ON
@@ -154,40 +195,51 @@ job:
   - Used tools including high-throughput crystallization robots, x-ray diffractometer,
     FPLC/HPLC, protein modelling software, isothermal titration calorimetry on a regular
     basis in addition to applying other common techniques
+  roles: '- Successfully crystallized and contributed to the resolution of the crystal
+    structure of the protein under study
+
+    - Performed and optimized a variety of biochemistry techniques, including protein
+    overexpression, mutational studies, structural characterization and protein-DNA
+    interaction studies
+
+    - Used tools including high-throughput crystallization robots, x-ray diffractometer,
+    FPLC/HPLC, protein modelling software, isothermal titration calorimetry on a regular
+    basis in addition to applying other common techniques'
   start_date: 2014-05-06 00:00:00
   title: Undergraduate Research Assistant
-- employer: Carleton University
-  end_date: 2023-12-30 00:00:00
+- employer: The Ottawa Hospital Rehabilitation Centre
+  end_date: 2019-03-30 00:00:00
   location: Ottawa, ON
   responsibilities:
-  - SYSC4001 - Operating Systems (Fall 2023)
-  - SYSC2100 - Data Structures and Algorithms (Spring 2023)
-  - SYSC4415 - Introduction to Machine Learning (Winter 2023)
-  - SYSC2002 - Data Structures and Algorithms (Spring 2020)
-  - SYSC2006 - Foundations of Imperative Programming (Fall 2017, Winter 2019)
-  start_date: 2017-09-01 00:00:00
-  title: Teaching Assistant
-- employer: Natural Resources Canada
-  end_date: 2018-04-28 00:00:00
-  location: Ottawa, ON
-  responsibilities:
-  - Co-authored a technical report detailing how deep learning strategies can be deployed
-    for passive monitoring of critical electrical infrastructure
-  - Responsible for the annotation of thousands of images for the development of deep
-    learning-based segmentation models
-  start_date: 2017-09-05 00:00:00
+  - Developed data collection software (iOS) for the annotation of stress levels of
+    post-traumatic stress disorder/traumatic brain injury patients undergoing VR therapy
+    (collaboration with Rehabilitation VR Lab at The Ottawa Hospital).
+  roles: '- Developed data collection software (iOS) for the annotation of stress
+    levels of post-traumatic stress disorder/traumatic brain injury patients undergoing
+    VR therapy (collaboration with Rehabilitation VR Lab at The Ottawa Hospital)'
+  start_date: 2018-09-04 00:00:00
   title: Contract Researcher
-- employer: Carleton University
-  end_date: 2020-08-29 00:00:00
+- employer: NuvoBio
   location: Ottawa, ON
   responsibilities:
-  - Collaboration initiated by the WSIB of Ontario upon reading my master's thesis
-  - Managed a team composed of myself, one M.Eng. student, and one undergraduate student
-  - Responsible for developing a semi-automated audiogram digitization/interpretation
-    solution using machine learning and computer vision to support the claim adjudication
-    process at WSIB
-  start_date: 2020-05-05 00:00:00
-  title: Lead Researcher (Contractual position)
+  - Responsible for the implementation, deployment and distribution of Darwin
+  - Leading the research and development efforts at NuvoBio
+  - Managing multiple high performance computing platforms (mid-size computer clusters,
+    cloud infrastructures)
+  roles: '- Design, implementation, deployment, and continuous development of DarwinAI,
+    NuvoBio''s AI-based peptide therapeutic discovery platform
+
+    - Execution of a research program and dissemination of results in peer-reviewed
+    journals and conferences
+
+    - Fulfillment of peptide binder design contracts for academic and industrial clients
+
+    - Management of high performance computing platforms (computer clusters, cloud
+    infrastructures, on-site hardware)
+
+    - Scientific popularization and communication'
+  start_date: 2023-09-05 00:00:00
+  title: Research Scientist & Co-Founder
 mentoringList:
 - degree: B.A.Sc.
   end_date: 2018-04-30 00:00:00

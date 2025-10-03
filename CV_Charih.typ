@@ -1,4 +1,5 @@
 #import "@preview/fontawesome:0.5.0": *
+#import "@preview/cmarker:0.1.6"
 #import "@preview/icu-datetime:0.1.2": experimental, fmt-date, fmt-datetime, fmt-time
 #import "@preview/datify:0.1.4": custom-date-format
 
@@ -146,7 +147,8 @@
 
         ],
       )
-      #list(..entry.responsibilities.map(d => list.item(d)))
+      //#list(..entry.responsibilities.map(d => list.item(d)))
+      #cmarker.render(entry.roles)
     ]
   }
 }
@@ -372,16 +374,16 @@ Ottawa, ON (K1S 5B6) \
     column-gutter: 3em,
     align: (left, left, left),
     [
-      Computational biochemistry \
-      Biomedical informatics
+      Peptide therapeutic design \
+      Bioinformatics
     ],
     [
       Applied machine learning \
-      High performance computing
+      Health informatics
     ],
     [
-      Cloud computing \
-      Peptide therapeutic design
+      High performance computing \
+      Cloud computing
     ],
   )
 ]

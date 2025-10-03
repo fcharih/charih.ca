@@ -68,9 +68,12 @@ sp.run("cp CV_Charih.pdf static/charih_cv.pdf", shell=True)
 
 client = ClientM(MANAGEMENT_KEY)
 
-asset = client.assets("h10co4b8nw83", "master").find("charih_cv")
-asset.unpublish()
-client.assets(SPACE_ID, "master").delete("charih_cv")
+try:
+    asset = client.assets("h10co4b8nw83", "master").find("charih_cv")
+    asset.unpublish()
+    client.assets(SPACE_ID, "master").delete("charih_cv")
+except:
+    print("CV does not exist in contentful.")
 
 new_upload = client.uploads("h10co4b8nw83").create(open("CV_Charih.pdf", "rb"))
 
