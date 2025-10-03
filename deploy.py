@@ -8,7 +8,7 @@ parser.add_argument("--cv", action="store_true", help="Whether to compile the CV
 args = parser.parse_args()
 
 if args.cv:
-    sp.run("./build_cv.py", shell=True)
+    sp.run("python3 build_and_upload_cv.py", shell=True)
 
 sp.run("git add .", shell=True)
 sp.run("git commit", shell=True)

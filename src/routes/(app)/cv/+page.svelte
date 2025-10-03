@@ -28,7 +28,8 @@
 {#each data.journalPublications.toSorted((a, b) => b.year - a.year) as pub, i}
   <div class="journal-pub">
     <b>[J{data.journalPublications.length - i}]</b>
-    {pub.authors.join(", ")}. {#if pub.url}<a href={pub.url}>{pub.title}</a
+    {@html pub.authors.join(", ").replace("F. Charih", "<b>F. Charih</b>")}. {#if pub.url}<a
+        href={pub.url}>{pub.title}</a
       >{:else}{pub.title}{/if} ({pub.year}).
     <i>{pub.publisher}</i>{#if pub.volume}
       {" "}{pub.volume}{/if}{#if pub.issue}({pub.issue}){/if}{#if pub.pages},
@@ -44,7 +45,8 @@
 {#each data.conferencePublications.toSorted((a, b) => b.year - a.year) as pub, i}
   <div class="conference-pub">
     <b>[C{data.conferencePublications.length - i}]</b>
-    {pub.authors.join(", ")}. {#if pub.url}<a href={pub.url}>{pub.title}</a
+    {@html pub.authors.join(", ").replace("F. Charih", "<b>F. Charih</b>")}. {#if pub.url}<a
+        href={pub.url}>{pub.title}</a
       >{:else}{pub.title}{/if}.
     <i>{pub.conference}</i>, {pub.location}, {pub.conferenceDate}.
   </div>
@@ -59,7 +61,8 @@
 {#each data.preprints.toSorted((a, b) => parseInt(b.year) - parseInt(a.year)) as pub, i}
   <div class="preprint">
     <b>[PP{data.preprints.length - i}]</b>
-    {pub.authors.join(", ")}. {#if pub.url}<a href={pub.url}>{pub.title}</a
+    {@html pub.authors.join(", ").replace("F. Charih", "<b>F. Charih</b>")}. {#if pub.url}<a
+        href={pub.url}>{pub.title}</a
       >{:else}{pub.title}{/if},
     <i>{pub.publisher}</i>, {pub.year}.{#if pub.comment}{" "}({pub.comment}).{/if}
   </div>

@@ -951,6 +951,37 @@ presentationList:
   title: X-ray crystallography and computational biochemistry (guest lecture)
 publicationList:
 - authors:
+  - G. M. Rurak
+  - C. Groulx
+  - A. McFee
+  - A. Aguilar-Valles
+  - F. Charih
+  - J. R. Green
+  - B. Woodside
+  - G. Coppola
+  - N. Salmaso
+  publication_date: 2025-10-03 00:00:00
+  publication_type: Journal
+  publisher: Glial Health Research
+  status: Submitted
+  title: Translatome plasticity of neocortical astroglia throughout the estrous cycle
+  year: '2025'
+- authors:
+  - F. Charih
+  - M. Boulter
+  - K. K. Biggar
+  - J. R. Green
+  comment: Submitted to Scientific Reports
+  doi: 10.1101/2025.08.27.672583v1
+  publication_date: 2025-09-01 00:00:00
+  publication_type: Preprint
+  publisher: bioRxiv
+  status: Submitted
+  title: Leveraging learned representations and multitask learning for lysine methylation
+    site discovery
+  url: https://www.biorxiv.org/content/10.1101/2025.08.27.672583v1
+  year: '2025'
+- authors:
   - K. K. Biggar
   - N. Ridgeway
   - A. Chopra
@@ -1316,18 +1347,6 @@ publicationList:
     in Rural Ontario'
   url: https://doi.org/10.1109/CRV.2018.00028
   year: '2018'
-- authors:
-  - F. Charih
-  - M. Boulter
-  - K. K. Biggar
-  - J. R. Green
-  doi: 10.1101/2025.08.27.672583v1
-  publication_type: Preprint
-  publisher: bioRxiv
-  title: Leveraging learned representations and multitask learning for lysine methylation
-    site discovery
-  url: https://www.biorxiv.org/content/10.1101/2025.08.27.672583v1
-  year: '2025'
 softwareList:
 - description: A database of translatomic data from astroglia (in collaboration with
     the Salmaso lab).
