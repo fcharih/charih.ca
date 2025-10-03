@@ -153,8 +153,8 @@
 
 #let format-journal(entry) = {
   [#entry.authors.join(", "). #entry.title (#entry.year). #text(style: "italic")[#entry.publisher]#if entry-contains-key(entry, "volume") [, #entry.volume]#if entry-contains-key(entry, "issue") [(#entry.issue)]#if entry-contains-key(entry, "volume") [.]
-    #if entry-contains-key(entry, "comment") [ (#entry.comment)]
-    #if entry.url != "" [ \[#link(entry.url)[Link]\]]
+    #if entry-contains-key(entry, "status") and entry.status != "Published" [ (#entry.status).]
+    #if "url" in entry [ \[#link(entry.url)[Link]\]]
   ]
 
   [

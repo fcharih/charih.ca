@@ -952,6 +952,73 @@ presentationList:
 publicationList:
 - authors:
   - G. M. Rurak
+  - S. Simard
+  - M. Freitas-Andrade
+  - B. Lacoste
+  - F. Charih
+  - A. Van Geel
+  - J. Stead
+  - B. Woodside
+  - J. R. Green
+  - G. Coppola
+  - N. Salmaso
+  doi: 10.1016/j.celrep.2022.110310
+  issue: '5'
+  publication_date: 2022-02-01 00:00:00
+  publication_type: Journal
+  publisher: Cell Reports
+  status: Published
+  title: Translatomic database of cortical astroglia across male and female mouse
+    development reveals two distinct developmental phenotypes
+  url: https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00022-5
+  volume: '38'
+  year: '2022'
+- authors:
+  - F. Charih
+  - K. Biggar
+  - J. R. Green
+  doi: 10.1038/s41598-022-13227-9
+  issue: '9610'
+  pages: 1-13
+  publication_date: 2022-06-10 00:00:00
+  publication_type: Journal
+  publisher: Scientific Reports
+  status: Published
+  title: Assessing sequence-based protein-protein interaction predictors for use in
+    therapeutic peptide engineering
+  url: https://www.nature.com/articles/s41598-022-13227-9
+  volume: '12'
+  year: '2022'
+- authors:
+  - K. Dick
+  - ' J. B. Tanner'
+  - F. Charih
+  - J. R. Green
+  doi: 10.1109/ACCESS.2022.3156578
+  pages: 28487-28498
+  publication_date: 2022-03-03 00:00:00
+  publication_type: Journal
+  publisher: IEEE Access
+  status: Published
+  title: 'GasBotty: Multi-Metric Extraction in the Wild'
+  url: https://ieeexplore.ieee.org/document/9727170
+  volume: '10'
+  year: '2022'
+- authors:
+  - F. Charih
+  - J. R. Green
+  doi: 10.1109/ACCESS.2022.3215972
+  pages: 110761-110769
+  publication_date: 2022-10-19 00:00:00
+  publication_type: Journal
+  publisher: IEEE Access
+  status: Published
+  title: Audiogram Digitization Tool for Audiological Reports
+  url: https://ieeexplore.ieee.org/document/9925220?source=authoralert
+  volume: '10'
+  year: '2022'
+- authors:
+  - G. M. Rurak
   - C. Groulx
   - A. McFee
   - A. Aguilar-Valles
@@ -1070,50 +1137,6 @@ publicationList:
   volume: '592'
   year: '2018'
 - authors:
-  - F. Charih
-  - K. Biggar
-  - J.R. Green
-  doi: 10.1038/s41598-022-13227-9
-  issue: '9610'
-  pages: 1-13
-  publication_date: 2022-06-10 00:00:00
-  publication_type: Journal
-  publisher: Scientific Reports
-  status: Published
-  title: Assessing sequence-based protein-protein interaction predictors for use in
-    therapeutic peptide engineering
-  url: https://www.nature.com/articles/s41598-022-13227-9
-  volume: '12'
-  year: '2022'
-- authors:
-  - K. Dick
-  - ' J. B. Tanner'
-  - F. Charih
-  - J.R. Green
-  doi: 10.1109/ACCESS.2022.3156578
-  pages: 28487-28498
-  publication_date: 2022-03-03 00:00:00
-  publication_type: Journal
-  publisher: IEEE Access
-  status: Published
-  title: 'GasBotty: Multi-Metric Extraction in the Wild'
-  url: https://ieeexplore.ieee.org/document/9727170
-  volume: '10'
-  year: '2022'
-- authors:
-  - F. Charih
-  - J.R. Green
-  doi: 10.1109/ACCESS.2022.3215972
-  pages: 110761-110769
-  publication_date: 2022-10-19 00:00:00
-  publication_type: Journal
-  publisher: IEEE Access
-  status: Published
-  title: Audiogram Digitization Tool for Audiological Reports
-  url: https://ieeexplore.ieee.org/document/9925220?source=authoralert
-  volume: '10'
-  year: '2022'
-- authors:
   - "V. Lukinovi\u0107"
   - H. Adhikary
   - M. Hoekstra
@@ -1164,29 +1187,6 @@ publicationList:
   url: https://www.sciencedirect.com/science/article/pii/S1874939923000858
   volume: '1866'
   year: '2023'
-- authors:
-  - G. M. Rurak
-  - S. Simard
-  - M. Freitas-Andrade
-  - B. Lacoste
-  - F. Charih
-  - A. Van Geel
-  - J. Stead
-  - B. Woodside
-  - J.R. Green
-  - G. Coppola
-  - N. Salmaso
-  doi: 10.1016/j.celrep.2022.110310
-  issue: '5'
-  publication_date: 2022-02-01 00:00:00
-  publication_type: Journal
-  publisher: Cell Reports
-  status: Published
-  title: Translatomic database of cortical astroglia across male and female mouse
-    development reveals two distinct developmental phenotypes
-  url: https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00022-5
-  volume: '38'
-  year: '2022'
 - authors:
   - F. Charih
   - J. R. Green
