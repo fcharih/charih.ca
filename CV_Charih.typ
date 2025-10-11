@@ -17,9 +17,11 @@
 
 #let to-datetime(datestring) = {
   let split_date = datestring.split("-")
-  return datetime(day: int(split_date.at(2).split(" ").at(0)), month: int(split_date.at(1)), year: int(split_date.at(
-    0,
-  )))
+  return datetime(day: int(split_date.at(2).split(" ").at(0)), month: int(split_date.at(1)), year: int(
+    split_date.at(
+      0,
+    ),
+  ))
 }
 
 #let title-case(string) = {
@@ -218,6 +220,28 @@
   ] else [
     #for (i, entry) in other-entries.enumerate().slice(1) {
       [\[O#(other-entries.len() - i)\] #format-other(entry)]
+    }
+  ]
+}
+
+
+#let format-patent(entry) = {
+  [#entry.authors.join(", "). #entry.title. #text(style: "italic")[#entry.publication_type], #entry.publisher#if "location" in entry { [, #entry.location] }, #entry.year.]
+  if "comment" in entry [ (#entry.comment)]
+  if "url" in entry [ \[#link(entry.url)[Link]\]]
+
+  [
+
+  ]
+}
+
+#let print-patent(publications, first: false) = {
+  let other-entries = publications.filter(p => p.publication_type == "Patent")
+  if first [
+    \[P#(other-entries.len())\] #format-patent(other-entries.at(0))
+  ] else [
+    #for (i, entry) in other-entries.enumerate().slice(1) {
+      [\[O#(other-entries.len() - i)\] #format-patent(entry)]
     }
   ]
 }
@@ -436,6 +460,16 @@ Ottawa, ON (K1S 5B6) \
 ]
 
 #print-other(other, first: false)
+
+#let patents = sort-by-datekey(
+  cv.publicationList.filter(p => p.publication_type == "Patent"),
+  "publication_date",
+)
+#box(width: 100%)[
+  === Patents
+
+  #print-patent(patents, first: true)
+]
 
 
 #let presentations = sort-by-datekey(cv.presentationList, "date")
