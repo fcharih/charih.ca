@@ -1,4 +1,9 @@
 awardList:
+- comment: Nominated by my Ph.D. examination committee for the University Medal awarded
+    to graduate students for outstanding academic achievement
+  date: 2025-09-12 00:00:00-04:00
+  source: Carleton University
+  title: Carleton University Medal nomination
 - comment: Awarded to high potential researchers to pursue doctoral studies
   date: 2019-05-01 00:00:00-04:00
   source: NSERC
@@ -88,12 +93,23 @@ degrees:
 - advisors:
   - James R. Green,https://www.sce.carleton.ca/faculty/green/green.php
   degree: M.A.Sc.
-  discipline: Electrical and Computer Engineering (Data Science)
+  discipline: Electrical and Computer Engineering
   end_date: 2018-12-18 00:00:00
   institution: Carleton University
   location: Ottawa, ON
   start_date: 2016-09-06 00:00:00
   thesis: 'Machine Learning in Audiology: Applications and Implications'
+- advisors:
+  - James R. Green,https://www.sce.carleton.ca/faculty/green/green.php
+  - Kyle K. Biggar,https://carleton.ca/biology/people/kyle-biggar/
+  degree: Ph.D.
+  discipline: Electrical and Computer Engineering
+  end_date: 2025-09-12 00:00:00
+  institution: Carleton University
+  location: Ottawa, ON
+  start_date: 2019-01-08 00:00:00
+  thesis: Sequence-based peptide binder design to modulate the lysine methylome and
+    beyond
 - advisors:
   - "Jean-Fran\xE7ois Couture,https://www.uottawa.ca/faculty-medicine/leadership-team/dr-jean-francois-couture"
   degree: B.Sc.(Hons.)
@@ -112,83 +128,7 @@ degrees:
   start_date: 2010-09-07 00:00:00
   thesis: Design, Simulation and Optimization of a High Production Volume Toluene
     Plant
-- advisors:
-  - James R. Green,https://www.sce.carleton.ca/faculty/green/green.php
-  - Kyle K. Biggar,https://carleton.ca/biology/people/kyle-biggar/
-  degree: Ph.D.
-  discipline: Electrical and Computer Engineering (Computational Biology)
-  end_date: 2025-09-12 00:00:00
-  institution: Carleton University
-  location: Ottawa, ON
-  start_date: 2019-01-08 00:00:00
-  thesis: Sequence-based peptide binder design to modulate the lysine methylome and
-    beyond
 job:
-- employer: Carleton University
-  end_date: 2020-08-29 00:00:00
-  location: Ottawa, ON
-  roles: '- Collaboration initiated by the WSIB of Ontario upon reading my master''s
-    thesis
-
-    - Managed a team composed of myself, one M.Eng. student, and one undergraduate
-    student
-
-    - Responsible for developing a semi-automated audiogram digitization/interpretation
-    solution using machine learning and computer vision to support the claim adjudication
-    process at WSIB
-
-    '
-  start_date: 2020-05-05 00:00:00
-  title: Lead Researcher (Contractual position)
-- employer: Natural Resources Canada
-  end_date: 2018-04-28 00:00:00
-  location: Ottawa, ON
-  roles: '- Co-authored a technical report detailing how deep learning strategies
-    can be deployed for passive monitoring of critical electrical infrastructure
-
-    - Responsible for the annotation of thousands of images for the development of
-    deep learning-based segmentation models
-
-    '
-  start_date: 2017-09-05 00:00:00
-  title: Contract Researcher
-- employer: Carleton University
-  end_date: 2023-12-30 00:00:00
-  location: Ottawa, ON
-  roles: '- SYSC4001 - Operating Systems (Fall 2023)
-
-    - SYSC2100 - Data Structures and Algorithms (Spring 2023)
-
-    - SYSC4415 - Introduction to Machine Learning (Winter 2023)
-
-    - SYSC2002 - Data Structures and Algorithms (Spring 2020)
-
-    - SYSC2006 - Foundations of Imperative Programming (Fall 2017, Winter 2019)'
-  start_date: 2017-09-01 00:00:00
-  title: Teaching Assistant
-- employer: Ottawa Institute of Systems Biology
-  end_date: 2016-08-31 00:00:00
-  location: Ottawa, ON
-  roles: '- Successfully crystallized and contributed to the resolution of the crystal
-    structure of the protein under study
-
-    - Performed and optimized a variety of biochemistry techniques, including protein
-    overexpression, mutational studies, structural characterization and protein-DNA
-    interaction studies
-
-    - Used tools including high-throughput crystallization robots, x-ray diffractometer,
-    FPLC/HPLC, protein modelling software, isothermal titration calorimetry on a regular
-    basis in addition to applying other common techniques'
-  start_date: 2014-05-06 00:00:00
-  title: Undergraduate Research Assistant
-- employer: The Ottawa Hospital Rehabilitation Centre
-  end_date: 2019-03-30 00:00:00
-  location: Ottawa, ON
-  roles: '- Developed data collection software (iOS) for the annotation of stress
-    levels of post-traumatic stress disorder/traumatic brain injury patients undergoing
-    VR therapy (collaboration with Rehabilitation VR Lab at The Ottawa Hospital)'
-  start_date: 2018-09-04 00:00:00
-  title: Contract Researcher
 - employer: NuvoBio
   location: Ottawa, ON
   roles: '- Design, implementation, deployment, and continuous development of DarwinAI,
@@ -204,8 +144,79 @@ job:
 
     - Scientific popularization and communication'
   start_date: 2023-09-05 00:00:00
-  title: Research Scientist & Co-Founder
+  title: Research scientist & co-founder
+- employer: The Ottawa Hospital Rehabilitation Centre
+  end_date: 2019-03-30 00:00:00
+  location: Ottawa, ON
+  roles: '- Developed data collection software (iOS) for the annotation of stress
+    levels of post-traumatic stress disorder/traumatic brain injury patients undergoing
+    VR therapy (collaboration with Rehabilitation VR Lab at The Ottawa Hospital)'
+  start_date: 2018-09-04 00:00:00
+  title: Contract researcher
+- employer: Ottawa Institute of Systems Biology
+  end_date: 2016-08-31 00:00:00
+  location: Ottawa, ON
+  roles: '- Successfully crystallized and contributed to the resolution of the crystal
+    structure of the protein under study
+
+    - Performed and optimized a variety of biochemistry techniques, including protein
+    overexpression, mutational studies, structural characterization and protein-DNA
+    interaction studies
+
+    - Used tools including high-throughput crystallization robots, x-ray diffractometer,
+    FPLC/HPLC, protein modelling software, isothermal titration calorimetry on a regular
+    basis in addition to applying other common techniques'
+  start_date: 2014-05-06 00:00:00
+  title: Undergraduate research assistant
+- employer: Carleton University
+  end_date: 2023-12-30 00:00:00
+  location: Ottawa, ON
+  roles: '- SYSC4001 - Operating Systems (Fall 2023)
+
+    - SYSC2100 - Data Structures and Algorithms (Spring 2023)
+
+    - SYSC4415 - Introduction to Machine Learning (Winter 2023)
+
+    - SYSC2002 - Data Structures and Algorithms (Spring 2020)
+
+    - SYSC2006 - Foundations of Imperative Programming (Fall 2017, Winter 2019)'
+  start_date: 2017-09-01 00:00:00
+  title: Teaching assistant
+- employer: Natural Resources Canada
+  end_date: 2018-04-28 00:00:00
+  location: Ottawa, ON
+  roles: '- Co-authored a technical report detailing how deep learning strategies
+    can be deployed for passive monitoring of critical electrical infrastructure
+
+    - Responsible for the annotation of thousands of images for the development of
+    deep learning-based segmentation models
+
+    '
+  start_date: 2017-09-05 00:00:00
+  title: Contract researcher
+- employer: Carleton University
+  end_date: 2020-08-29 00:00:00
+  location: Ottawa, ON
+  roles: '- Collaboration initiated by the WSIB of Ontario upon reading my master''s
+    thesis
+
+    - Managed a team composed of myself, one M.Eng. student, and one undergraduate
+    student
+
+    - Responsible for developing a semi-automated audiogram digitization/interpretation
+    solution using machine learning and computer vision to support the claim adjudication
+    process at WSIB
+
+    '
+  start_date: 2020-05-05 00:00:00
+  title: Lead researcher (contractual position)
 mentoringList:
+- degree: B.Sc.
+  end_date: 2024-04-30 00:00:00
+  location: Carleton University
+  project: Prediction of cell-penetrating peptides
+  start_date: 2024-01-01 00:00:00
+  student_name: Tadesse Gessese
 - degree: B.A.Sc.
   end_date: 2018-04-30 00:00:00
   location: Carleton University
@@ -237,6 +248,10 @@ mentoringList:
   start_date: 2020-05-01 00:00:00
   student_name: Abhinav Yalamanchili
 peerReviewList:
+- publication_type: Conference
+  title: 'PIPA: An agent for protein interaction identification and perturbation analysis'
+  venue: International Conference on Learning Representations (ICLR)
+  year: 2025
 - publication_type: Conference
   title: "MambaPP: Structured Sequence Modeling for Protein\u2013Peptide Interaction"
   venue: Conference on Neural Information Processing Systems (NeurIPS)
@@ -967,6 +982,41 @@ presentationList:
   location: Ottawa, ON
   title: X-ray crystallography and computational biochemistry (guest lecture)
 publicationList:
+- article_number: '340'
+  authors:
+  - N. Ridgeway
+  - A. Chopra
+  - "V. Lukinovi\u0107"
+  - M. Feldman
+  - F. Charih
+  - D. Levy
+  - J. R. Green
+  - K. K. Biggar
+  doi: 10.1038/s42004-025-01717-6
+  publication_date: 2025-11-07 00:00:00
+  publication_type: Journal
+  publisher: Communications Chemistry
+  status: Published
+  title: Machine learning-driven prediction of substrates for enzymes introducing
+    or removing protein post-translational modifications
+  url: https://www.nature.com/articles/s42004-025-01717-6
+  volume: '8'
+  year: '2025'
+- authors:
+  - F. Charih
+  - M. Boulter
+  - K. K. Biggar
+  - J. R. Green
+  comment: Submitted to Scientific Reports
+  doi: 10.1101/2025.08.27.672583v1
+  publication_date: 2025-09-01 00:00:00
+  publication_type: Preprint
+  publisher: bioRxiv
+  status: Submitted
+  title: Leveraging learned representations and multitask learning for lysine methylation
+    site discovery
+  url: https://www.biorxiv.org/content/10.1101/2025.08.27.672583v2
+  year: '2025'
 - authors:
   - F. Charih
   - K. K. Biggar
@@ -1060,38 +1110,6 @@ publicationList:
   publisher: Glial Health Research
   status: Submitted
   title: Translatome plasticity of neocortical astroglia throughout the estrous cycle
-  year: '2025'
-- authors:
-  - F. Charih
-  - M. Boulter
-  - K. K. Biggar
-  - J. R. Green
-  comment: Submitted to Scientific Reports
-  doi: 10.1101/2025.08.27.672583v1
-  publication_date: 2025-09-01 00:00:00
-  publication_type: Preprint
-  publisher: bioRxiv
-  status: Submitted
-  title: Leveraging learned representations and multitask learning for lysine methylation
-    site discovery
-  url: https://www.biorxiv.org/content/10.1101/2025.08.27.672583v1
-  year: '2025'
-- authors:
-  - K. K. Biggar
-  - N. Ridgeway
-  - A. Chopra
-  - "V. Lukinovi\u0107"
-  - F. Charih
-  - D. Levy
-  - J. R. Green
-  doi: 10.21203/rs.3.rs-3771179/v1
-  publication_date: 2025-09-17 00:00:00
-  publication_type: Journal
-  publisher: Communications Chemistry
-  status: Accepted
-  title: 'Machine learning-based exploration of enzyme-substrate networks: SET8-mediated
-    methyllysine and its changing impact within cancer proteomes'
-  url: https://www.researchsquare.com/article/rs-3771179/v1
   year: '2025'
 - authors:
   - F. Charih

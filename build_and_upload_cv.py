@@ -2,6 +2,7 @@
 
 import time, os
 import subprocess as sp
+import sys
 
 from contentful import Client
 from contentful_management import Client as ClientM
@@ -65,6 +66,11 @@ with open("cv.yaml", "w") as ofile:
 # sp.run("typst compile CV_Charih.typ && rm temp_data.yaml", shell=True)
 sp.run("typst compile CV_Charih.typ", shell=True)
 sp.run("cp CV_Charih.pdf static/charih_cv.pdf", shell=True)
+
+resp = input(">Do you want to upload the CV to contentful? (y/n)\n")
+
+if resp not in ("Y", "y"):
+    sys.exit(0)
 
 client = ClientM(MANAGEMENT_KEY)
 

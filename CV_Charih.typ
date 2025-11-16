@@ -3,6 +3,9 @@
 #import "@preview/icu-datetime:0.1.2": experimental, fmt-date, fmt-datetime, fmt-time
 #import "@preview/datify:0.1.4": custom-date-format
 
+//#set text(font: "Roboto", size: 9pt)
+#set text(size: 9pt, font: "Noto Sans")
+
 #let count-entries(entries) = {
   let counts = (:)
   for entry in entries {
@@ -48,7 +51,6 @@
 }
 
 
-#set text(size: 10pt)
 #show link: set text(blue)
 //#show heading: set align(center)
 #set list(indent: 3em, spacing: 10pt)
@@ -399,15 +401,15 @@ Ottawa, ON (K1S 5B6) \
     align: (left, left, left),
     [
       Peptide therapeutic design \
-      Bioinformatics
+      Computational biochemistry
     ],
     [
       Applied machine learning \
       Health informatics
     ],
     [
-      High performance computing \
-      Cloud computing
+      Clinical decision support \
+      AI in education
     ],
   )
 ]

@@ -28,7 +28,7 @@
 
 <div id="who-i-am">
   <img alt="francois" id="headshot" src="/img/charih.png" />
-  <h1>François Charih ({$locale === "en" ? "he/him/they/them" : "il/lui"})</h1>
+  <h1>François Charih ({$locale === "en" ? "he/they" : "il/lui"})</h1>
   <div>
     ({$locale === "en"
       ? "pronunciation: Fran-swa Sha-ree"
@@ -36,7 +36,7 @@
   </div>
   <div>
     {@html $locale === "en"
-      ? "Co-founder and Research scientist @ "
+      ? "Co-founder and research scientist @ "
       : "Co-fondateur et chercheur @ "}
     <a href="https://nuvobio.com"
       ><span class="orange">Nuvo</span><span class="green">B</span><span
